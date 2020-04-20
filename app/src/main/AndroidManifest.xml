@@ -9,12 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Tema">
-        <activity android:name=".SplashActivity">
+		<activity android:name=".DebugActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".SplashActivity">
+            <!--NA VERSÃO FINAL MOVER O <intent-filter> pra cá-->
         </activity>
         <activity android:name=".MainActivity">
         </activity>
