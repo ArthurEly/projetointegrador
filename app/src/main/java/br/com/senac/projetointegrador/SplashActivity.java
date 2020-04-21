@@ -32,7 +32,7 @@ public class SplashActivity extends Activity {
     }
 	
 	public void initActivity(Class cls) {
-		Intent i = new Intent(this, MainActivity.class);
+		Intent i = new Intent(this, cls);
 		startActivity(i);
 	}
 }

@@ -19,8 +19,8 @@
         <activity android:name=".SplashActivity">
             <!--NA VERSÃO FINAL MOVER O <intent-filter> pra cá-->
         </activity>
-        <activity android:name=".MainActivity">
-        </activity>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".LoginActivity"/>
     </application>
 
 </manifest>

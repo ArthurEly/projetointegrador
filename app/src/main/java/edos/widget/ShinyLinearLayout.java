@@ -28,7 +28,7 @@ public class ShinyLinearLayout extends LinearLayout {
 						setBackgroundColor(0xFFCC0000);
 						bool = true;
 					} else if (p2.getAction() == p2.ACTION_UP) {
-						setBackgroundColor(0xFFFFFFFF);
+						setBackgroundColor(0xFF000000);
 						bool = false;
 					}
 					return bool;

@@ -13,19 +13,47 @@
 		android:textAppearance="?android:attr/textAppearanceLarge"
 		android:layout_margin="10dp"/>
 
-	<edos.ShinyLinearLayout
+	<edos.widget.ShinyLinearLayout
 		android:layout_height="wrap_content"
 		android:layout_width="match_parent"
 		android:padding="10dp"
-		android:orientation="horizontal">
+		android:orientation="horizontal"
+		android:gravity="center">
 
 		<TextView
 			android:text="Email"
 			android:layout_height="wrap_content"
 			android:layout_width="0dp"
-			android:weightSum="1.0"/>
+			android:layout_weight="1.0"/>
 
-	</edos.ShinyLinearLayout>
+		<edos.widget.EditText
+			android:id="@+id/LOGIN_EMAIL"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_weight="1.0"/>
+
+	</edos.widget.ShinyLinearLayout>
+
+	<edos.widget.ShinyLinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:padding="10dp"
+		android:orientation="horizontal"
+		android:gravity="center">
+
+		<TextView
+			android:text="Senha"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_weight="1.0"/>
+
+		<edos.widget.EditText
+			android:id="@+id/LOGIN_PASSWORD"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_weight="1.0"/>
+
+	</edos.widget.ShinyLinearLayout>
 
 </LinearLayout>
 
