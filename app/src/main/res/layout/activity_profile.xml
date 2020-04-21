@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileActivity">
+    tools:context=".ProfileActivity"
+	android:orientation="vertical">
 
     <ImageView
         android:id="@+id/logoNetflocos"
@@ -13,9 +14,7 @@
         android:layout_height="57dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/splashlogo" />
+        android:src="@drawable/splashlogo" />
 
     <TextView
         android:id="@+id/tituloNome"
@@ -24,9 +23,7 @@
         android:layout_marginLeft="24dp"
         android:layout_marginTop="20dp"
         android:text="Nome:"
-        android:textColor="#FFFFFF"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+        android:textColor="#FFFFFF" />
 
     <TextView
         android:id="@+id/tituloEmail"
@@ -35,9 +32,7 @@
         android:layout_marginLeft="24dp"
         android:layout_marginTop="20dp"
         android:text="Email:"
-        android:textColor="#FFFFFF"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tituloNome" />
+        android:textColor="#FFFFFF" />
 
     <TextView
         android:id="@+id/tituloSenha"
@@ -46,9 +41,7 @@
         android:layout_marginLeft="24dp"
         android:layout_marginTop="20dp"
         android:text="Senha:"
-        android:textColor="#FFFFFF"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tituloEmail" />
+        android:textColor="#FFFFFF" />
 
     <TextView
         android:id="@+id/tituloConta"
@@ -59,18 +52,13 @@
         android:layout_marginTop="20dp"
         android:text="Conta"
         android:textColor="#FFFFFF"
-        android:textSize="30sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logoNetflocos" />
+        android:textSize="30sp" />
 
     <View
         android:id="@+id/divider"
         android:layout_width="match_parent"
         android:layout_height="0.75sp"
-        android:background="#FFFCFC"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logoNetflocos" />
+        android:background="#FFFCFC" />
 
     <View
         android:id="@+id/divider2"
@@ -81,11 +69,7 @@
         android:layout_marginTop="4dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
-        android:background="#FFFCFC"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tituloConta" />
+        android:background="#FFFCFC" />
 
     <TextView
         android:id="@+id/textView7"
@@ -94,9 +78,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:text="foto de perfil"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="foto de perfil" />
 
     <TextView
         android:id="@+id/textoNome"
@@ -104,9 +86,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
-        android:text="NOMENOMENOME"
-        app:layout_constraintStart_toEndOf="@+id/tituloNome"
-        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+        android:text="NOMENOMENOME" />
 
     <TextView
         android:id="@+id/textoEmail"
@@ -114,9 +94,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="20dp"
-        android:text="EMAILEMAILEMAIL"
-        app:layout_constraintStart_toEndOf="@+id/tituloEmail"
-        app:layout_constraintTop_toBottomOf="@+id/textoNome" />
+        android:text="EMAILEMAILEMAIL"/>
 
     <TextView
         android:id="@+id/textoSenha"
@@ -125,22 +103,15 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:inputType="numberPassword|textWebPassword"
-        android:text="SENHASENHASENHA"
-        app:layout_constraintStart_toEndOf="@+id/tituloSenha"
-        app:layout_constraintTop_toBottomOf="@+id/textoEmail" />
+        android:text="SENHASENHASENHA"/>
 
-    <Button
+    <edos.widget.Button
         android:id="@+id/botaoMostrarMenuAlterar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:onClick="mostrarMenu"
-        android:text="Alterar informações"
-        android:textColor="#E60000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textoSenha" />
+        android:text="Alterar informações"/>
 
     <TextView
         android:id="@+id/tituloNomeAlterar"
@@ -150,9 +121,7 @@
         android:layout_marginTop="60dp"
         android:text="Digite seu nome:"
         android:textColor="#FFFFFF"
-        android:visibility="gone"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/botaoMostrarMenuAlterar" />
+        android:visibility="gone" />
 
     <TextView
         android:id="@+id/tituloEmailAlterar"
@@ -161,10 +130,7 @@
         android:layout_marginLeft="24dp"
         android:layout_marginTop="20dp"
         android:text="Digite seu e-mail:"
-        android:textColor="#FFFFFF"
-        android:visibility="gone"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tituloNomeAlterar" />
+        android:visibility="gone" />
 
     <TextView
         android:id="@+id/tituloSenhaAlterar"
@@ -174,9 +140,7 @@
         android:layout_marginTop="20dp"
         android:text="Digite sua senha:"
         android:textColor="#FFFFFF"
-        android:visibility="gone"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tituloEmailAlterar" />
+        android:visibility="gone" />
 
     <EditText
         android:id="@+id/textoNomeAlterar"
@@ -190,10 +154,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:textSize="14sp"
-        android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tituloNomeAlterar"
-        app:layout_constraintTop_toBottomOf="@+id/botaoMostrarMenuAlterar" />
+        android:visibility="gone" />
 
     <EditText
         android:id="@+id/textoEmailAlterar"
@@ -204,10 +165,7 @@
         android:ems="10"
         android:inputType="textWebEmailAddress"
         android:textSize="14sp"
-        android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tituloEmailAlterar"
-        app:layout_constraintTop_toBottomOf="@+id/textoNomeAlterar" />
+        android:visibility="gone" />
 
     <EditText
         android:id="@+id/textoSenhaAlterar"
@@ -218,23 +176,15 @@
         android:ems="10"
         android:inputType="textWebPassword"
         android:textSize="14sp"
-        android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tituloSenhaAlterar"
-        app:layout_constraintTop_toBottomOf="@+id/textoEmailAlterar" />
+        android:visibility="gone" />
 
-    <Button
+    <edos.widget.Button
         android:id="@+id/botaoAlterar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="Alterar"
-        android:textColor="#E60000"
-        android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBoxVisuSenha" />
+        android:visibility="gone" />
 
     <CheckBox
         android:id="@+id/checkBoxVisuSenha"
@@ -244,8 +194,6 @@
         android:layout_marginRight="24dp"
         android:onClick="verSenha"
         android:text="Visualizar senha"
-        android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textoSenhaAlterar" />
+        android:visibility="gone" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

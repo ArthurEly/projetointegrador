@@ -32,6 +32,35 @@
 			android:paddingTop="20dp"
 			android:paddingBottom="20dp"
 			android:id="@+id/MAIN_ACTIVITY"/>
+
+		<View
+			android:background="?android:attr/dividerVertical"
+			android:layout_width="match_parent"
+			android:layout_height="1dp"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="ProfileActivity"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:paddingTop="20dp"
+			android:paddingBottom="20dp"
+			android:id="@+id/PROFILE_ACTIVITY"/>
+		
+
+		<View
+			android:background="?android:attr/dividerVertical"
+			android:layout_width="match_parent"
+			android:layout_height="1dp"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="LoginActivity"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:paddingTop="20dp"
+			android:paddingBottom="20dp"
+			android:id="@+id/LOGIN_ACTIVITY"/>
 	</LinearLayout>
 
 </ScrollView>

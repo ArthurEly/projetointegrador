@@ -55,5 +55,37 @@
 
 	</edos.widget.ShinyLinearLayout>
 
+	<View
+		android:layout_width="1dp"
+		android:layout_height="0dp"
+		android:layout_weight="1.0"/>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:padding="10dp"
+		android:gravity="center">
+
+		<edos.widget.Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Fazer Login"
+			android:id="@+id/LOGIN_BUTTON"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="—ou—"
+			android:layout_margin="10dp"/>
+
+		<edos.widget.Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="SignUp"
+			android:id="@+id/LOGIN_SIGNUP"/>
+
+	</LinearLayout>
+
 </LinearLayout>
 

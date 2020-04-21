@@ -7,7 +7,7 @@ import android.view.*;
 import android.content.*;
 
 public class DebugActivity extends Activity {
-	TextView splash,debug;
+	TextView splash,main,profile,login;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,7 +15,9 @@ public class DebugActivity extends Activity {
         setContentView(R.layout.activity_debug);
 		
 		splash = findViewById(R.id.SPLASH_ACTIVITY);
-		debug = findViewById(R.id.MAIN_ACTIVITY);
+		main = findViewById(R.id.MAIN_ACTIVITY);
+		profile = findViewById(R.id.PROFILE_ACTIVITY);
+		login = findViewById(R.id.LOGIN_ACTIVITY);
 		
 		splash.setOnClickListener(new OnClickListener() {
 			@Override public void onClick(View p1) {
@@ -23,11 +25,23 @@ public class DebugActivity extends Activity {
 			}
 		});
 		
-		debug.setOnClickListener(new OnClickListener() {
+		main.setOnClickListener(new OnClickListener() {
 			@Override public void onClick(View p1) {
 				initActivity(MainActivity.class);
 			}
 		});
+		
+		profile.setOnClickListener(new OnClickListener() {
+				@Override public void onClick(View p1) {
+					initActivity(ProfileActivity.class);
+				}
+			});
+
+		login.setOnClickListener(new OnClickListener() {
+				@Override public void onClick(View p1) {
+					initActivity(LoginActivity.class);
+				}
+			});
     }
 	
 	public void initActivity(Class cls) {
