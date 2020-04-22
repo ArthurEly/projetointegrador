@@ -28,18 +28,20 @@ public class MainActivity extends Activity {
 
     public void irHome(View view)
     {
-        Toast.makeText(getApplicationContext(),"Você já está no início.", Toast.LENGTH_SHORT).show();
+        new edos.widget.Toast(this, R.layout.dialog_home,100).show();
     }
 
     public void irBusca(View view)
     {
-        Intent i = new Intent(this, MainActivity.class);
+        Intent i = new Intent(this, SearchActivity.class);
         startActivity(i);
       //  finish();
     }
 
     public void irConfigs(View view)
     {
-
+        Intent i = new Intent(this, ConfigActivity.class);
+        startActivity(i);
+        finish();
     }
 }

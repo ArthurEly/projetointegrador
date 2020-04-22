@@ -1,33 +1,28 @@
 package br.com.senac.projetointegrador;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
 import android.app.*;
-import android.os.*;
-import android.view.*;
 
 import br.com.senac.projetointegrador.util.AndroidUtils;
 
-
-public class ProfileActivity extends Activity {
+public class SearchActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
+        setContentView(R.layout.activity_search);
         AndroidUtils.setImmersiveMode(this,true);
-
-    }
-
-    public void irMenuEdit(View view)
-    {
-        Intent i = new Intent(this, EditProfileActivity.class);
-        startActivity(i);
-        finish();
     }
 
     public void irProfile(View view)
     {
-        new edos.widget.Toast(this, R.layout.dialog_profile, 100).show();
+        Intent i = new Intent(this, ProfileActivity.class);
+        startActivity(i);
+        finish();
     }
 
     public void irHome(View view)
@@ -39,9 +34,7 @@ public class ProfileActivity extends Activity {
 
     public void irBusca(View view)
     {
-        Intent i = new Intent(this, SearchActivity.class);
-        startActivity(i);
-        finish();
+        new edos.widget.Toast(this, R.layout.dialog_search,100).show();
     }
 
     public void irConfigs(View view)
@@ -51,5 +44,3 @@ public class ProfileActivity extends Activity {
         finish();
     }
 }
-
-
