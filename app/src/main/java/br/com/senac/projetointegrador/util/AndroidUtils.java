@@ -4,6 +4,7 @@ import android.view.*;
 import android.app.*;
 import android.transition.*;
 import android.content.*;
+import android.view.animation.*;
 
 public class AndroidUtils {
     public static void setImmersiveMode(Activity act, boolean bool) {
@@ -25,42 +26,31 @@ public class AndroidUtils {
     }
 	
 	public static void animate(final Activity startact,int transition, final Class finalactiviy, int time) {
-		Transition t = TransitionInflater.from(startact).inflateTransition(transition);
-		t.setDuration(time);
-		TransitionManager.go(startact.getContentScene(),t);
-		t.addListener(new Transition.TransitionListener() {
+		Animation a = AnimationUtils.loadAnimation(startact,transition);
+		//Transition t = a.ge;
+		a.setDuration(time);
+		a.setAnimationListener(new Animation.AnimationListener() {
 
 				@Override
-				public void onTransitionStart(Transition p1)
+				public void onAnimationStart(Animation p1)
 				{
-					// TODO: Implement this method
+				// TODO: Implement this method
 				}
 
 				@Override
-				public void onTransitionEnd(Transition p1)
+				public void onAnimationEnd(Animation p1)
 				{
+
 					Intent i = new Intent(startact,finalactiviy);
 					startact.startActivity(i);
-				}
+				}                                    
 
 				@Override
-				public void onTransitionCancel(Transition p1)
+				public void onAnimationRepeat(Animation p1)
 				{
-					// TODO: Implement this method
-				}
-
-				@Override
-				public void onTransitionPause(Transition p1)
-				{
-					// TODO: Implement this method
-				}
-
-				@Override
-				public void onTransitionResume(Transition p1)
-				{
-					
+				// TODO: Implement this method
 				}
 			});
-		
+		a.start();
 	}
 }
