@@ -3,21 +3,15 @@ import android.content.*;
 import android.app.*;
 import br.com.senac.projetointegrador.*;
 import android.view.*;
+import android.widget.*;
 
-public class Toast {
-	private android.widget.Toast t;
+public class Toast extends android.widget.Toast {
 	public Toast(Activity ctx, int xml, int tempo) {
-		t = new android.widget.Toast(ctx);
-		View layout = ctx.getLayoutInflater().inflate(xml,null,true);
-		t.setDuration(tempo);
-		t.setView(layout);
-	}
-	
-	public void show() {
-		t.show();
-	}
-	
-	public void setGravity(int gravity, int x, int y) {
-		t.setGravity(gravity,x,y);
+		super(ctx);
+		View layout = ctx.getLayoutInflater().inflate(R.layout.toast_view,null,true);
+		LinearLayout l = layout.findViewById(R.id.TOASTVIEW_CONTENT);
+		l.addView(layout);
+		setDuration(tempo);
+		setView(l);
 	}
 }
