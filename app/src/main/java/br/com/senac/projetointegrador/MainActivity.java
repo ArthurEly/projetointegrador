@@ -9,10 +9,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.core.app.ActivityCompat;
-import androidx.core.app.ActivityOptionsCompat;
-
 import br.com.senac.projetointegrador.util.AndroidUtils;
+import android.view.animation.*;
 
 public class MainActivity extends Activity {
 
@@ -43,8 +41,8 @@ public class MainActivity extends Activity {
     public void irBusca(View view)
     {
         Intent i = new Intent(this, SearchActivity.class);
-        ActivityOptionsCompat a = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(),R.anim.fade_in, R.anim.mover_direita);
-        ActivityCompat.startActivity(MainActivity.this, i, a.toBundle());
+        Animation a = ActivityOptions.makeSceneTransitionAnimation(this,R.layout.activity_main, R.anim.mover_direita);
+        startActivity(i);
         //startActivity(i);
         finish();
     }
