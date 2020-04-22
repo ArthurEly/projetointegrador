@@ -1,11 +1,14 @@
 package br.com.senac.projetointegrador;
 
 import android.app.*;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
 import android.view.*;
 import android.widget.*;
+
+import br.com.senac.projetointegrador.util.AndroidUtils;
 
 public class EditProfileActivity extends Activity {
 
@@ -17,7 +20,7 @@ public class EditProfileActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_profile);
-
+        AndroidUtils.setImmersiveMode(this,true);
         textoNomeAlterar = findViewById(R.id.textoNomeAlterar);
         textoEmailAlterar = findViewById(R.id.textoEmailAlterar);
         textoSenhaAlterar = findViewById(R.id.textoSenhaAlterar);
@@ -44,5 +47,22 @@ public class EditProfileActivity extends Activity {
 
     }
 
+    public void irProfile(View view)
+    {
+        Toast.makeText(getApplicationContext(),"Você já está no menu de conta.", Toast.LENGTH_SHORT).show();
+    }
 
+    public void irHome(View view)
+    {
+        Intent i = new Intent(this, MainActivity.class);
+        startActivity(i);
+        finish();
+    }
+
+    public void irBusca(View view)
+    {
+        Intent i = new Intent(this, MainActivity.class);
+        startActivity(i);
+        finish();
+    }
 }

@@ -32,7 +32,7 @@ public class ProfileActivity extends Activity {
 
     public void irProfile(View view)
     {
-        Toast.makeText(getApplicationContext(),"Você já está em conta", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(),"Você já está no menu de conta.", Toast.LENGTH_SHORT).show();
     }
 
     public void irHome(View view)

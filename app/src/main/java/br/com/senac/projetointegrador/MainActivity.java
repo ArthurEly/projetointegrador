@@ -28,7 +28,7 @@ public class MainActivity extends Activity {
 
     public void irHome(View view)
     {
-        Toast.makeText(getApplicationContext(),"Você já está em conta", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(),"Você já está no início.", Toast.LENGTH_SHORT).show();
     }
 
     public void irBusca(View view)
