@@ -26,31 +26,7 @@ public class AndroidUtils {
     }
 	
 	public static void animate(final Activity startact,int transition, final Class finalactiviy, int time) {
-		Animation a = AnimationUtils.loadAnimation(startact,transition);
-		//Transition t = a.ge;
-		a.setDuration(time);
-		a.setAnimationListener(new Animation.AnimationListener() {
-
-				@Override
-				public void onAnimationStart(Animation p1)
-				{
-				// TODO: Implement this method
-				}
-
-				@Override
-				public void onAnimationEnd(Animation p1)
-				{
-
-					Intent i = new Intent(startact,finalactiviy);
-					startact.startActivity(i);
-				}                                    
-
-				@Override
-				public void onAnimationRepeat(Animation p1)
-				{
-				// TODO: Implement this method
-				}
-			});
-		a.start();
+		Transition t = TransitionInflater.from(startact).inflateTransition(transition);
+		
 	}
 }
