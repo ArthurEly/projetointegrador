@@ -13,6 +13,8 @@
 		android:id="@+id/PLAYER_VIDEO"/>
 
 	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
 		android:layout_centerHorizontal="true"
 		android:layout_centerVertical="true"
 		android:gravity="center">
@@ -55,12 +57,21 @@
 		android:layout_height="wrap_content"
 		android:layout_margin="10dp"/>
 
-	<SeekBar
+	<LinearLayout
+		android:orientation="vertical"
 		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
+		android:layout_height="50dp"
 		android:layout_alignParentBottom="true"
-		android:thumb="@drawable/seekbar_thumbdata"
-		android:elevation="10dp"/>
+		android:gravity="bottom"
+		android:background="@drawable/effect_gradient">
+
+		<SeekBar
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:thumb="@drawable/seekbar_thumbdata"
+			android:elevation="10dp"/>
+
+	</LinearLayout>
 
 	<LinearLayout
 		android:orientation="horizontal"
@@ -70,7 +81,17 @@
 		android:layout_margin="10dp">
 
 		<ImageView
-			android:src="@drawable/ic_hdr_white"
+			android:src="@drawable/ic_standard_definition_white"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+
+		<ImageView
+			android:src="@drawable/ic_fullscreen_exit_white"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+
+		<ImageView
+			android:src="@drawable/ic_dots_vertical_white"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"/>
 
