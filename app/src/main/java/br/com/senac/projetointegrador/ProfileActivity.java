@@ -10,6 +10,7 @@ import android.widget.*;
 import android.view.*;
 import android.widget.EditText;
 
+import br.com.senac.projetointegrador.util.AndroidUtils;
 
 
 public class ProfileActivity extends Activity {
@@ -18,8 +19,7 @@ public class ProfileActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-
-
+        AndroidUtils.setImmersiveMode(this,true);
 
     }
 
@@ -27,7 +27,28 @@ public class ProfileActivity extends Activity {
     {
         Intent i = new Intent(this, EditProfileActivity.class);
         startActivity(i);
+        finish();
     }
+
+    public void irProfile(View view)
+    {
+        Toast.makeText(getApplicationContext(),"Você já está em conta", Toast.LENGTH_SHORT).show();
+    }
+
+    public void irHome(View view)
+    {
+        Intent i = new Intent(this, MainActivity.class);
+        startActivity(i);
+        finish();
+    }
+
+    public void irBusca(View view)
+    {
+        Intent i = new Intent(this, MainActivity.class);
+        startActivity(i);
+        finish();
+    }
+
 }
 
 
