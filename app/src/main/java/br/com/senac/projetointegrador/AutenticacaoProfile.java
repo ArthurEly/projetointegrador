@@ -4,12 +4,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
+import android.app.Activity;
 
 import edos.widget.EditText;
 import edos.widget.Toast;
 
-public class AutenticacaoProfile extends AppCompatActivity {
+public class AutenticacaoProfile extends Activity {
 
     private EditText campoSenha;
     private TextView textoSenha;

@@ -1,7 +1,5 @@
 package br.com.senac.projetointegrador;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.*;
 import android.content.Intent;
 import android.os.Bundle;

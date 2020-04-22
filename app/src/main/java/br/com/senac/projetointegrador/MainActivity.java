@@ -40,11 +40,7 @@ public class MainActivity extends Activity {
 
     public void irBusca(View view)
     {
-        Intent i = new Intent(this, SearchActivity.class);
-        Animation a = ActivityOptions.makeSceneTransitionAnimation(this,R.layout.activity_main, R.anim.mover_direita);
-        startActivity(i);
-        //startActivity(i);
-        finish();
+	AndroidUtils.animate(this,R.anim.fade_in,SearchActivity.class,500);
     }
 
     public void irConfigs(View view)
