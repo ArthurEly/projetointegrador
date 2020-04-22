@@ -18,13 +18,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".SplashActivity">
-
             <!-- NA VERSÃO FINAL MOVER O <intent-filter> pra cá -->
         </activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".EditProfileActivity"/>
+        <activity android:name=".PlayerActivity"/>
     </application>
 
 </manifest>
