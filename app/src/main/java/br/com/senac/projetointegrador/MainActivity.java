@@ -10,7 +10,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import br.com.senac.projetointegrador.util.AndroidUtils;
-import android.view.animation.*;
 
 public class MainActivity extends Activity {
 
@@ -40,7 +39,12 @@ public class MainActivity extends Activity {
 
     public void irBusca(View view)
     {
-	AndroidUtils.animate(this,R.anim.fade_in,SearchActivity.class,500);
+        Intent i = new Intent(this, SearchActivity.class);
+        AndroidUtils.animate(this,R.anim.fade_in,SearchActivity.class,1);
+//        ActivityOptionsCompat a = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(),R.anim.fade_in, R.anim.mover_direita);
+//        ActivityCompat.startActivity(MainActivity.this, i, a.toBundle());
+//        startActivity(i);
+        finish();
     }
 
     public void irConfigs(View view)
@@ -54,7 +58,6 @@ public class MainActivity extends Activity {
     {
         Intent i = new Intent(this, MenuFilmesActivity.class);
         startActivity(i);
-        i.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
         finish();
         menuSeries.setTextColor(getResources().getColor(R.color.corMenuOculto));
     }
@@ -63,7 +66,6 @@ public class MainActivity extends Activity {
     {
         Intent i = new Intent(this, MenuSeriesActivity.class);
         startActivity(i);
-        i.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
         finish();
         menuFilmes.setTextColor(getResources().getColor(R.color.corMenuOculto));
     }
