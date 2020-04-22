@@ -12,7 +12,6 @@ public class Dialog extends android.app.Dialog {
 	public Dialog(Activity a, int layout) {
 		super(a);
 		d = layout;
-		
 	}
 	
 	@Override
