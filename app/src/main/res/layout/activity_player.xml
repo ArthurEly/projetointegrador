@@ -8,35 +8,65 @@
 
 	<VideoView
 		android:layout_width="match_parent"
-		android:layout_height="match_parent"/>
+		android:layout_height="match_parent"
+		android:background="#756B6A"
+		android:id="@+id/PLAYER_VIDEO"/>
 
-	<ImageView
-		android:src="@drawable/ic_play_white"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
+	<LinearLayout
 		android:layout_centerHorizontal="true"
 		android:layout_centerVertical="true"
-		android:scaleType="centerInside"
-		android:scaleX="2"
-		android:scaleY="2"/>
+		android:gravity="center">
+
+		<ImageView
+			android:src="@drawable/ic_skip_previous_white"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:scaleType="centerInside"
+			android:layout_alignParentLeft="true"
+			android:layout_margin="10dp"/>
+
+		<ImageView
+			android:src="@drawable/ic_play_white"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true"
+			android:scaleType="centerInside"
+			android:scaleX="2"
+			android:scaleY="2"
+			android:layout_margin="25dp"/>
+
+		<ImageView
+			android:src="@drawable/ic_skip_next_white"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="false"
+			android:layout_centerVertical="true"
+			android:scaleType="centerInside"
+			android:layout_alignParentRight="true"
+			android:layout_margin="10dp"/>
+
+	</LinearLayout>
 
 	<ImageView
-		android:src="@drawable/ic_skip_next_white"
+		android:src="@drawable/ic_arrow_left_white"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_centerHorizontal="false"
-		android:layout_centerVertical="true"
-		android:scaleType="centerInside"
-		android:layout_alignParentRight="true"
 		android:layout_margin="10dp"/>
 
-	<ImageView
-		android:src="@drawable/ic_skip_previous_white"
+	<SeekBar
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:thumb="@drawable/seekbar_thumbdata"
+		android:elevation="10dp"/>
+
+	<LinearLayout
+		android:orientation="horizontal"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_centerVertical="true"
-		android:scaleType="centerInside"
-		android:layout_alignParentLeft="true"
+		android:layout_alignParentRight="true"
 		android:layout_margin="10dp"/>
 
 </RelativeLayout>

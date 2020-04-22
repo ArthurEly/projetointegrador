@@ -1,6 +1,5 @@
 package br.com.senac.projetointegrador;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.app.*;
 import android.os.Bundle;
 import android.text.method.HideReturnsTransformationMethod;
