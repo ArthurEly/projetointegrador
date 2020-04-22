@@ -4,14 +4,15 @@
     android:layout_height="match_parent">
 
     <gradient
-        android:startColor="#FFFFFF"
-        android:endColor="#FFFFFF"
+        android:startColor="#F0F0F0"
+        android:endColor="#F0F0F0"
         android:angle="45"/>
 
     <padding android:left="6dp"
         android:top="6dp"
         android:right="6dp"
         android:bottom="6dp" />
+
     <corners android:radius="10dp" />
 
 </shape>
