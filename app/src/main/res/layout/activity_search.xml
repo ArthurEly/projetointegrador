@@ -7,11 +7,28 @@
     tools:context=".SearchActivity"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView4"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ola pesquisador" />
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="Busque por uma série, filme, gênero, etc."
+            android:inputType="textPersonName" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:src="@drawable/lupa" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -73,5 +90,7 @@
                 android:onClick="irConfigs"
                 android:src="@drawable/ic_dots_vertical_white" />
         </LinearLayout>
+
     </LinearLayout>
+
 </LinearLayout>

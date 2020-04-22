@@ -4,11 +4,18 @@ import android.content.Intent;
 import android.app.*;
 import android.os.*;
 import android.view.*;
+import android.widget.TextView;
 
 import br.com.senac.projetointegrador.util.AndroidUtils;
+import edos.widget.EditText;
+import edos.widget.Toast;
 
 
 public class ProfileActivity extends Activity {
+
+
+    private EditText campoSenha;
+    private TextView textoSenha;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,13 +23,18 @@ public class ProfileActivity extends Activity {
         setContentView(R.layout.activity_profile);
         AndroidUtils.setImmersiveMode(this,true);
 
+        campoSenha = findViewById(R.id.campoSenha);
+        textoSenha = findViewById(R.id.textoSenha);
+
+//        edos.app.Dialog dialog = new edos.app.Dialog(this, R.layout.autenticacaoprofile);
+//        dialog.getOkButton().setText("lkfçsldkflçs");
     }
 
     public void irMenuEdit(View view)
     {
-        Intent i = new Intent(this, EditProfileActivity.class);
-        startActivity(i);
-        finish();
+        edos.app.Dialog dialog = new edos.app.Dialog(this, R.layout.autenticacaoprofile);
+        dialog.show();
+        System.out.println("kldhsjfalç");
     }
 
     public void irProfile(View view)

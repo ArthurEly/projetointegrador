@@ -1,27 +1,23 @@
 package br.com.senac.projetointegrador;
 
+import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.*;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.app.*;
-import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import androidx.core.app.ActivityCompat;
-import androidx.core.app.ActivityOptionsCompat;
 
 import br.com.senac.projetointegrador.util.AndroidUtils;
 
-public class MainActivity extends Activity {
+public class MenuSeriesActivity extends Activity {
 
     private TextView menuSeries, menuFilmes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_menu_series);
         AndroidUtils.setImmersiveMode(this,true);
 
         menuSeries = findViewById(R.id.menuSeries);
@@ -37,15 +33,15 @@ public class MainActivity extends Activity {
 
     public void irHome(View view)
     {
-        new edos.widget.Toast(this, R.layout.dialog_home,100).show();
+        Intent i = new Intent(this, MainActivity.class);
+        startActivity(i);
+        finish();
     }
 
     public void irBusca(View view)
     {
         Intent i = new Intent(this, SearchActivity.class);
-        ActivityOptionsCompat a = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(),R.anim.fade_in, R.anim.mover_direita);
-        ActivityCompat.startActivity(MainActivity.this, i, a.toBundle());
-        //startActivity(i);
+        startActivity(i);
         finish();
     }
 
@@ -56,22 +52,16 @@ public class MainActivity extends Activity {
         finish();
     }
 
+
     public void irFilmes(View view)
     {
         Intent i = new Intent(this, MenuFilmesActivity.class);
         startActivity(i);
-        i.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
         finish();
-        menuSeries.setTextColor(getResources().getColor(R.color.corMenuOculto));
     }
 
     public void irSeries(View view)
     {
-        Intent i = new Intent(this, MenuSeriesActivity.class);
-        startActivity(i);
-        i.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-        finish();
-        menuFilmes.setTextColor(getResources().getColor(R.color.corMenuOculto));
+        new edos.widget.Toast(this,R.layout.dialog_home,100);
     }
-
 }

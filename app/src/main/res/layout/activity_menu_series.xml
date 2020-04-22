@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        android:layout_weight="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:background="@drawable/background"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView30"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/iconetflocoquadradoinvi" />
+
+                <TextView
+                    android:id="@+id/menuFilmes"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:onClick="irFilmes"
+                    android:text="Filmes"
+                    android:textColor="@color/corMenuOculto"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/menuSeries"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="irSeries"
+                    android:text="Séries"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Texto exemplo"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginRight="5dp"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/iconetflocoquadradoinvi"/>
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/iconetflocoquadradoinvi"/>
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/iconetflocoquadradoinvi"/>
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/iconetflocoquadradoinvi"/>
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/iconetflocoquadradoinvi"/>
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/iconetflocoquadradoinvi"/>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Texto exemplo"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginRight="5dp"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/iconetflocoquadradoinvi"/>
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/iconetflocoquadradoinvi"/>
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/iconetflocoquadradoinvi"/>
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/iconetflocoquadradoinvi"/>
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/iconetflocoquadradoinvi"/>
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/iconetflocoquadradoinvi" />
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Texto exemplo"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginRight="5dp"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/iconetflocoquadradoinvi"/>
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/iconetflocoquadradoinvi"/>
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/iconetflocoquadradoinvi"/>
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/iconetflocoquadradoinvi"/>
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/iconetflocoquadradoinvi"/>
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/iconetflocoquadradoinvi"/>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Texto exemplo"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginRight="5dp"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/iconetflocoquadradoinvi"/>
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/iconetflocoquadradoinvi"/>
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/iconetflocoquadradoinvi"/>
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/iconetflocoquadradoinvi"/>
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/iconetflocoquadradoinvi"/>
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/iconetflocoquadradoinvi"/>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Texto exemplo"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginRight="5dp"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/iconetflocoquadradoinvi"/>
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/iconetflocoquadradoinvi"/>
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/iconetflocoquadradoinvi"/>
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/iconetflocoquadradoinvi"/>
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/iconetflocoquadradoinvi"/>
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/iconetflocoquadradoinvi"/>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Texto exemplo"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginRight="5dp"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/iconetflocoquadradoinvi"/>
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/iconetflocoquadradoinvi"/>
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/iconetflocoquadradoinvi"/>
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/iconetflocoquadradoinvi"/>
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/iconetflocoquadradoinvi"/>
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/iconetflocoquadradoinvi"/>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Texto exemplo"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginRight="5dp"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/iconetflocoquadradoinvi"/>
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/iconetflocoquadradoinvi"/>
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/iconetflocoquadradoinvi"/>
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/iconetflocoquadradoinvi"/>
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/iconetflocoquadradoinvi"/>
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/iconetflocoquadradoinvi"/>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="#580000"
+        android:elevation="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#BB2929"
+        android:backgroundTint="#1f1f1f"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButtonLupa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            android:onClick="irBusca"
+            android:src="@drawable/lupa"
+            android:tint="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/imageButtonHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            android:onClick="irHome"
+            android:src="@drawable/ic_home_white"
+            android:tint="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/imageButtonProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            android:onClick="irProfile"
+            android:src="@drawable/account"
+            android:tint="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/imageButtonConfig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            android:onClick="irConfigs"
+            android:src="@drawable/ic_dots_vertical_white" />
+    </LinearLayout>
+
+</LinearLayout>
+

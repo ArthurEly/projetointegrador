@@ -34,10 +34,11 @@
 			android:id="@+id/DIALOGVIEW_CANCEL"/>
 
 		<edos.widget.Button
+			android:id="@+id/DIALOGVIEW_OK"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:text="OK"
-			android:id="@+id/DIALOGVIEW_OK"/>
+			android:onClick="irMenuEdit"
+			android:text="OK" />
 
 	</LinearLayout>
 
