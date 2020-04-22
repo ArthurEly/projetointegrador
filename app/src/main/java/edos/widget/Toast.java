@@ -4,11 +4,20 @@ import android.app.*;
 import br.com.senac.projetointegrador.*;
 import android.view.*;
 
-public class Toast extends android.widget.Toast {
+public class Toast {
+	private android.widget.Toast t;
 	public Toast(Activity ctx, int xml, int tempo) {
-		super((Context) ctx);
+		t = new android.widget.Toast(ctx);
 		View layout = ctx.getLayoutInflater().inflate(xml,null,true);
-		setDuration(tempo);
-		setView(layout);
+		t.setDuration(tempo);
+		t.setView(layout);
+	}
+	
+	public void show() {
+		t.show();
+	}
+	
+	public void setGravity(int gravity, int x, int y) {
+		t.setGravity(gravity,x,y);
 	}
 }
