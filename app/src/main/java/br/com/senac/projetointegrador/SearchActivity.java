@@ -35,10 +35,4 @@ public class SearchActivity extends Activity {
         new edos.widget.Toast(this, R.layout.dialog_search,100).show();
     }
 
-    public void irConfigs(View view)
-    {
-        Intent i = new Intent(this, ConfigActivity.class);
-        startActivity(i);
-        finish();
-    }
 }

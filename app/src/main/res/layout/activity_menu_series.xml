@@ -641,14 +641,6 @@
             android:src="@drawable/account"
             android:tint="#FFFFFF" />
 
-        <ImageButton
-            android:id="@+id/imageButtonConfig"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#00FFFFFF"
-            android:onClick="irConfigs"
-            android:src="@drawable/ic_dots_vertical_white" />
     </LinearLayout>
 
 </LinearLayout>

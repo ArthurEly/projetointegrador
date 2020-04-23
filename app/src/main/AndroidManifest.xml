@@ -16,7 +16,6 @@
         <activity android:name=".JSONTeste"></activity>
         <activity android:name=".MenuSeriesActivity" />
         <activity android:name=".MenuFilmesActivity" />
-        <activity android:name=".ConfigActivity" />
         <activity android:name=".SearchActivity" />
         <activity android:name=".DebugActivity">
             <intent-filter>

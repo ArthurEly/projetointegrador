@@ -56,13 +56,6 @@ public class ProfileActivity extends Activity {
         startActivity(i);
         finish();
     }
-
-    public void irConfigs(View view)
-    {
-        Intent i = new Intent(this, ConfigActivity.class);
-        startActivity(i);
-        finish();
-    }
 }
 
 

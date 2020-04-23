@@ -43,12 +43,6 @@ public class MenuFilmesActivity extends Activity {
         finish();
     }
 
-    public void irConfigs(View view)
-    {
-        Intent i = new Intent(this, ConfigActivity.class);
-        startActivity(i);
-        finish();
-    }
 
     public void irFilmes(View view)
     {
