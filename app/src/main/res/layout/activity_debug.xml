@@ -8,102 +8,103 @@
 	<LinearLayout
 		android:layout_width="fill_parent"
 		android:layout_height="fill_parent"
-		android:orientation="vertical">
+		android:orientation="vertical"
+		android:padding="20dp">
 
 		<TextView
+			android:id="@+id/SPLASH_ACTIVITY"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
+			android:paddingTop="20dp"
+			android:paddingBottom="20dp"
 			android:text="SplashActivity"
-			android:textAppearance="?android:attr/textAppearanceLarge"
-			android:paddingTop="20dp"
-			android:paddingBottom="20dp"
-			android:id="@+id/SPLASH_ACTIVITY"/>
+			android:textAppearance="?android:attr/textAppearanceLarge" />
 
 		<View
-			android:background="?android:attr/dividerVertical"
 			android:layout_width="match_parent"
-			android:layout_height="1dp"/>
+			android:layout_height="1dp"
+			android:background="?android:attr/dividerVertical" />
 
 		<TextView
+			android:id="@+id/MAIN_ACTIVITY"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
+			android:paddingTop="20dp"
+			android:paddingBottom="20dp"
 			android:text="MainActivity"
-			android:textAppearance="?android:attr/textAppearanceLarge"
-			android:paddingTop="20dp"
-			android:paddingBottom="20dp"
-			android:id="@+id/MAIN_ACTIVITY"/>
+			android:textAppearance="?android:attr/textAppearanceLarge" />
 
 		<View
-			android:background="?android:attr/dividerVertical"
 			android:layout_width="match_parent"
-			android:layout_height="1dp"/>
+			android:layout_height="1dp"
+			android:background="?android:attr/dividerVertical" />
 
 		<TextView
+			android:id="@+id/PROFILE_ACTIVITY"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
+			android:paddingTop="20dp"
+			android:paddingBottom="20dp"
 			android:text="ProfileActivity"
-			android:textAppearance="?android:attr/textAppearanceLarge"
-			android:paddingTop="20dp"
-			android:paddingBottom="20dp"
-			android:id="@+id/PROFILE_ACTIVITY"/>
-		
+			android:textAppearance="?android:attr/textAppearanceLarge" />
+
 
 		<View
-			android:background="?android:attr/dividerVertical"
 			android:layout_width="match_parent"
-			android:layout_height="1dp"/>
+			android:layout_height="1dp"
+			android:background="?android:attr/dividerVertical" />
 
 		<TextView
+			android:id="@+id/LOGIN_ACTIVITY"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
+			android:paddingTop="20dp"
+			android:paddingBottom="20dp"
 			android:text="LoginActivity"
-			android:textAppearance="?android:attr/textAppearanceLarge"
-			android:paddingTop="20dp"
-			android:paddingBottom="20dp"
-			android:id="@+id/LOGIN_ACTIVITY"/>
-		
+			android:textAppearance="?android:attr/textAppearanceLarge" />
+
 
 		<View
-			android:background="?android:attr/dividerVertical"
 			android:layout_width="match_parent"
-			android:layout_height="1dp"/>
+			android:layout_height="1dp"
+			android:background="?android:attr/dividerVertical" />
 
 		<TextView
+			android:id="@+id/PLAYER_ACTIVITY"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
+			android:paddingTop="20dp"
+			android:paddingBottom="20dp"
 			android:text="PlayerActivity"
-			android:textAppearance="?android:attr/textAppearanceLarge"
-			android:paddingTop="20dp"
-			android:paddingBottom="20dp"
-			android:id="@+id/PLAYER_ACTIVITY"/>
+			android:textAppearance="?android:attr/textAppearanceLarge" />
 
 		<View
-			android:background="?android:attr/dividerVertical"
 			android:layout_width="match_parent"
-			android:layout_height="1dp"/>
+			android:layout_height="1dp"
+			android:background="?android:attr/dividerVertical" />
 
 		<TextView
+			android:id="@+id/EDITPROFILE_ACTIVITY"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
+			android:paddingTop="20dp"
+			android:paddingBottom="20dp"
 			android:text="EditProfileActivity"
-			android:textAppearance="?android:attr/textAppearanceLarge"
-			android:paddingTop="20dp"
-			android:paddingBottom="20dp"
-			android:id="@+id/EDITPROFILE_ACTIVITY"/>
+			android:textAppearance="?android:attr/textAppearanceLarge" />
 
 		<View
-			android:background="?android:attr/dividerVertical"
 			android:layout_width="match_parent"
-			android:layout_height="1dp"/>
+			android:layout_height="1dp"
+			android:background="?android:attr/dividerVertical" />
 
 		<TextView
+			android:id="@+id/JSON_ACTIVITY"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:text="JSONActivity"
-			android:textAppearance="?android:attr/textAppearanceLarge"
 			android:paddingTop="20dp"
 			android:paddingBottom="20dp"
-			android:id="@+id/JSON_ACTIVITY"/>
+			android:text="JSONActivity"
+			android:textAppearance="?android:attr/textAppearanceLarge" />
 	</LinearLayout>
 
 </ScrollView>
