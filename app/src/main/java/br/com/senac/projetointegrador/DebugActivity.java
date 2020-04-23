@@ -9,7 +9,7 @@ import br.com.senac.projetointegrador.util.*;
 import android.util.*;
 
 public class DebugActivity extends Activity {
-	TextView splash,main,profile,login,player;
+	TextView splash,main,profile,login,player,edit,json;
 	
 	public void debugFunction() {
 		Log.i("Debug",NetworkUtils.sqlGet("series"));
@@ -25,6 +25,8 @@ public class DebugActivity extends Activity {
 		profile = findViewById(R.id.PROFILE_ACTIVITY);
 		login = findViewById(R.id.LOGIN_ACTIVITY);
 		player = findViewById(R.id.PLAYER_ACTIVITY);
+		edit = findViewById(R.id.EDITPROFILE_ACTIVITY);
+		json = findViewById(R.id.JSON_ACTIVITY);
 		
 		splash.setOnClickListener(new OnClickListener() {
 			@Override public void onClick(View p1) {
@@ -55,6 +57,18 @@ public class DebugActivity extends Activity {
 					initActivity(PlayerActivity.class);
 				}
 			});
+
+		edit.setOnClickListener(new OnClickListener() {
+			@Override public void onClick(View p1) {
+				initActivity(EditProfileActivity.class);
+			}
+		});
+
+		json.setOnClickListener(new OnClickListener() {
+			@Override public void onClick(View p1) {
+				initActivity(JSONTeste.class);
+			}
+		});
 			
 		debugFunction();
     }

@@ -76,6 +76,34 @@
 			android:paddingTop="20dp"
 			android:paddingBottom="20dp"
 			android:id="@+id/PLAYER_ACTIVITY"/>
+
+		<View
+			android:background="?android:attr/dividerVertical"
+			android:layout_width="match_parent"
+			android:layout_height="1dp"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="EditProfileActivity"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:paddingTop="20dp"
+			android:paddingBottom="20dp"
+			android:id="@+id/EDITPROFILE_ACTIVITY"/>
+
+		<View
+			android:background="?android:attr/dividerVertical"
+			android:layout_width="match_parent"
+			android:layout_height="1dp"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="JSONActivity"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:paddingTop="20dp"
+			android:paddingBottom="20dp"
+			android:id="@+id/JSON_ACTIVITY"/>
 	</LinearLayout>
 
 </ScrollView>

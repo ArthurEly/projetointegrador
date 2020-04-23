@@ -2,7 +2,6 @@ package br.com.senac.projetointegrador.util;
 
 import java.sql.*;
 import android.util.*;
-import org.sqldroid.*;
 import edos.app.*;
 import android.app.Activity;
 import br.com.senac.projetointegrador.*;
