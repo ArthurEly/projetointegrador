@@ -5,9 +5,15 @@ import android.widget.*;
 import android.view.View.*;
 import android.view.*;
 import android.content.*;
+import br.com.senac.projetointegrador.util.*;
+import android.util.*;
 
 public class DebugActivity extends Activity {
 	TextView splash,main,profile,login,player;
+	
+	public void debugFunction() {
+		Log.i("Debug",NetworkUtils.sqlGet("series"));
+	}
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +55,8 @@ public class DebugActivity extends Activity {
 					initActivity(PlayerActivity.class);
 				}
 			});
+			
+		debugFunction();
     }
 	
 	public void initActivity(Class cls) {
