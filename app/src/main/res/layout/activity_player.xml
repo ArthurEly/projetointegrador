@@ -9,7 +9,6 @@
 	<VideoView
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-		android:background="#756B6A"
 		android:id="@+id/PLAYER_VIDEO"/>
 
 	<LinearLayout
@@ -26,7 +25,8 @@
 			android:layout_centerVertical="true"
 			android:scaleType="centerInside"
 			android:layout_alignParentLeft="true"
-			android:layout_margin="10dp"/>
+			android:layout_margin="10dp"
+			android:id="@+id/PLAYER_PREVIOUS"/>
 
 		<ImageView
 			android:src="@drawable/ic_play_white"
@@ -37,7 +37,8 @@
 			android:scaleType="centerInside"
 			android:scaleX="2"
 			android:scaleY="2"
-			android:layout_margin="25dp"/>
+			android:layout_margin="25dp"
+			android:id="@+id/PLAYER_PLAY"/>
 
 		<ImageView
 			android:src="@drawable/ic_skip_next_white"
@@ -47,7 +48,8 @@
 			android:layout_centerVertical="true"
 			android:scaleType="centerInside"
 			android:layout_alignParentRight="true"
-			android:layout_margin="10dp"/>
+			android:layout_margin="10dp"
+			android:id="@+id/PLAYER_NEXT"/>
 
 	</LinearLayout>
 
@@ -55,7 +57,8 @@
 		android:src="@drawable/ic_arrow_left_white"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_margin="10dp"/>
+		android:layout_margin="10dp"
+		android:id="@+id/PLAYER_RETURN"/>
 
 	<LinearLayout
 		android:orientation="vertical"
@@ -69,7 +72,8 @@
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:thumb="@drawable/seekbar_thumbdata"
-			android:elevation="10dp"/>
+			android:elevation="10dp"
+			android:id="@+id/PLAYER_TRACK"/>
 
 	</LinearLayout>
 
@@ -83,17 +87,20 @@
 		<ImageView
 			android:src="@drawable/ic_standard_definition_white"
 			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"/>
+			android:layout_height="wrap_content"
+			android:id="@+id/PLAYER_DEFINITION"/>
 
 		<ImageView
 			android:src="@drawable/ic_fullscreen_exit_white"
 			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"/>
+			android:layout_height="wrap_content"
+			android:id="@+id/PLAYER_PIP"/>
 
 		<ImageView
 			android:src="@drawable/ic_dots_vertical_white"
 			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"/>
+			android:layout_height="wrap_content"
+			android:id="@+id/PLAYER_OPTIONS"/>
 
 	</LinearLayout>
 
