@@ -3,21 +3,7 @@ import android.content.*;
 import android.util.*;
 import android.view.*;
 
-public class Button extends android.widget.Button implements View.OnClickListener, View.OnTouchListener
-{
-
-	@Override
-	public void onClick(View p1)
-	{
-		// TODO: Implement this method
-	}
-
-	@Override
-	public boolean onTouch(View p1, MotionEvent p2)
-	{
-		// TODO: Implement this method
-		return false;
-	}
+public class Button extends android.widget.Button {
 
 	private void init() {
 		setBackgroundColor(0xFFCC0000);
