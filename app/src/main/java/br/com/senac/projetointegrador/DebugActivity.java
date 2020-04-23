@@ -12,7 +12,7 @@ public class DebugActivity extends Activity {
 	TextView splash,main,profile,login,player,edit,json;
 	
 	public void debugFunction() {
-		Log.i("Debug",NetworkUtils.sqlGet("series"));
+		
 	}
 
     @Override

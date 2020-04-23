@@ -1,8 +1,10 @@
 package br.com.senac.projetointegrador;
 import android.app.*;
 import android.os.*;
-import edos.widget.*;
 import android.text.*;
+import android.widget.*;
+import android.view.*;
+import br.com.senac.projetointegrador.util.*;
 
 public class LoginActivity extends Activity {
 
@@ -10,10 +12,16 @@ public class LoginActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-		EditText email = findViewById(R.id.LOGIN_EMAIL);
+		final EditText email = findViewById(R.id.LOGIN_EMAIL);
 		EditText pass = findViewById(R.id.LOGIN_PASSWORD);
+		Button login = findViewById(R.id.LOGIN_BUTTON);
 		
-		email.setInputType(InputType.TYPE_TEXT_VARIATION_EMAIL_ADDRESS);
-		pass.setInputType(InputType.TYPE_TEXT_VARIATION_PASSWORD);
+		login.setOnClickListener(new View.OnClickListener() {
+			@Override public void onClick(View p1) {
+				String emailInput = email.getText().toString();
+				String db = NetworkUtils.sqlGet(NetworkUtils.TABLE_USERS,"usuario_email",emailInput);
+				android.widget.Toast.makeText(p1.getContext(),db,500).show();
+			}
+		});
     }
 }

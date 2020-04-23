@@ -26,11 +26,13 @@
 			android:layout_width="0dp"
 			android:layout_weight="1.0"/>
 
-		<edos.widget.EditText
+		<EditText
 			android:id="@+id/LOGIN_EMAIL"
 			android:layout_height="wrap_content"
 			android:layout_width="0dp"
-			android:layout_weight="1.0"/>
+			android:layout_weight="1.0"
+			android:inputType="textEmailAddress"
+			android:background="#FFFFFF"/>
 
 	</edos.widget.ShinyLinearLayout>
 
@@ -47,11 +49,13 @@
 			android:layout_width="0dp"
 			android:layout_weight="1.0"/>
 
-		<edos.widget.EditText
+		<EditText
 			android:id="@+id/LOGIN_PASSWORD"
 			android:layout_height="wrap_content"
 			android:layout_width="0dp"
-			android:layout_weight="1.0"/>
+			android:layout_weight="1.0"
+			android:inputType="textPassword"
+			android:background="#FFFFFF"/>
 
 	</edos.widget.ShinyLinearLayout>
 
@@ -67,11 +71,12 @@
 		android:padding="10dp"
 		android:gravity="center">
 
-		<edos.widget.Button
+		<Button
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:text="Fazer Login"
-			android:id="@+id/LOGIN_BUTTON"/>
+			android:id="@+id/LOGIN_BUTTON"
+			android:background="#CC0000"/>
 
 		<TextView
 			android:layout_width="wrap_content"
@@ -79,11 +84,12 @@
 			android:text="—ou—"
 			android:layout_margin="10dp"/>
 
-		<edos.widget.Button
+		<Button
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:text="SignUp"
-			android:id="@+id/LOGIN_SIGNUP"/>
+			android:id="@+id/LOGIN_SIGNUP"
+			android:background="#CC0000"/>
 
 	</LinearLayout>
 
