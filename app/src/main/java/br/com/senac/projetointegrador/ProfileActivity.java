@@ -7,12 +7,12 @@ import android.view.*;
 import android.widget.TextView;
 
 import br.com.senac.projetointegrador.util.AndroidUtils;
+import edos.widget.Button;
 import edos.widget.EditText;
 import edos.widget.Toast;
 
 
 public class ProfileActivity extends Activity {
-
 
     private EditText campoSenha;
     private TextView textoSenha;
@@ -26,15 +26,16 @@ public class ProfileActivity extends Activity {
         campoSenha = findViewById(R.id.campoSenha);
         textoSenha = findViewById(R.id.textoSenha);
 
-//        edos.app.Dialog dialog = new edos.app.Dialog(this, R.layout.autenticacaoprofile);
-//        dialog.getOkButton().setText("lkfçsldkflçs");
     }
 
-    public void irMenuEdit(View view)
-    {
+    public void irMenuEdit(View view) {
         edos.app.Dialog dialog = new edos.app.Dialog(this, R.layout.autenticacaoprofile);
         dialog.show();
-        System.out.println("kldhsjfalç");
+    }
+
+    public void autenticacaoProfile()
+    {
+
     }
 
     public void irProfile(View view)

@@ -39,12 +39,9 @@ public class MainActivity extends Activity {
 
     public void irBusca(View view)
     {
-        //Intent i = new Intent(this, SearchActivity.class);
-        AndroidUtils.animate(this,R.anim.mover_direita,SearchActivity.class,500);
-//        ActivityOptionsCompat a = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(),R.anim.fade_in, R.anim.mover_direita);
-//        ActivityCompat.startActivity(MainActivity.this, i, a.toBundle());
-//        startActivity(i);
-       // finish();
+        Intent i = new Intent(this, SearchActivity.class);
+        startActivity(i);
+        finish();
     }
 
     public void irConfigs(View view)
