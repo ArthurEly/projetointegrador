@@ -35,6 +35,7 @@ public class MainActivity extends Activity {
     public void irHome(View view)
     {
         new edos.widget.Toast(this, R.layout.dialog_home,100).show();
+
     }
 
     public void irBusca(View view)

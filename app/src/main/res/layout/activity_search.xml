@@ -59,7 +59,7 @@
                 android:background="#00FFFFFF"
                 android:onClick="irBusca"
                 android:src="@drawable/lupa"
-                android:tint="#FFFFFF" />
+                android:tint="#DA1414" />
 
             <ImageButton
                 android:id="@+id/imageButtonHome"

@@ -204,7 +204,7 @@
                     android:background="#00FFFFFF"
                     android:onClick="irProfile"
                     android:src="@drawable/account"
-                    android:tint="#FFFFFF" />
+                    android:tint="#DA1414" />
 
             </LinearLayout>
         </LinearLayout>
