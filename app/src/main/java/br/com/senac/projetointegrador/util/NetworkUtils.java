@@ -7,6 +7,9 @@ import android.app.Activity;
 import br.com.senac.projetointegrador.*;
 import android.widget.*;
 import java.io.*;
+import org.json.*;
+import android.content.*;
+import java.util.*;
 
 public class NetworkUtils {
 	public static final String TABLE_USERS = "usuario";
@@ -136,6 +139,37 @@ public class NetworkUtils {
 			e.printStackTrace();
 			return "Error: " + e.getMessage();
 		}
+	}
+	
+	public static JSONObject parseDataBase(String sqlResponse,int linha) {
+		try {
+			JSONArray json = new JSONArray(sqlResponse);
+			return json.getJSONObject(linha);
+		} catch(JSONException e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+	
+	public static void cacheUser(Context act, JSONObject usuario) throws JSONException {
+		boolean pro = false;
+		SharedPreferences.Editor c = AndroidUtils.getCache(act).edit();
+		
+		if (usuario.getInt("usuario_pro") == 1) {
+			pro = true;
+		} else {
+			pro = false;
+		}
+		
+		c.putInt("usuario_id",usuario.getInt("usuario_id"));
+		c.putString("usuario_nome",usuario.getString("usuario_nome"));
+		c.putString("usuario_email",usuario.getString("usuario_email"));
+		c.putString("usuario_senha",usuario.getString("usuario_senha"));
+		c.putBoolean("usuario_pro",pro);
+		c.putString("usuario_series",usuario.getJSONArray("usuario_series").toString());
+		c.putString("usuario_ultimo_episodio",usuario.getString("usuario_ultimo_episodio"));
+		
+		c.commit();
 	}
 }
 

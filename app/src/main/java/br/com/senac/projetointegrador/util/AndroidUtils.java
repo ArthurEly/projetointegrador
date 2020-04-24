@@ -42,4 +42,8 @@ public class AndroidUtils {
 		Transition t = TransitionInflater.from(startact).inflateTransition(transition);
 		
 	}
+
+	public static SharedPreferences getCache(Context act) {
+		return act.getSharedPreferences("cache",act.MODE_PRIVATE);
+	}
 }
