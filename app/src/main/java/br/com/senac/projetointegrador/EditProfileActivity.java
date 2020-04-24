@@ -25,7 +25,7 @@ public class EditProfileActivity extends Activity {
         textoEmailAlterar = findViewById(R.id.textoEmailAlterar);
         textoSenhaAlterar = findViewById(R.id.textoSenhaAlterar);
         botaoAlterar = findViewById(R.id.botaoAlterar);
-        imagemOlho = findViewById(R.id.imagemOlho);
+        imagemOlho = findViewById(R.id.imagemOlhoEdit);
 
         imagemOlho.setOnTouchListener(new View.OnTouchListener() {
             @Override

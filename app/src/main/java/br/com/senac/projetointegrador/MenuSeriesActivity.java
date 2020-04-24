@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import androidx.core.app.ActivityCompat;
+import androidx.core.app.ActivityOptionsCompat;
+
 import br.com.senac.projetointegrador.util.AndroidUtils;
 
 public class MenuSeriesActivity extends Activity {
@@ -32,7 +35,8 @@ public class MenuSeriesActivity extends Activity {
     public void irHome(View view)
     {
         Intent i = new Intent(this, MainActivity.class);
-        startActivity(i);
+        ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(),R.anim.escurecer,R.anim.naofazertransicao);
+        ActivityCompat.startActivity(this, i, activityOptionsCompat.toBundle());
         finish();
     }
 
@@ -48,7 +52,8 @@ public class MenuSeriesActivity extends Activity {
     public void irFilmes(View view)
     {
         Intent i = new Intent(this, MenuFilmesActivity.class);
-        startActivity(i);
+        ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(),R.anim.escurecer,R.anim.naofazertransicao);
+        ActivityCompat.startActivity(this, i, activityOptionsCompat.toBundle());
         finish();
     }
 

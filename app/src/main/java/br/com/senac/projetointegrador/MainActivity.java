@@ -5,15 +5,18 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.app.*;
-import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import androidx.core.app.ActivityCompat;
+import androidx.core.app.ActivityOptionsCompat;
 
 import br.com.senac.projetointegrador.util.AndroidUtils;
 
 public class MainActivity extends Activity {
 
     private TextView menuSeries, menuFilmes;
+    private LinearLayout layoutMain;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +26,7 @@ public class MainActivity extends Activity {
 
         menuSeries = findViewById(R.id.menuSeries);
         menuFilmes = findViewById(R.id.menuFilmes);
+        layoutMain = findViewById(R.id.layoutMain);
     }
 
     public void irProfile(View view)
@@ -49,17 +53,17 @@ public class MainActivity extends Activity {
     public void irFilmes(View view)
     {
         Intent i = new Intent(this, MenuFilmesActivity.class);
-        startActivity(i);
+        ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(),R.anim.escurecer,R.anim.naofazertransicao);
+        ActivityCompat.startActivity(this, i, activityOptionsCompat.toBundle());
         finish();
-        menuSeries.setTextColor(getResources().getColor(R.color.corMenuOculto));
     }
 
     public void irSeries(View view)
     {
         Intent i = new Intent(this, MenuSeriesActivity.class);
-        startActivity(i);
+        ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(),R.anim.escurecer,R.anim.naofazertransicao);
+        ActivityCompat.startActivity(this, i, activityOptionsCompat.toBundle());
         finish();
-        menuFilmes.setTextColor(getResources().getColor(R.color.corMenuOculto));
     }
 
 }

@@ -630,7 +630,7 @@
             android:background="#00FFFFFF"
             android:onClick="irHome"
             android:src="@drawable/ic_home_white"
-            android:tint="#FFFFFF" />
+            android:tint="#DA1414" />
 
         <ImageButton
             android:id="@+id/imageButtonProfile"

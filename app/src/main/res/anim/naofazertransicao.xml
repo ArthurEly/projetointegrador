@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <translate xmlns:android="http://schemas.android.com/apk/res/android"
-    android:duration="500"
+    android:duration="0"
     android:fromYDelta="0"
+    android:toYDelta="0"
     android:fromXDelta="0"
-    android:toYDelta="100%"
     android:toXDelta="0"
-/>
+    />
+    <!--duração-->
+    <!--ir pra cima-->
+    <!--ir pra baixo-->
+    <!--ir pra esquerda-->
+    <!--ir pra direita-->
+

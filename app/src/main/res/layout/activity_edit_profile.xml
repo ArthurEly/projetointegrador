@@ -149,7 +149,7 @@
             tools:text="SENHASENHASENHA" />
 
         <ImageButton
-            android:id="@+id/imagemOlho"
+            android:id="@+id/imagemOlhoEdit"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_marginTop="15dp"

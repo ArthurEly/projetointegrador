@@ -2,6 +2,11 @@ package br.com.senac.projetointegrador;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import android.app.Activity;
@@ -13,6 +18,7 @@ public class AutenticacaoProfile extends Activity {
 
     private EditText campoSenha;
     private TextView textoSenha;
+    private ImageButton imagemOlho;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -22,6 +28,20 @@ public class AutenticacaoProfile extends Activity {
 
         campoSenha = findViewById(R.id.campoSenha);
         textoSenha = findViewById(R.id.textoSenha);
+        imagemOlho = findViewById(R.id.imagemOlhoEdit);
+
+
+        imagemOlho.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent event) {
+                if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                    imagemOlho.setImageResource(R.drawable.olhoriscado);
+                } else {
+                    imagemOlho.setImageResource(R.drawable.olhonormal);
+                }
+                return false;
+            }
+        });
     }
 
     public void autenticacaoProfile()

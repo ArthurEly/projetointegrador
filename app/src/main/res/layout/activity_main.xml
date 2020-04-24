@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
-	android:orientation="vertical"
+	android:id="@+id/layoutMain"
 	android:layout_width="wrap_content"
-	android:layout_height="wrap_content">
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
 
 	<ScrollView
 		android:layout_width="match_parent"
 		android:layout_height="0dp"
-		android:scrollbars="none"
-		android:layout_weight="1.0">
+		android:layout_weight="1.0"
+		android:scrollbars="none">
 
 		<LinearLayout
 			android:layout_width="match_parent"
@@ -68,7 +68,7 @@
 					android:layout_marginLeft="15dp"
 					android:text="Texto exemplo"
 					android:textColor="#FFFFFF"
-					android:textSize="16sp"/>
+					android:textSize="16sp" />
 
 				<HorizontalScrollView
 					android:layout_width="match_parent"
@@ -87,7 +87,7 @@
 							android:layout_height="150dp"
 							android:layout_marginRight="5dp"
 							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi"/>
+							android:src="@drawable/iconetflocoquadradoinvi" />
 
 						<ImageView
 							android:layout_width="110dp"
@@ -95,16 +95,7 @@
 							android:layout_marginLeft="5dp"
 							android:layout_marginRight="5dp"
 							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi"/>
-
-						<ImageView
-							android:layout_width="110dp"
-							android:layout_height="150dp"
-							android:layout_marginLeft="5dp"
-							android:layout_marginRight="5dp"
-							android:layout_weight="1"
-							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi"/>
+							android:src="@drawable/iconetflocoquadradoinvi" />
 
 						<ImageView
 							android:layout_width="110dp"
@@ -113,7 +104,7 @@
 							android:layout_marginRight="5dp"
 							android:layout_weight="1"
 							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi"/>
+							android:src="@drawable/iconetflocoquadradoinvi" />
 
 						<ImageView
 							android:layout_width="110dp"
@@ -122,7 +113,7 @@
 							android:layout_marginRight="5dp"
 							android:layout_weight="1"
 							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi"/>
+							android:src="@drawable/iconetflocoquadradoinvi" />
 
 						<ImageView
 							android:layout_width="110dp"
@@ -131,7 +122,16 @@
 							android:layout_marginRight="5dp"
 							android:layout_weight="1"
 							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi"/>
+							android:src="@drawable/iconetflocoquadradoinvi" />
+
+						<ImageView
+							android:layout_width="110dp"
+							android:layout_height="150dp"
+							android:layout_marginLeft="5dp"
+							android:layout_marginRight="5dp"
+							android:layout_weight="1"
+							android:background="#FFFFFF"
+							android:src="@drawable/iconetflocoquadradoinvi" />
 
 					</LinearLayout>
 
@@ -144,7 +144,7 @@
 					android:layout_marginTop="20dp"
 					android:text="Texto exemplo"
 					android:textColor="#FFFFFF"
-					android:textSize="16sp"/>
+					android:textSize="16sp" />
 
 				<HorizontalScrollView
 					android:layout_width="match_parent"
@@ -163,7 +163,7 @@
 							android:layout_height="150dp"
 							android:layout_marginRight="5dp"
 							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi"/>
+							android:src="@drawable/iconetflocoquadradoinvi" />
 
 						<ImageView
 							android:layout_width="110dp"
@@ -171,16 +171,7 @@
 							android:layout_marginLeft="5dp"
 							android:layout_marginRight="5dp"
 							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi"/>
-
-						<ImageView
-							android:layout_width="110dp"
-							android:layout_height="150dp"
-							android:layout_marginLeft="5dp"
-							android:layout_marginRight="5dp"
-							android:layout_weight="1"
-							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi"/>
+							android:src="@drawable/iconetflocoquadradoinvi" />
 
 						<ImageView
 							android:layout_width="110dp"
@@ -189,7 +180,7 @@
 							android:layout_marginRight="5dp"
 							android:layout_weight="1"
 							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi"/>
+							android:src="@drawable/iconetflocoquadradoinvi" />
 
 						<ImageView
 							android:layout_width="110dp"
@@ -198,7 +189,16 @@
 							android:layout_marginRight="5dp"
 							android:layout_weight="1"
 							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi"/>
+							android:src="@drawable/iconetflocoquadradoinvi" />
+
+						<ImageView
+							android:layout_width="110dp"
+							android:layout_height="150dp"
+							android:layout_marginLeft="5dp"
+							android:layout_marginRight="5dp"
+							android:layout_weight="1"
+							android:background="#FFFFFF"
+							android:src="@drawable/iconetflocoquadradoinvi" />
 
 						<ImageView
 							android:layout_width="110dp"
@@ -219,7 +219,7 @@
 					android:layout_marginTop="20dp"
 					android:text="Texto exemplo"
 					android:textColor="#FFFFFF"
-					android:textSize="16sp"/>
+					android:textSize="16sp" />
 
 				<HorizontalScrollView
 					android:layout_width="match_parent"
@@ -238,7 +238,7 @@
 							android:layout_height="150dp"
 							android:layout_marginRight="5dp"
 							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi"/>
+							android:src="@drawable/iconetflocoquadradoinvi" />
 
 						<ImageView
 							android:layout_width="110dp"
@@ -246,16 +246,7 @@
 							android:layout_marginLeft="5dp"
 							android:layout_marginRight="5dp"
 							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi"/>
-
-						<ImageView
-							android:layout_width="110dp"
-							android:layout_height="150dp"
-							android:layout_marginLeft="5dp"
-							android:layout_marginRight="5dp"
-							android:layout_weight="1"
-							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi"/>
+							android:src="@drawable/iconetflocoquadradoinvi" />
 
 						<ImageView
 							android:layout_width="110dp"
@@ -264,7 +255,7 @@
 							android:layout_marginRight="5dp"
 							android:layout_weight="1"
 							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi"/>
+							android:src="@drawable/iconetflocoquadradoinvi" />
 
 						<ImageView
 							android:layout_width="110dp"
@@ -273,7 +264,7 @@
 							android:layout_marginRight="5dp"
 							android:layout_weight="1"
 							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi"/>
+							android:src="@drawable/iconetflocoquadradoinvi" />
 
 						<ImageView
 							android:layout_width="110dp"
@@ -282,7 +273,16 @@
 							android:layout_marginRight="5dp"
 							android:layout_weight="1"
 							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi"/>
+							android:src="@drawable/iconetflocoquadradoinvi" />
+
+						<ImageView
+							android:layout_width="110dp"
+							android:layout_height="150dp"
+							android:layout_marginLeft="5dp"
+							android:layout_marginRight="5dp"
+							android:layout_weight="1"
+							android:background="#FFFFFF"
+							android:src="@drawable/iconetflocoquadradoinvi" />
 
 					</LinearLayout>
 
@@ -295,7 +295,7 @@
 					android:layout_marginTop="20dp"
 					android:text="Texto exemplo"
 					android:textColor="#FFFFFF"
-					android:textSize="16sp"/>
+					android:textSize="16sp" />
 
 				<HorizontalScrollView
 					android:layout_width="match_parent"
@@ -314,7 +314,7 @@
 							android:layout_height="150dp"
 							android:layout_marginRight="5dp"
 							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi"/>
+							android:src="@drawable/iconetflocoquadradoinvi" />
 
 						<ImageView
 							android:layout_width="110dp"
@@ -322,16 +322,7 @@
 							android:layout_marginLeft="5dp"
 							android:layout_marginRight="5dp"
 							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi"/>
-
-						<ImageView
-							android:layout_width="110dp"
-							android:layout_height="150dp"
-							android:layout_marginLeft="5dp"
-							android:layout_marginRight="5dp"
-							android:layout_weight="1"
-							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi"/>
+							android:src="@drawable/iconetflocoquadradoinvi" />
 
 						<ImageView
 							android:layout_width="110dp"
@@ -340,7 +331,7 @@
 							android:layout_marginRight="5dp"
 							android:layout_weight="1"
 							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi"/>
+							android:src="@drawable/iconetflocoquadradoinvi" />
 
 						<ImageView
 							android:layout_width="110dp"
@@ -349,7 +340,7 @@
 							android:layout_marginRight="5dp"
 							android:layout_weight="1"
 							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi"/>
+							android:src="@drawable/iconetflocoquadradoinvi" />
 
 						<ImageView
 							android:layout_width="110dp"
@@ -358,7 +349,16 @@
 							android:layout_marginRight="5dp"
 							android:layout_weight="1"
 							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi"/>
+							android:src="@drawable/iconetflocoquadradoinvi" />
+
+						<ImageView
+							android:layout_width="110dp"
+							android:layout_height="150dp"
+							android:layout_marginLeft="5dp"
+							android:layout_marginRight="5dp"
+							android:layout_weight="1"
+							android:background="#FFFFFF"
+							android:src="@drawable/iconetflocoquadradoinvi" />
 
 					</LinearLayout>
 
@@ -371,7 +371,7 @@
 					android:layout_marginTop="20dp"
 					android:text="Texto exemplo"
 					android:textColor="#FFFFFF"
-					android:textSize="16sp"/>
+					android:textSize="16sp" />
 
 				<HorizontalScrollView
 					android:layout_width="match_parent"
@@ -390,7 +390,7 @@
 							android:layout_height="150dp"
 							android:layout_marginRight="5dp"
 							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi"/>
+							android:src="@drawable/iconetflocoquadradoinvi" />
 
 						<ImageView
 							android:layout_width="110dp"
@@ -398,16 +398,7 @@
 							android:layout_marginLeft="5dp"
 							android:layout_marginRight="5dp"
 							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi"/>
-
-						<ImageView
-							android:layout_width="110dp"
-							android:layout_height="150dp"
-							android:layout_marginLeft="5dp"
-							android:layout_marginRight="5dp"
-							android:layout_weight="1"
-							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi"/>
+							android:src="@drawable/iconetflocoquadradoinvi" />
 
 						<ImageView
 							android:layout_width="110dp"
@@ -416,7 +407,7 @@
 							android:layout_marginRight="5dp"
 							android:layout_weight="1"
 							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi"/>
+							android:src="@drawable/iconetflocoquadradoinvi" />
 
 						<ImageView
 							android:layout_width="110dp"
@@ -425,7 +416,7 @@
 							android:layout_marginRight="5dp"
 							android:layout_weight="1"
 							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi"/>
+							android:src="@drawable/iconetflocoquadradoinvi" />
 
 						<ImageView
 							android:layout_width="110dp"
@@ -434,7 +425,16 @@
 							android:layout_marginRight="5dp"
 							android:layout_weight="1"
 							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi"/>
+							android:src="@drawable/iconetflocoquadradoinvi" />
+
+						<ImageView
+							android:layout_width="110dp"
+							android:layout_height="150dp"
+							android:layout_marginLeft="5dp"
+							android:layout_marginRight="5dp"
+							android:layout_weight="1"
+							android:background="#FFFFFF"
+							android:src="@drawable/iconetflocoquadradoinvi" />
 
 					</LinearLayout>
 
@@ -447,7 +447,7 @@
 					android:layout_marginTop="20dp"
 					android:text="Texto exemplo"
 					android:textColor="#FFFFFF"
-					android:textSize="16sp"/>
+					android:textSize="16sp" />
 
 				<HorizontalScrollView
 					android:layout_width="match_parent"
@@ -466,7 +466,7 @@
 							android:layout_height="150dp"
 							android:layout_marginRight="5dp"
 							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi"/>
+							android:src="@drawable/iconetflocoquadradoinvi" />
 
 						<ImageView
 							android:layout_width="110dp"
@@ -474,16 +474,7 @@
 							android:layout_marginLeft="5dp"
 							android:layout_marginRight="5dp"
 							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi"/>
-
-						<ImageView
-							android:layout_width="110dp"
-							android:layout_height="150dp"
-							android:layout_marginLeft="5dp"
-							android:layout_marginRight="5dp"
-							android:layout_weight="1"
-							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi"/>
+							android:src="@drawable/iconetflocoquadradoinvi" />
 
 						<ImageView
 							android:layout_width="110dp"
@@ -492,7 +483,7 @@
 							android:layout_marginRight="5dp"
 							android:layout_weight="1"
 							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi"/>
+							android:src="@drawable/iconetflocoquadradoinvi" />
 
 						<ImageView
 							android:layout_width="110dp"
@@ -501,7 +492,7 @@
 							android:layout_marginRight="5dp"
 							android:layout_weight="1"
 							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi"/>
+							android:src="@drawable/iconetflocoquadradoinvi" />
 
 						<ImageView
 							android:layout_width="110dp"
@@ -510,7 +501,16 @@
 							android:layout_marginRight="5dp"
 							android:layout_weight="1"
 							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi"/>
+							android:src="@drawable/iconetflocoquadradoinvi" />
+
+						<ImageView
+							android:layout_width="110dp"
+							android:layout_height="150dp"
+							android:layout_marginLeft="5dp"
+							android:layout_marginRight="5dp"
+							android:layout_weight="1"
+							android:background="#FFFFFF"
+							android:src="@drawable/iconetflocoquadradoinvi" />
 
 					</LinearLayout>
 
@@ -523,7 +523,7 @@
 					android:layout_marginTop="20dp"
 					android:text="Texto exemplo"
 					android:textColor="#FFFFFF"
-					android:textSize="16sp"/>
+					android:textSize="16sp" />
 
 				<HorizontalScrollView
 					android:layout_width="match_parent"
@@ -543,7 +543,7 @@
 							android:layout_height="150dp"
 							android:layout_marginRight="5dp"
 							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi"/>
+							android:src="@drawable/iconetflocoquadradoinvi" />
 
 						<ImageView
 							android:layout_width="110dp"
@@ -551,16 +551,7 @@
 							android:layout_marginLeft="5dp"
 							android:layout_marginRight="5dp"
 							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi"/>
-
-						<ImageView
-							android:layout_width="110dp"
-							android:layout_height="150dp"
-							android:layout_marginLeft="5dp"
-							android:layout_marginRight="5dp"
-							android:layout_weight="1"
-							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi"/>
+							android:src="@drawable/iconetflocoquadradoinvi" />
 
 						<ImageView
 							android:layout_width="110dp"
@@ -569,7 +560,7 @@
 							android:layout_marginRight="5dp"
 							android:layout_weight="1"
 							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi"/>
+							android:src="@drawable/iconetflocoquadradoinvi" />
 
 						<ImageView
 							android:layout_width="110dp"
@@ -578,7 +569,7 @@
 							android:layout_marginRight="5dp"
 							android:layout_weight="1"
 							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi"/>
+							android:src="@drawable/iconetflocoquadradoinvi" />
 
 						<ImageView
 							android:layout_width="110dp"
@@ -587,7 +578,16 @@
 							android:layout_marginRight="5dp"
 							android:layout_weight="1"
 							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi"/>
+							android:src="@drawable/iconetflocoquadradoinvi" />
+
+						<ImageView
+							android:layout_width="110dp"
+							android:layout_height="150dp"
+							android:layout_marginLeft="5dp"
+							android:layout_marginRight="5dp"
+							android:layout_weight="1"
+							android:background="#FFFFFF"
+							android:src="@drawable/iconetflocoquadradoinvi" />
 
 					</LinearLayout>
 				</HorizontalScrollView>
