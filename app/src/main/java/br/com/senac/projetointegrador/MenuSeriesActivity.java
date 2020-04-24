@@ -3,6 +3,9 @@ package br.com.senac.projetointegrador;
 import android.app.*;
 import android.content.Intent;
 import android.os.Bundle;
+import android.transition.Explode;
+import android.transition.Slide;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.TextView;
 
@@ -21,6 +24,21 @@ public class MenuSeriesActivity extends Activity {
         setContentView(R.layout.activity_menu_series);
         AndroidUtils.setImmersiveMode(this,true);
 
+        //ANIMAÇÕES
+        Slide trans1 = new Slide();
+        trans1.setDuration(800);
+        trans1.setSlideEdge(Gravity.END);
+
+        Slide trans2 = new Slide();
+        trans2.setDuration(400);
+        trans2.setSlideEdge(Gravity.START);
+
+        getWindow().setEnterTransition(trans1);
+        getWindow().setReturnTransition(trans2);
+        getWindow().setExitTransition(trans2);
+        getWindow().setReenterTransition(trans1);
+        //ANIMAÇÕES
+
         menuSeries = findViewById(R.id.menuSeries);
         menuFilmes = findViewById(R.id.menuFilmes);
     }
@@ -28,7 +46,8 @@ public class MenuSeriesActivity extends Activity {
     public void irProfile(View view)
     {
         Intent i = new Intent(this, ProfileActivity.class);
-        startActivity(i);
+        ActivityOptionsCompat options =ActivityOptionsCompat.makeSceneTransitionAnimation(this, null);
+        this.startActivity(i, options.toBundle());
         finish();
     }
 
@@ -43,16 +62,15 @@ public class MenuSeriesActivity extends Activity {
     public void irBusca(View view)
     {
         Intent i = new Intent(this, SearchActivity.class);
+        ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(this, null);
         startActivity(i);
         finish();
     }
 
-
-
     public void irFilmes(View view)
     {
         Intent i = new Intent(this, MenuFilmesActivity.class);
-        ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(),R.anim.escurecer,R.anim.naofazertransicao);
+        ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(this, null);
         ActivityCompat.startActivity(this, i, activityOptionsCompat.toBundle());
         finish();
     }

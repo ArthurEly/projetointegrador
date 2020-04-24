@@ -7,9 +7,9 @@
         <item name="android:windowActionBar">false</item>
         <item name="android:windowSoftInputMode">stateAlwaysHidden</item>
         <item name="android:windowNoDisplay">false</item>
-        <!--item name="android:fontFamily">ubuntu</item>
+        <item name="android:fontFamily">@font/coolvetica</item>
         <item name="android:textStyle">normal</item>
-        <item name="android:typeface">monospace</item-->
+        <item name="android:typeface">monospace</item>
         <item name="android:textColorLink">#FFCC0000</item>
     </style>
 </resources>
