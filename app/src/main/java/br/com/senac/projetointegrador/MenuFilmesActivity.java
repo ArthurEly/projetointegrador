@@ -5,12 +5,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.transition.Explode;
 import android.transition.Slide;
+import android.transition.Transition;
+import android.transition.TransitionInflater;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.TextView;
 
 import androidx.core.app.ActivityCompat;
 import androidx.core.app.ActivityOptionsCompat;
+import androidx.core.util.Pair;
 
 import br.com.senac.projetointegrador.util.AndroidUtils;
 
@@ -28,17 +31,21 @@ public class MenuFilmesActivity extends Activity {
         Slide trans1 = new Slide();
         trans1.setDuration(800);
         trans1.setSlideEdge(Gravity.START);
-
         Slide trans2 = new Slide();
         trans2.setDuration(400);
         trans2.setSlideEdge(Gravity.END);
-
         getWindow().setEnterTransition(trans1);
         getWindow().setReenterTransition(trans1);
         getWindow().setReturnTransition(trans2);
         getWindow().setExitTransition(trans2);
-
         //ANIMAÇÕES
+
+        //            TRANSIÇÃO ANIMADA COM OS ELEMENTOS MUDANDO DE BAGULHO;
+            TransitionInflater inflater = TransitionInflater.from(this);
+            Transition transition = inflater.inflateTransition(R.transition.transitions);
+            transition.setDuration(2000);
+            getWindow().setSharedElementEnterTransition(transition);
+            getWindow().setSharedElementExitTransition(transition);
 
         menuSeries = findViewById(R.id.menuSeries);
         menuFilmes = findViewById(R.id.menuFilmes);
@@ -69,16 +76,24 @@ public class MenuFilmesActivity extends Activity {
     }
 
 
-    public void irFilmes(View view)
+    public void irMenuFilmes(View view)
     {
         new edos.widget.Toast(this,R.layout.dialog_home,100);
     }
 
-    public void irSeries(View view)
+    public void irMenuSeries(View view)
     {
         Intent i = new Intent(this, MenuSeriesActivity.class);
         ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(this, null);
         ActivityCompat.startActivity(this, i, activityOptionsCompat.toBundle());
+        finish();
+    }
+
+    public void irFilme(View view)
+    {
+        Intent i = new Intent(this, FilmeActivity.class);
+        ActivityOptionsCompat options =ActivityOptionsCompat.makeSceneTransitionAnimation(this, null);
+        ActivityCompat.startActivity(this, i, options.toBundle());
         finish();
     }
 }

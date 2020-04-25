@@ -3,25 +3,88 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
+    android:background="#00FFFFFF"
+    android:gravity="center|top"
+    android:onClick="voltar"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Digite sua senha:"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp" />
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="10dp"
+        android:background="#000000"
+        android:gravity="center_horizontal|top"
+        android:orientation="vertical"
+        android:padding="10dp">
 
-    <EditText
-        android:id="@+id/campoSenha"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:layout_marginBottom="10dp"
-        android:ems="10"
-        android:inputType="textPersonName" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@drawable/splash_logo" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Digite sua senha:"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/campoSenha"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Digite aqui:"
+                android:inputType="textWebPassword" />
+
+            <ImageButton
+                android:id="@+id/imagemOlhoAut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="#00FFFFFF"
+                android:src="@drawable/olhonormal"
+                android:tint="#FFFFFF" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/DIALOGVIEW_CANCEL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="#DC1414"
+                android:onClick="voltar"
+                android:text="Cancelar"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/DIALOGVIEW_OK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#DC1414"
+                android:onClick="autenticacaoProfile"
+                android:text="OK"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>

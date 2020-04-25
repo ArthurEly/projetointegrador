@@ -67,7 +67,7 @@ public class MenuSeriesActivity extends Activity {
         finish();
     }
 
-    public void irFilmes(View view)
+    public void irMenuFilmes(View view)
     {
         Intent i = new Intent(this, MenuFilmesActivity.class);
         ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(this, null);
@@ -75,8 +75,16 @@ public class MenuSeriesActivity extends Activity {
         finish();
     }
 
-    public void irSeries(View view)
+    public void irMenuSeries(View view)
     {
         new edos.widget.Toast(this,R.layout.dialog_home,100);
+    }
+
+    public void irSerie(View view)
+    {
+        Intent i = new Intent(this, SerieActivity.class);
+        ActivityOptionsCompat options =ActivityOptionsCompat.makeSceneTransitionAnimation(this, null);
+        ActivityCompat.startActivity(this, i, options.toBundle());
+        finish();
     }
 }

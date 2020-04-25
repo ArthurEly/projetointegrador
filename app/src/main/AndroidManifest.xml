@@ -13,10 +13,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Tema">
-        <activity android:name=".JSONTeste"></activity>
+        <activity android:name=".SerieActivity"></activity>
+        <activity android:name=".FilmeActivity" />
+        <activity android:name=".JSONTeste" />
         <activity android:name=".MenuSeriesActivity" />
         <activity android:name=".MenuFilmesActivity" />
         <activity android:name=".SearchActivity" />
+        <activity android:name=".AutenticacaoProfile"/>
         <activity android:name=".DebugActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

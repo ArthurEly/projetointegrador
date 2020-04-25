@@ -20,6 +20,8 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-	implementation 'com.sachinchandil:videodownloadandplay:1.0.0'
-	implementation 'io.requery:sqlite-android:3.31.0'
+    implementation 'com.sachinchandil:videodownloadandplay:1.0.0'
+    implementation 'io.requery:sqlite-android:3.31.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
 }
