@@ -77,6 +77,8 @@
 			android:name=".EditProfileActivity"/>
 
 		<activity
+			android:screenOrientation="sensorLandscape"
+			android:configChanges="orientation"
 			android:name=".PlayerActivity"/>
 
 	</application>

@@ -38,7 +38,10 @@
         <activity android:name="br.com.senac.projetointegrador.LoginActivity" />
         <activity android:name="br.com.senac.projetointegrador.ProfileActivity" />
         <activity android:name="br.com.senac.projetointegrador.EditProfileActivity" />
-        <activity android:name="br.com.senac.projetointegrador.PlayerActivity" />
+        <activity
+            android:name="br.com.senac.projetointegrador.PlayerActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorLandscape" />
     </application>
 
 </manifest>

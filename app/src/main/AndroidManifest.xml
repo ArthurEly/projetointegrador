@@ -30,7 +30,10 @@
         <activity android:name=".LoginActivity" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".EditProfileActivity" />
-        <activity android:name=".PlayerActivity" />
+        <activity
+			android:screenOrientation="sensorLandscape"
+			android:configChanges="orientation"
+			android:name=".PlayerActivity" />
     </application>
 
 </manifest>
