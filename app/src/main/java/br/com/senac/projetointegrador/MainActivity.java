@@ -10,8 +10,8 @@ import android.app.*;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import androidx.core.app.ActivityCompat;
-import androidx.core.app.ActivityOptionsCompat;
+//import androidx.core.app.ActivityCompat;
+//import androidx.core.app.ActivityOptions;
 
 import br.com.senac.projetointegrador.util.AndroidUtils;
 
@@ -45,7 +45,7 @@ public class MainActivity extends Activity {
     public void irProfile(View view)
     {
         Intent i = new Intent(this, ProfileActivity.class);
-        ActivityOptionsCompat options =ActivityOptionsCompat.makeSceneTransitionAnimation(this, null);
+        ActivityOptions options =ActivityOptions.makeSceneTransitionAnimation(this, null);
         this.startActivity(i, options.toBundle());
         finish();
     }
@@ -60,7 +60,7 @@ public class MainActivity extends Activity {
     public void irBusca(View view)
     {
         Intent i = new Intent(this, SearchActivity.class);
-        ActivityOptionsCompat options =ActivityOptionsCompat.makeSceneTransitionAnimation(this, null);
+        ActivityOptions options =ActivityOptions.makeSceneTransitionAnimation(this, null);
         this.startActivity(i, options.toBundle());
         finish();
     }
@@ -68,32 +68,32 @@ public class MainActivity extends Activity {
     public void irMenuFilmes(View view)
     {
         Intent i = new Intent(this, MenuFilmesActivity.class);
-        ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(),R.anim.escurecer,R.anim.naofazertransicao);
-        ActivityCompat.startActivity(this, i, activityOptionsCompat.toBundle());
+        ActivityOptions activityOptions = ActivityOptions.makeCustomAnimation(getApplicationContext(),R.anim.escurecer,R.anim.naofazertransicao);
+        startActivity( i, activityOptions.toBundle());
         finish();
     }
 
     public void irMenuSeries(View view)
     {
         Intent i = new Intent(this, MenuSeriesActivity.class);
-        ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(),R.anim.escurecer,R.anim.naofazertransicao);
-        ActivityCompat.startActivity(this, i, activityOptionsCompat.toBundle());
+        ActivityOptions activityOptions = ActivityOptions.makeCustomAnimation(getApplicationContext(),R.anim.escurecer,R.anim.naofazertransicao);
+        startActivity( i, activityOptions.toBundle());
         finish();
     }
 
     public void irFilme(View view)
     {
         Intent i = new Intent(this, FilmeActivity.class);
-        ActivityOptionsCompat options =ActivityOptionsCompat.makeSceneTransitionAnimation(this, null);
-        ActivityCompat.startActivity(this, i, options.toBundle());
+        ActivityOptions options =ActivityOptions.makeSceneTransitionAnimation(this, null);
+        startActivity( i, options.toBundle());
         finish();
     }
 
     public void irSerie(View view)
     {
         Intent i = new Intent(this, SerieActivity.class);
-        ActivityOptionsCompat options =ActivityOptionsCompat.makeSceneTransitionAnimation(this, null);
-        ActivityCompat.startActivity(this, i, options.toBundle());
+        ActivityOptions options =ActivityOptions.makeSceneTransitionAnimation(this, null);
+        startActivity( i, options.toBundle());
         finish();
     }
 

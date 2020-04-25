@@ -7,7 +7,7 @@ import android.transition.Fade;
 import android.view.View;
 import android.app.*;
 
-import androidx.core.app.ActivityOptionsCompat;
+//import androidx.core.app.ActivityOptions;
 
 import br.com.senac.projetointegrador.util.AndroidUtils;
 
@@ -35,7 +35,7 @@ public class SearchActivity extends Activity {
     public void irProfile(View view)
     {
         Intent i = new Intent(this, ProfileActivity.class);
-        ActivityOptionsCompat options =ActivityOptionsCompat.makeSceneTransitionAnimation(this, null);
+        ActivityOptions options =ActivityOptions.makeSceneTransitionAnimation(this, null);
         this.startActivity(i, options.toBundle());
         finish();
     }
@@ -43,7 +43,7 @@ public class SearchActivity extends Activity {
     public void irHome(View view)
     {
         Intent i = new Intent(this, MainActivity.class);
-        ActivityOptionsCompat options =ActivityOptionsCompat.makeSceneTransitionAnimation(this, null);
+        ActivityOptions options =ActivityOptions.makeSceneTransitionAnimation(this, null);
         this.startActivity(i, options.toBundle());
         finish();
     }

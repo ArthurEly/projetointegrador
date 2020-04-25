@@ -16,8 +16,8 @@ import android.widget.ImageView;
 import android.widget.Switch;
 import android.widget.TextView;
 
-import androidx.core.app.ActivityCompat;
-import androidx.core.app.ActivityOptionsCompat;
+//import androidx.core.app.ActivityCompat;
+//import androidx.core.app.ActivityOptionsCompat;
 
 import br.com.senac.projetointegrador.util.AndroidUtils;
 import edos.widget.Button;
@@ -58,13 +58,13 @@ public class ProfileActivity extends Activity {
         senha = textoSenha.getText().toString();
 
         Intent i = new Intent(this, AutenticacaoProfile.class);
-        ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(this,null);
+        ActivityOptions activityOptionsCompat = ActivityOptions.makeSceneTransitionAnimation(this,null);
         Bundle b = new Bundle ();
         b.putString("senha", senha);
         i.putExtras(b);
 
 //        startActivity(i);
-        ActivityCompat.startActivity(this, i, activityOptionsCompat.toBundle());
+        startActivity(i, activityOptionsCompat.toBundle());
     }
 
 
@@ -76,16 +76,16 @@ public class ProfileActivity extends Activity {
     public void irHome(View view)
     {
         Intent i = new Intent(this, MainActivity.class);
-        ActivityOptionsCompat options =ActivityOptionsCompat.makeSceneTransitionAnimation(this, null);
-        this.startActivity(i, options.toBundle());
+        ActivityOptions options =ActivityOptions.makeSceneTransitionAnimation(this, null);
+        startActivity(i, options.toBundle());
         finish();
     }
 
     public void irBusca(View view)
     {
         Intent i = new Intent(this, SearchActivity.class);
-        ActivityOptionsCompat options =ActivityOptionsCompat.makeSceneTransitionAnimation(this, null);
-        this.startActivity(i, options.toBundle());
+        ActivityOptions options =ActivityOptions.makeSceneTransitionAnimation(this, null);
+        startActivity(i, options.toBundle());
         finish();
     }
 
