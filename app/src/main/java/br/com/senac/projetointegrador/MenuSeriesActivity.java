@@ -27,11 +27,11 @@ public class MenuSeriesActivity extends Activity {
         //ANIMAÇÕES
         Slide trans1 = new Slide();
         trans1.setDuration(800);
-        trans1.setSlideEdge(Gravity.END);
+        trans1.setSlideEdge(Gravity.RIGHT);
 
         Slide trans2 = new Slide();
-        trans2.setDuration(400);
-        trans2.setSlideEdge(Gravity.START);
+        trans2.setDuration(800);
+        trans2.setSlideEdge(Gravity.RIGHT);
 
         getWindow().setEnterTransition(trans1);
         getWindow().setReturnTransition(trans2);

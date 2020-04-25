@@ -3,12 +3,15 @@ package br.com.senac.projetointegrador;
 import android.app.*;
 import android.content.Intent;
 import android.os.Bundle;
+import android.telecom.Call;
 import android.transition.Explode;
 import android.transition.Slide;
 import android.transition.Transition;
 import android.transition.TransitionInflater;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.core.app.ActivityCompat;
@@ -20,6 +23,8 @@ import br.com.senac.projetointegrador.util.AndroidUtils;
 public class MenuFilmesActivity extends Activity {
 
     private TextView menuSeries, menuFilmes;
+    private ImageView filme11;
+    int idfilme;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,10 +35,10 @@ public class MenuFilmesActivity extends Activity {
         //ANIMAÇÕES
         Slide trans1 = new Slide();
         trans1.setDuration(800);
-        trans1.setSlideEdge(Gravity.START);
+        trans1.setSlideEdge(Gravity.LEFT);
         Slide trans2 = new Slide();
-        trans2.setDuration(400);
-        trans2.setSlideEdge(Gravity.END);
+        trans2.setDuration(800);
+        trans2.setSlideEdge(Gravity.LEFT);
         getWindow().setEnterTransition(trans1);
         getWindow().setReenterTransition(trans1);
         getWindow().setReturnTransition(trans2);
@@ -49,6 +54,8 @@ public class MenuFilmesActivity extends Activity {
 
         menuSeries = findViewById(R.id.menuSeries);
         menuFilmes = findViewById(R.id.menuFilmes);
+        filme11 = findViewById(R.id.filme11);
+        idfilme = filme11.getId();
     }
 
     public void irProfile(View view)
@@ -62,9 +69,11 @@ public class MenuFilmesActivity extends Activity {
     public void irHome(View view)
     {
         Intent i = new Intent(this, MainActivity.class);
-        ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(),R.anim.escurecer,R.anim.naofazertransicao);
-        ActivityCompat.startActivity(this, i, activityOptionsCompat.toBundle());
+//        ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(),R.anim.escurecer,R.anim.naofazertransicao);
+//        ActivityCompat.startActivity(this, i, activityOptionsCompat.toBundle());
+        startActivity(i);
         finish();
+        overridePendingTransition(0, android.R.anim.fade_out);
     }
 
     public void irBusca(View view)
@@ -89,6 +98,7 @@ public class MenuFilmesActivity extends Activity {
         finish();
     }
 
+
     public void irFilme(View view)
     {
         Intent i = new Intent(this, FilmeActivity.class);
@@ -96,4 +106,5 @@ public class MenuFilmesActivity extends Activity {
         ActivityCompat.startActivity(this, i, options.toBundle());
         finish();
     }
+
 }
