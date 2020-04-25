@@ -9,8 +9,8 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.TextView;
 
-import androidx.core.app.ActivityCompat;
-import androidx.core.app.ActivityOptionsCompat;
+//import androidx.core.app.ActivityCompat;
+//import androidx.core.app.ActivityOptionsCompat;
 
 import br.com.senac.projetointegrador.util.AndroidUtils;
 
@@ -46,7 +46,7 @@ public class MenuSeriesActivity extends Activity {
     public void irProfile(View view)
     {
         Intent i = new Intent(this, ProfileActivity.class);
-        ActivityOptionsCompat options =ActivityOptionsCompat.makeSceneTransitionAnimation(this, null);
+        ActivityOptions options =ActivityOptions.makeSceneTransitionAnimation(this, null);
         this.startActivity(i, options.toBundle());
         finish();
     }
@@ -54,24 +54,24 @@ public class MenuSeriesActivity extends Activity {
     public void irHome(View view)
     {
         Intent i = new Intent(this, MainActivity.class);
-        ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(),R.anim.escurecer,R.anim.naofazertransicao);
-        ActivityCompat.startActivity(this, i, activityOptionsCompat.toBundle());
+        ActivityOptions activityOptionsCompat = ActivityOptions.makeCustomAnimation(getApplicationContext(),R.anim.escurecer,R.anim.naofazertransicao);
+        startActivity(i, activityOptionsCompat.toBundle());
         finish();
     }
 
     public void irBusca(View view)
     {
         Intent i = new Intent(this, SearchActivity.class);
-        ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(this, null);
-        startActivity(i);
+        ActivityOptions activityOptionsCompat = ActivityOptions.makeSceneTransitionAnimation(this, null);
+        startActivity(i,activityOptionsCompat.toBundle());
         finish();
     }
 
     public void irMenuFilmes(View view)
     {
         Intent i = new Intent(this, MenuFilmesActivity.class);
-        ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(this, null);
-        ActivityCompat.startActivity(this, i, activityOptionsCompat.toBundle());
+        ActivityOptions activityOptionsCompat = ActivityOptions.makeSceneTransitionAnimation(this, null);
+        startActivity(i, activityOptionsCompat.toBundle());
         finish();
     }
 
@@ -83,8 +83,8 @@ public class MenuSeriesActivity extends Activity {
     public void irSerie(View view)
     {
         Intent i = new Intent(this, SerieActivity.class);
-        ActivityOptionsCompat options =ActivityOptionsCompat.makeSceneTransitionAnimation(this, null);
-        ActivityCompat.startActivity(this, i, options.toBundle());
+        ActivityOptions options =ActivityOptions.makeSceneTransitionAnimation(this, null);
+        startActivity(i, options.toBundle());
         finish();
     }
 }
