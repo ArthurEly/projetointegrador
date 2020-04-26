@@ -18,11 +18,12 @@ import android.app.Activity;
 
 import android.widget.*;
 
-import androidx.core.app.ActivityCompat;
-import androidx.core.app.ActivityOptionsCompat;
+//import androidx.core.app.ActivityCompat;
+//import androidx.core.app.ActivityOptions;
 
 import br.com.senac.projetointegrador.util.AndroidUtils;
 import edos.widget.Toast;
+import android.app.*;
 
 public class AutenticacaoProfile extends Activity {
 
@@ -90,8 +91,8 @@ public class AutenticacaoProfile extends Activity {
             if (campoSenhaLocal.equals(senha))
             {
                 Intent i = new Intent(this, EditProfileActivity.class);
-                ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(this,null);
-                ActivityCompat.startActivity(this, i, activityOptionsCompat.toBundle());
+                ActivityOptions activityOptions = ActivityOptions.makeSceneTransitionAnimation(this,null);
+                startActivity( i, activityOptions.toBundle());
             }
             else
             {
@@ -102,8 +103,8 @@ public class AutenticacaoProfile extends Activity {
 
     public void voltar(View view){
         Intent i = new Intent(this, ProfileActivity.class);
-        ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(),R.anim.escurecer,R.anim.naofazertransicao);
-        ActivityCompat.startActivity(this, i, activityOptionsCompat.toBundle());
+        ActivityOptions activityOptions = ActivityOptions.makeCustomAnimation(getApplicationContext(),R.anim.escurecer,R.anim.naofazertransicao);
+        startActivity(i, activityOptions.toBundle());
         finish();
     }
 

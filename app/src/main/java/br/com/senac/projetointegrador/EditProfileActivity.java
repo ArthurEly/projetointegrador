@@ -9,7 +9,7 @@ import android.transition.Slide;
 import android.view.*;
 import android.widget.*;
 
-import androidx.core.app.ActivityOptionsCompat;
+//import androidx.core.app.ActivityOptions;
 
 import br.com.senac.projetointegrador.util.AndroidUtils;
 
@@ -72,7 +72,7 @@ public class EditProfileActivity extends Activity {
     public void irHome(View view)
     {
         Intent i = new Intent(this, MainActivity.class);
-        ActivityOptionsCompat options =ActivityOptionsCompat.makeSceneTransitionAnimation(this, null);
+        ActivityOptions options =ActivityOptions.makeSceneTransitionAnimation(this, null);
         this.startActivity(i, options.toBundle());
         finish();
     }
@@ -80,7 +80,7 @@ public class EditProfileActivity extends Activity {
     public void irBusca(View view)
     {
         Intent i = new Intent(this, SearchActivity.class);
-        ActivityOptionsCompat options =ActivityOptionsCompat.makeSceneTransitionAnimation(this, null);
+        ActivityOptions options =ActivityOptions.makeSceneTransitionAnimation(this, null);
         this.startActivity(i, options.toBundle());
         finish();
     }

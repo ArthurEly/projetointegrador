@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.senac.projetointegrador"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="26"
+        android:targetSdkVersion="29" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Tema" >
+        <activity android:name="br.com.senac.projetointegrador.SerieActivity" />
+        <activity android:name="br.com.senac.projetointegrador.FilmeActivity" />
+        <activity android:name="br.com.senac.projetointegrador.JSONTeste" />
+        <activity android:name="br.com.senac.projetointegrador.MenuSeriesActivity" />
+        <activity android:name="br.com.senac.projetointegrador.MenuFilmesActivity" />
+        <activity android:name="br.com.senac.projetointegrador.SearchActivity" />
+        <activity android:name="br.com.senac.projetointegrador.AutenticacaoProfile" />
+        <activity android:name="br.com.senac.projetointegrador.DebugActivity" />
+        <activity android:name="br.com.senac.projetointegrador.SplashActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="br.com.senac.projetointegrador.MainActivity" />
+        <activity android:name="br.com.senac.projetointegrador.LoginActivity" />
+        <activity android:name="br.com.senac.projetointegrador.ProfileActivity" />
+        <activity android:name="br.com.senac.projetointegrador.EditProfileActivity" />
+        <activity
+            android:name="br.com.senac.projetointegrador.PlayerActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorLandscape" />
+    </application>
+
+</manifest>

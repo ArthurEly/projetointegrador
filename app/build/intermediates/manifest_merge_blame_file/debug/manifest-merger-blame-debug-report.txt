@@ -1,0 +1,99 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="br.com.senac.projetointegrador"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+8-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:5:5-67
+11-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+12-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:6:5-80
+12-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:6:22-77
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+13-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:7:5-81
+13-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:7:22-78
+14
+15    <application
+15-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:9:5-39:19
+16        android:allowBackup="true"
+16-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:10:9-35
+17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+17-->[androidx.core:core:1.1.0] C:\Users\pivo_\.gradle\caches\transforms-2\files-2.1\34b4ab0d8b65ac74ddd00d45b26dd963\core-1.1.0\AndroidManifest.xml:24:18-86
+18        android:debuggable="true"
+19        android:extractNativeLibs="false"
+20        android:icon="@mipmap/ic_launcher"
+20-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:11:9-43
+21        android:label="@string/app_name"
+21-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:12:9-41
+22        android:roundIcon="@mipmap/ic_launcher_round"
+22-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:13:9-54
+23        android:supportsRtl="true"
+23-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:14:9-35
+24        android:theme="@style/Tema" >
+24-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:15:9-36
+25        <activity android:name="br.com.senac.projetointegrador.SerieActivity" />
+25-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:16:9-60
+25-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:16:19-48
+26        <activity android:name="br.com.senac.projetointegrador.FilmeActivity" />
+26-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:17:9-51
+26-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:17:19-48
+27        <activity android:name="br.com.senac.projetointegrador.JSONTeste" />
+27-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:18:9-47
+27-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:18:19-44
+28        <activity android:name="br.com.senac.projetointegrador.MenuSeriesActivity" />
+28-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:19:9-56
+28-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:19:19-53
+29        <activity android:name="br.com.senac.projetointegrador.MenuFilmesActivity" />
+29-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:20:9-56
+29-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:20:19-53
+30        <activity android:name="br.com.senac.projetointegrador.SearchActivity" />
+30-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:21:9-52
+30-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:21:19-49
+31        <activity android:name="br.com.senac.projetointegrador.AutenticacaoProfile" />
+31-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:22:9-56
+31-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:22:19-54
+32        <activity android:name="br.com.senac.projetointegrador.DebugActivity" >
+32-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:23:9-29:20
+32-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:23:19-48
+33            <intent-filter>
+33-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:24:13-28:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:25:17-69
+34-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:25:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:27:17-77
+36-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:27:27-74
+37            </intent-filter>
+38        </activity>
+39        <activity android:name="br.com.senac.projetointegrador.SplashActivity" >
+39-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:30:9-33:20
+39-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:30:19-49
+40
+41            <!-- NA VERSÃO FINAL MOVER O <intent-filter> pra cá -->
+42        </activity>
+43        <activity android:name="br.com.senac.projetointegrador.MainActivity" />
+43-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:34:9-50
+43-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:34:19-47
+44        <activity android:name="br.com.senac.projetointegrador.LoginActivity" />
+44-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:35:9-51
+44-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:35:19-48
+45        <activity android:name="br.com.senac.projetointegrador.ProfileActivity" />
+45-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:36:9-53
+45-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:36:19-50
+46        <activity android:name="br.com.senac.projetointegrador.EditProfileActivity" />
+46-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:37:9-57
+46-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:37:19-54
+47        <activity android:name="br.com.senac.projetointegrador.PlayerActivity" />
+47-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:38:9-52
+47-->I:\SENAC\projetointegrador\app\src\main\AndroidManifest.xml:38:19-49
+48    </application>
+49
+50</manifest>
