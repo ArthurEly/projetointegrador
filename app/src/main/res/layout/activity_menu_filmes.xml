@@ -35,7 +35,7 @@
                         android:id="@+id/imageView30"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/iconetflocoquadradoinvi" />
+                        android:src="@drawable/ic_launcher" />
 
                     <TextView
                         android:id="@+id/menuFilmes"
@@ -124,7 +124,7 @@
                             android:layout_marginRight="5dp"
                             android:background="#042DAF"
                             android:onClick="irFilme"
-                            android:src="@drawable/iconetflocoquadradoinvi" />
+                            android:src="@drawable/ic_launcher" />
 
                         <ImageView
                             android:id="@+id/filme12"
@@ -134,7 +134,7 @@
                             android:layout_marginRight="5dp"
                             android:background="#042DAF"
                             android:onClick="irFilme"
-                            android:src="@drawable/iconetflocoquadradoinvi" />
+                            android:src="@drawable/ic_launcher" />
 
                         <ImageView
                             android:id="@+id/filme13"
@@ -145,7 +145,7 @@
                             android:layout_weight="1"
                             android:background="#042DAF"
                             android:onClick="irFilme"
-                            android:src="@drawable/iconetflocoquadradoinvi" />
+                            android:src="@drawable/ic_launcher" />
 
                         <ImageView
                             android:id="@+id/filme14"
@@ -156,7 +156,7 @@
                             android:layout_weight="1"
                             android:background="#042DAF"
                             android:onClick="irFilme"
-                            android:src="@drawable/iconetflocoquadradoinvi" />
+                            android:src="@drawable/ic_launcher" />
 
                         <ImageView
                             android:id="@+id/filme15"
@@ -167,7 +167,7 @@
                             android:layout_weight="1"
                             android:background="#042DAF"
                             android:onClick="irFilme"
-                            android:src="@drawable/iconetflocoquadradoinvi" />
+                            android:src="@drawable/ic_launcher" />
 
                     </LinearLayout>
 
@@ -201,7 +201,7 @@
                             android:layout_marginRight="5dp"
                             android:background="#042DAF"
                             android:onClick="irFilme"
-                            android:src="@drawable/iconetflocoquadradoinvi" />
+                            android:src="@drawable/ic_launcher" />
 
                         <ImageView
                             android:id="@+id/filme22"
@@ -211,7 +211,7 @@
                             android:layout_marginRight="5dp"
                             android:background="#042DAF"
                             android:onClick="irFilme"
-                            android:src="@drawable/iconetflocoquadradoinvi" />
+                            android:src="@drawable/ic_launcher" />
 
                         <ImageView
                             android:id="@+id/filme23"
@@ -222,7 +222,7 @@
                             android:layout_weight="1"
                             android:background="#042DAF"
                             android:onClick="irFilme"
-                            android:src="@drawable/iconetflocoquadradoinvi" />
+                            android:src="@drawable/ic_launcher" />
 
                         <ImageView
                             android:id="@+id/filme24"
@@ -233,7 +233,7 @@
                             android:layout_weight="1"
                             android:background="#042DAF"
                             android:onClick="irFilme"
-                            android:src="@drawable/iconetflocoquadradoinvi" />
+                            android:src="@drawable/ic_launcher" />
 
                         <ImageView
                             android:id="@+id/filme25"
@@ -244,7 +244,7 @@
                             android:layout_weight="1"
                             android:background="#042DAF"
                             android:onClick="irFilme"
-                            android:src="@drawable/iconetflocoquadradoinvi" />
+                            android:src="@drawable/ic_launcher" />
 
                     </LinearLayout>
 
@@ -278,7 +278,7 @@
                             android:layout_marginRight="5dp"
                             android:background="#042DAF"
                             android:onClick="irFilme"
-                            android:src="@drawable/iconetflocoquadradoinvi" />
+                            android:src="@drawable/ic_launcher" />
 
                         <ImageView
                             android:id="@+id/filme32"
@@ -288,7 +288,7 @@
                             android:layout_marginRight="5dp"
                             android:background="#042DAF"
                             android:onClick="irFilme"
-                            android:src="@drawable/iconetflocoquadradoinvi" />
+                            android:src="@drawable/ic_launcher" />
 
                         <ImageView
                             android:id="@+id/filme33"
@@ -299,7 +299,7 @@
                             android:layout_weight="1"
                             android:background="#042DAF"
                             android:onClick="irFilme"
-                            android:src="@drawable/iconetflocoquadradoinvi" />
+                            android:src="@drawable/ic_launcher" />
 
                         <ImageView
                             android:id="@+id/filme34"
@@ -310,7 +310,7 @@
                             android:layout_weight="1"
                             android:background="#042DAF"
                             android:onClick="irFilme"
-                            android:src="@drawable/iconetflocoquadradoinvi" />
+                            android:src="@drawable/ic_launcher" />
 
                         <ImageView
                             android:id="@+id/filme35"
@@ -321,7 +321,7 @@
                             android:layout_weight="1"
                             android:background="#042DAF"
                             android:onClick="irFilme"
-                            android:src="@drawable/iconetflocoquadradoinvi" />
+                            android:src="@drawable/ic_launcher" />
 
                     </LinearLayout>
 

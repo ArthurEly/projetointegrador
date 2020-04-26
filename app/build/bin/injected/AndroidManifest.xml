@@ -20,9 +20,9 @@
 
 	<application
 		android:allowBackup="true"
-		android:icon="@mipmap/ic_launcher"
+		android:icon="@drawable/ic_launcher"
 		android:label="@string/app_name"
-		android:roundIcon="@mipmap/ic_launcher_round"
+		android:roundIcon="@drawable/ic_launcher"
 		android:theme="@style/Tema">
 
 		<activity
@@ -71,12 +71,17 @@
 			android:name=".LoginActivity"/>
 
 		<activity
+			android:name=".RegisterActivity"/>
+
+		<activity
 			android:name=".ProfileActivity"/>
 
 		<activity
 			android:name=".EditProfileActivity"/>
 
 		<activity
+			android:screenOrientation="sensorLandscape"
+			android:configChanges="orientation"
 			android:name=".PlayerActivity"/>
 
 	</application>

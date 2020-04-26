@@ -20,6 +20,7 @@ public class SplashActivity extends Activity {
 				} else {
 					initActivity(MainActivity.class);
 				}
+				finish();
 			}
 		}, 1500L);
     }

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:id="@+id/layoutMain"
-	android:layout_width="wrap_content"
-	android:layout_height="wrap_content"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
 	android:orientation="vertical">
 
 	<ScrollView
@@ -35,7 +36,7 @@
 						android:id="@+id/imageView30"
 						android:layout_width="50dp"
 						android:layout_height="50dp"
-						android:src="@drawable/iconetflocoquadradoinvi" />
+						android:src="@drawable/ic_launcher"/>
 
 					<TextView
 						android:id="@+id/menuFilmes"
@@ -47,7 +48,7 @@
 						android:text="Filmes"
 						android:textColor="#FFFFFF"
 						android:textSize="20sp"
-						android:textStyle="bold" />
+						android:textStyle="bold"/>
 
 					<TextView
 						android:id="@+id/menuSeries"
@@ -60,7 +61,8 @@
 						android:text="Séries"
 						android:textColor="#FFFFFF"
 						android:textSize="20sp"
-						android:textStyle="bold" />
+						android:textStyle="bold"/>
+
 				</LinearLayout>
 
 				<LinearLayout
@@ -75,7 +77,7 @@
 						android:layout_height="40dp"
 						android:layout_marginLeft="10dp"
 						android:layout_weight="1"
-						android:src="@drawable/botaoassistir" />
+						android:src="@drawable/botaoassistir"/>
 
 					<ImageView
 						android:id="@+id/imageView5"
@@ -84,7 +86,7 @@
 						android:layout_marginBottom="5dp"
 						android:layout_weight="1"
 						android:src="@drawable/informationoutline"
-						android:tint="#1AFFFFFF" />
+						android:tint="#1AFFFFFF"/>
 
 				</LinearLayout>
 
@@ -93,7 +95,8 @@
 			<LinearLayout
 				android:layout_width="match_parent"
 				android:layout_height="match_parent"
-				android:orientation="vertical">
+				android:orientation="vertical"
+				android:background="#000000">
 
 				<TextView
 					android:layout_width="match_parent"
@@ -101,7 +104,7 @@
 					android:layout_marginLeft="15dp"
 					android:text="Lançamentos"
 					android:textColor="#FFFFFF"
-					android:textSize="16sp" />
+					android:textSize="16sp"/>
 
 				<HorizontalScrollView
 					android:layout_width="match_parent"
@@ -111,57 +114,38 @@
 					android:scrollbars="none">
 
 					<LinearLayout
+						android:id="@+id/MAIN_LANÇAMENTOS"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
 						android:orientation="horizontal">
 
-						<ImageView
-							android:layout_width="110dp"
-							android:layout_height="150dp"
-							android:layout_marginRight="5dp"
-							android:background="#FFFFFF"
-							android:onClick="irFilme"
-							android:src="@drawable/iconetflocoquadradoinvi" />
 
-						<ImageView
-							android:layout_width="110dp"
-							android:layout_height="150dp"
-							android:layout_marginLeft="5dp"
-							android:layout_marginRight="5dp"
-							android:background="#FFFFFF"
-							android:onClick="irFilme"
-							android:src="@drawable/iconetflocoquadradoinvi" />
+					</LinearLayout>
 
-						<ImageView
-							android:layout_width="110dp"
-							android:layout_height="150dp"
-							android:layout_marginLeft="5dp"
-							android:layout_marginRight="5dp"
-							android:layout_weight="1"
-							android:background="#FFFFFF"
-							android:onClick="irFilme"
-							android:src="@drawable/iconetflocoquadradoinvi" />
+				</HorizontalScrollView>
 
-						<ImageView
-							android:layout_width="110dp"
-							android:layout_height="150dp"
-							android:layout_marginLeft="5dp"
-							android:layout_marginRight="5dp"
-							android:layout_weight="1"
-							android:background="#FFFFFF"
-							android:onClick="irFilme"
-							android:src="@drawable/iconetflocoquadradoinvi" />
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="15dp"
+					android:layout_marginTop="20dp"
+					android:text="Filmes de Terror"
+					android:textColor="#FFFFFF"
+					android:textSize="16sp"/>
 
-						<ImageView
-							android:layout_width="110dp"
-							android:layout_height="150dp"
-							android:layout_marginLeft="5dp"
-							android:layout_marginRight="5dp"
-							android:layout_weight="1"
-							android:background="#FFFFFF"
-							android:onClick="irFilme"
-							android:src="@drawable/iconetflocoquadradoinvi" />
+				<HorizontalScrollView
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_marginLeft="15dp"
+					android:layout_marginTop="5dp"
+					android:scrollbars="none">
 
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:orientation="horizontal">
+
+						
 					</LinearLayout>
 
 				</HorizontalScrollView>
@@ -173,7 +157,7 @@
 					android:layout_marginTop="20dp"
 					android:text="Texto exemplo"
 					android:textColor="#FFFFFF"
-					android:textSize="16sp" />
+					android:textSize="16sp"/>
 
 				<HorizontalScrollView
 					android:layout_width="match_parent"
@@ -192,8 +176,7 @@
 							android:layout_height="150dp"
 							android:layout_marginRight="5dp"
 							android:background="#FFFFFF"
-							android:onClick="irSerie"
-							android:src="@drawable/iconetflocoquadradoinvi" />
+							android:src="@drawable/ic_launcher"/>
 
 						<ImageView
 							android:layout_width="110dp"
@@ -201,18 +184,7 @@
 							android:layout_marginLeft="5dp"
 							android:layout_marginRight="5dp"
 							android:background="#FFFFFF"
-							android:onClick="irSerie"
-							android:src="@drawable/iconetflocoquadradoinvi" />
-
-						<ImageView
-							android:layout_width="110dp"
-							android:layout_height="150dp"
-							android:layout_marginLeft="5dp"
-							android:layout_marginRight="5dp"
-							android:layout_weight="1"
-							android:background="#FFFFFF"
-							android:onClick="irSerie"
-							android:src="@drawable/iconetflocoquadradoinvi" />
+							android:src="@drawable/ic_launcher"/>
 
 						<ImageView
 							android:layout_width="110dp"
@@ -221,8 +193,7 @@
 							android:layout_marginRight="5dp"
 							android:layout_weight="1"
 							android:background="#FFFFFF"
-							android:onClick="irSerie"
-							android:src="@drawable/iconetflocoquadradoinvi" />
+							android:src="@drawable/ic_launcher"/>
 
 						<ImageView
 							android:layout_width="110dp"
@@ -231,48 +202,7 @@
 							android:layout_marginRight="5dp"
 							android:layout_weight="1"
 							android:background="#FFFFFF"
-							android:onClick="irSerie"
-							android:src="@drawable/iconetflocoquadradoinvi" />
-
-					</LinearLayout>
-
-				</HorizontalScrollView>
-
-				<TextView
-					android:layout_width="match_parent"
-					android:layout_height="wrap_content"
-					android:layout_marginLeft="15dp"
-					android:layout_marginTop="20dp"
-					android:text="Texto exemplo"
-					android:textColor="#FFFFFF"
-					android:textSize="16sp" />
-
-				<HorizontalScrollView
-					android:layout_width="match_parent"
-					android:layout_height="match_parent"
-					android:layout_marginLeft="15dp"
-					android:layout_marginTop="5dp"
-					android:scrollbars="none">
-
-					<LinearLayout
-						android:layout_width="match_parent"
-						android:layout_height="match_parent"
-						android:orientation="horizontal">
-
-						<ImageView
-							android:layout_width="110dp"
-							android:layout_height="150dp"
-							android:layout_marginRight="5dp"
-							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi" />
-
-						<ImageView
-							android:layout_width="110dp"
-							android:layout_height="150dp"
-							android:layout_marginLeft="5dp"
-							android:layout_marginRight="5dp"
-							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi" />
+							android:src="@drawable/ic_launcher"/>
 
 						<ImageView
 							android:layout_width="110dp"
@@ -281,39 +211,23 @@
 							android:layout_marginRight="5dp"
 							android:layout_weight="1"
 							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi" />
-
-						<ImageView
-							android:layout_width="110dp"
-							android:layout_height="150dp"
-							android:layout_marginLeft="5dp"
-							android:layout_marginRight="5dp"
-							android:layout_weight="1"
-							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi" />
-
-						<ImageView
-							android:layout_width="110dp"
-							android:layout_height="150dp"
-							android:layout_marginLeft="5dp"
-							android:layout_marginRight="5dp"
-							android:layout_weight="1"
-							android:background="#FFFFFF"
-							android:src="@drawable/iconetflocoquadradoinvi" />
+							android:src="@drawable/ic_launcher"/>
 
 					</LinearLayout>
 
 				</HorizontalScrollView>
 
 			</LinearLayout>
+
 		</LinearLayout>
+
 	</ScrollView>
 
 	<View
 		android:layout_width="match_parent"
 		android:layout_height="1.5dp"
 		android:background="#580000"
-		android:elevation="10dp" />
+		android:elevation="10dp"/>
 
 	<LinearLayout
 		android:layout_width="match_parent"
@@ -332,7 +246,7 @@
 			android:background="#00FFFFFF"
 			android:onClick="irBusca"
 			android:src="@drawable/lupa"
-			android:tint="#FFFFFF" />
+			android:tint="#FFFFFF"/>
 
 		<ImageButton
 			android:id="@+id/imageButtonHome"
@@ -342,7 +256,7 @@
 			android:background="#00FFFFFF"
 			android:onClick="irHome"
 			android:src="@drawable/ic_home_white"
-			android:tint="#DA1414" />
+			android:tint="#DA1414"/>
 
 		<ImageButton
 			android:id="@+id/imageButtonProfile"
@@ -352,7 +266,7 @@
 			android:background="#00FFFFFF"
 			android:onClick="irProfile"
 			android:src="@drawable/account"
-			android:tint="#FFFFFF" />
+			android:tint="#FFFFFF"/>
 
 	</LinearLayout>
 

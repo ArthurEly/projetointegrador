@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:gravity="center">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<ImageView
+			android:id="@+id/logoNetflocos"
+			android:layout_width="103dp"
+			android:layout_height="57dp"
+			android:layout_marginStart="16dp"
+			android:layout_marginLeft="16dp"
+			android:src="@drawable/splashlogo"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="right"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:text="Registre-se"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_marginRight="16dp"
+				android:gravity="center"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<View
+		android:background="?android:attr/dividerVertical"
+		android:layout_width="match_parent"
+		android:layout_height="1dp"/>
+
+	<edos.widget.ShinyLinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:padding="10dp"
+		android:orientation="horizontal"
+		android:gravity="center">
+
+		<TextView
+			android:text="Nome Completo"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_weight="1.0"/>
+
+		<EditText
+			android:id="@+id/REGISTER_NAME"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_weight="1.0"
+			android:inputType="textCapWords"
+			android:background="#FFFFFF"
+			android:textColor="#000000"/>
+
+	</edos.widget.ShinyLinearLayout>
+
+	<edos.widget.ShinyLinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:padding="10dp"
+		android:orientation="horizontal"
+		android:gravity="center">
+
+		<TextView
+			android:text="Email"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_weight="1.0"/>
+
+		<EditText
+			android:id="@+id/REGISTER_EMAIL"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_weight="1.0"
+			android:inputType="textEmailAddress"
+			android:background="#FFFFFF"
+			android:textColor="#000000"/>
+
+	</edos.widget.ShinyLinearLayout>
+
+	<edos.widget.ShinyLinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:padding="10dp"
+		android:orientation="horizontal"
+		android:gravity="center">
+
+		<TextView
+			android:text="Senha"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_weight="1.0"/>
+
+		<EditText
+			android:id="@+id/REGISTER_PASSWORD"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_weight="1.0"
+			android:inputType="textPassword"
+			android:background="#FFFFFF"
+			android:textColor="#000000"/>
+
+	</edos.widget.ShinyLinearLayout>
+
+	<edos.widget.ShinyLinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:padding="10dp"
+		android:orientation="horizontal"
+		android:gravity="center">
+
+		<TextView
+			android:text="Confirme a Senha"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_weight="1.0"/>
+
+		<EditText
+			android:id="@+id/REGISTER_CONFIRM_PASSWORD"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_weight="1.0"
+			android:inputType="textPassword"
+			android:background="#FFFFFF"
+			android:textColor="#000000"/>
+
+	</edos.widget.ShinyLinearLayout>
+
+	<edos.widget.ShinyLinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:padding="10dp"
+		android:orientation="vertical"
+		android:gravity="center">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:gravity="center">
+
+			<TextView
+				android:text="Idade"
+				android:layout_height="wrap_content"
+				android:layout_width="0dp"
+				android:layout_weight="1.0"/>
+
+			<EditText
+				android:id="@+id/REGISTER_OLD"
+				android:layout_height="wrap_content"
+				android:layout_width="0dp"
+				android:layout_weight="1.0"
+				android:inputType="number"
+				android:background="#FFFFFF"
+				android:textColor="#000000"/>
+
+		</LinearLayout>
+
+		<TextView
+			android:text="A sua idade não afetará a criação de sua conta, porém a sua idade irá afetar os filmes que você poderá assistir."
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:background="#FFFFFF"
+			android:layout_margin="10dp"
+			android:typeface="monospace"
+			android:textColor="#454545"/>
+
+	</edos.widget.ShinyLinearLayout>
+
+	<edos.widget.ShinyLinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:padding="10dp"
+		android:orientation="horizontal"
+		android:gravity="center">
+
+		<CheckBox
+			android:id="@+id/REGISTER_PRO"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="Assinar o plano PRO"/>
+
+	</edos.widget.ShinyLinearLayout>
+
+	<View
+		android:layout_width="1dp"
+		android:layout_height="0dp"
+		android:layout_weight="1.0"/>
+
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Registrar"
+		android:layout_margin="10dp"
+		android:id="@+id/REGISTER_BUTTON"
+		android:background="#CC0000"/>
+
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Registrar"
+		android:layout_margin="10dp"
+		android:id="@+id/REGISTER_LOGIN"
+		android:background="#CC0000"/>
+	
+</LinearLayout>
+
