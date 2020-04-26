@@ -30,7 +30,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="#042DAF"
-                    android:src="@drawable/iconetflocoquadradoinvi"
+                    android:src="@drawable/ic_launcher"
                     android:transitionName="elemento1"/>
             </LinearLayout>
 

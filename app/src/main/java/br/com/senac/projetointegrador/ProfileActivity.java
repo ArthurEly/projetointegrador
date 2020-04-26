@@ -34,7 +34,6 @@ public class ProfileActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-        AndroidUtils.setImmersiveMode(this,true);
 
         //ANIMAÇÕES
         Slide trans1 = new Slide();
@@ -51,6 +50,11 @@ public class ProfileActivity extends Activity {
 
         textoSenha = findViewById(R.id.textoSenha);
     }
+
+	@Override protected void onResume() {
+		super.onResume();
+        AndroidUtils.setImmersiveMode(this,true);
+	}
 
     public void irMenuEdit(View view) {
 //        edos.app.Dialog dialog = new edos.app.Dialog(this, R.layout.autenticacaoprofile);

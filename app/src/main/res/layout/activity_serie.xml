@@ -30,7 +30,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="#007E14"
-                    android:src="@drawable/iconetflocoquadradoinvi" />
+                    android:src="@drawable/ic_launcher" />
             </LinearLayout>
 
             <LinearLayout
@@ -106,7 +106,7 @@
                                 android:layout_width="130dp"
                                 android:layout_height="80dp"
                                 android:background="#007E14"
-                                android:src="@drawable/iconetflocoquadradoinvi" />
+                                android:src="@drawable/ic_launcher" />
 
                             <ImageView
                                 android:layout_width="match_parent"
@@ -170,7 +170,7 @@
                                 android:layout_width="130dp"
                                 android:layout_height="80dp"
                                 android:background="#007E14"
-                                android:src="@drawable/iconetflocoquadradoinvi" />
+                                android:src="@drawable/ic_launcher" />
 
                             <ImageView
                                 android:layout_width="match_parent"
@@ -235,7 +235,7 @@
                                 android:layout_width="130dp"
                                 android:layout_height="80dp"
                                 android:background="#007E14"
-                                android:src="@drawable/iconetflocoquadradoinvi" />
+                                android:src="@drawable/ic_launcher" />
 
                             <ImageView
                                 android:layout_width="match_parent"
@@ -299,7 +299,7 @@
                                 android:layout_width="130dp"
                                 android:layout_height="80dp"
                                 android:background="#007E14"
-                                android:src="@drawable/iconetflocoquadradoinvi" />
+                                android:src="@drawable/ic_launcher" />
 
                             <ImageView
                                 android:layout_width="match_parent"
@@ -363,7 +363,7 @@
                                 android:layout_width="130dp"
                                 android:layout_height="80dp"
                                 android:background="#007E14"
-                                android:src="@drawable/iconetflocoquadradoinvi" />
+                                android:src="@drawable/ic_launcher" />
 
                             <ImageView
                                 android:layout_width="match_parent"

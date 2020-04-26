@@ -35,7 +35,7 @@
                         android:id="@+id/imageView30"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/iconetflocoquadradoinvi" />
+                        android:src="@drawable/ic_launcher" />
 
                     <TextView
                         android:id="@+id/menuFilmes"
@@ -121,7 +121,7 @@
                             android:layout_marginRight="5dp"
                             android:background="#007E14"
                             android:onClick="irSerie"
-                            android:src="@drawable/iconetflocoquadradoinvi" />
+                            android:src="@drawable/ic_launcher" />
 
                         <ImageView
                             android:layout_width="110dp"
@@ -130,17 +130,7 @@
                             android:layout_marginRight="5dp"
                             android:background="#007E14"
                             android:onClick="irSerie"
-                            android:src="@drawable/iconetflocoquadradoinvi" />
-
-                        <ImageView
-                            android:layout_width="110dp"
-                            android:layout_height="150dp"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginRight="5dp"
-                            android:layout_weight="1"
-                            android:background="#007E14"
-                            android:onClick="irSerie"
-                            android:src="@drawable/iconetflocoquadradoinvi" />
+                            android:src="@drawable/ic_launcher" />
 
                         <ImageView
                             android:layout_width="110dp"
@@ -150,7 +140,7 @@
                             android:layout_weight="1"
                             android:background="#007E14"
                             android:onClick="irSerie"
-                            android:src="@drawable/iconetflocoquadradoinvi" />
+                            android:src="@drawable/ic_launcher" />
 
                         <ImageView
                             android:layout_width="110dp"
@@ -160,7 +150,17 @@
                             android:layout_weight="1"
                             android:background="#007E14"
                             android:onClick="irSerie"
-                            android:src="@drawable/iconetflocoquadradoinvi" />
+                            android:src="@drawable/ic_launcher" />
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="#007E14"
+                            android:onClick="irSerie"
+                            android:src="@drawable/ic_launcher" />
 
                     </LinearLayout>
 
@@ -193,7 +193,7 @@
                             android:layout_marginRight="5dp"
                             android:background="#007E14"
                             android:onClick="irSerie"
-                            android:src="@drawable/iconetflocoquadradoinvi" />
+                            android:src="@drawable/ic_launcher" />
 
                         <ImageView
                             android:layout_width="110dp"
@@ -202,17 +202,7 @@
                             android:layout_marginRight="5dp"
                             android:background="#007E14"
                             android:onClick="irSerie"
-                            android:src="@drawable/iconetflocoquadradoinvi" />
-
-                        <ImageView
-                            android:layout_width="110dp"
-                            android:layout_height="150dp"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginRight="5dp"
-                            android:layout_weight="1"
-                            android:background="#007E14"
-                            android:onClick="irSerie"
-                            android:src="@drawable/iconetflocoquadradoinvi" />
+                            android:src="@drawable/ic_launcher" />
 
                         <ImageView
                             android:layout_width="110dp"
@@ -222,7 +212,7 @@
                             android:layout_weight="1"
                             android:background="#007E14"
                             android:onClick="irSerie"
-                            android:src="@drawable/iconetflocoquadradoinvi" />
+                            android:src="@drawable/ic_launcher" />
 
                         <ImageView
                             android:layout_width="110dp"
@@ -232,7 +222,17 @@
                             android:layout_weight="1"
                             android:background="#007E14"
                             android:onClick="irSerie"
-                            android:src="@drawable/iconetflocoquadradoinvi" />
+                            android:src="@drawable/ic_launcher" />
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="#007E14"
+                            android:onClick="irSerie"
+                            android:src="@drawable/ic_launcher" />
 
                     </LinearLayout>
 
@@ -265,7 +265,7 @@
                             android:layout_marginRight="5dp"
                             android:background="#007E14"
                             android:onClick="irSerie"
-                            android:src="@drawable/iconetflocoquadradoinvi" />
+                            android:src="@drawable/ic_launcher" />
 
                         <ImageView
                             android:layout_width="110dp"
@@ -274,17 +274,7 @@
                             android:layout_marginRight="5dp"
                             android:background="#007E14"
                             android:onClick="irSerie"
-                            android:src="@drawable/iconetflocoquadradoinvi" />
-
-                        <ImageView
-                            android:layout_width="110dp"
-                            android:layout_height="150dp"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginRight="5dp"
-                            android:layout_weight="1"
-                            android:background="#007E14"
-                            android:onClick="irSerie"
-                            android:src="@drawable/iconetflocoquadradoinvi" />
+                            android:src="@drawable/ic_launcher" />
 
                         <ImageView
                             android:layout_width="110dp"
@@ -294,7 +284,7 @@
                             android:layout_weight="1"
                             android:background="#007E14"
                             android:onClick="irSerie"
-                            android:src="@drawable/iconetflocoquadradoinvi" />
+                            android:src="@drawable/ic_launcher" />
 
                         <ImageView
                             android:layout_width="110dp"
@@ -304,7 +294,17 @@
                             android:layout_weight="1"
                             android:background="#007E14"
                             android:onClick="irSerie"
-                            android:src="@drawable/iconetflocoquadradoinvi" />
+                            android:src="@drawable/ic_launcher" />
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="#007E14"
+                            android:onClick="irSerie"
+                            android:src="@drawable/ic_launcher" />
 
                     </LinearLayout>
 
