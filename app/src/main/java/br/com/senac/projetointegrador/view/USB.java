@@ -8,6 +8,17 @@ public class USB {
 	String nome = "N/a";
 	String sinopse = "N/a";
 	int image = R.drawable.ic_launcher;
+	
+	public USB(String n, String s, int i) {
+		nome = n;
+		sinopse = s;
+		image = i;
+	}
+	
+	public USB(String n, String s) {
+		nome = n;
+		sinopse = s;
+	}
 
 	public void setNome(String nome) {
 		this.nome = nome;

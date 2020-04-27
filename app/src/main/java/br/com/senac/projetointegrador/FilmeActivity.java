@@ -33,7 +33,7 @@ public class FilmeActivity extends Activity {
 			adaptadorUSB = new AdaptadorUSB(this,R.layout.view_episodio,usb);
 			JSONObject filme_js = NetworkUtils.parseDataBase(filme,0);
 			JSONArray json = new JSONArray(episodios);
-		
+	
 			lista = findViewById(R.id.SERIE_LIST);
 			nome_serie = findViewById(R.id.SERIE_TITLE);
 			desc = findViewById(R.id.SERIE_DESCRIPT);
