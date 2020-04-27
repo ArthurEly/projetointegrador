@@ -1,40 +1,32 @@
 package br.com.senac.projetointegrador;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.app.*;
-import android.content.res.ColorStateList;
-import android.graphics.Color;
-import android.media.Image;
 import android.os.*;
-import android.transition.Explode;
-import android.transition.Fade;
 import android.transition.Slide;
 import android.view.*;
-import android.widget.GridLayout;
-import android.widget.ImageView;
-import android.widget.Switch;
 import android.widget.TextView;
 
 //import androidx.core.app.ActivityCompat;
 //import androidx.core.app.ActivityOptionsCompat;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import br.com.senac.projetointegrador.util.AndroidUtils;
-import edos.widget.Button;
-import edos.widget.EditText;
-import edos.widget.Toast;
+import br.com.senac.projetointegrador.util.NetworkUtils;
 
 
 public class ProfileActivity extends Activity {
 
-    private TextView textoSenha;
+    private TextView textoSenha, textoNome, textoEmail;
     private String senha;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-        AndroidUtils.setImmersiveMode(this,true);
 
         //ANIMAÇÕES
         Slide trans1 = new Slide();
@@ -49,8 +41,14 @@ public class ProfileActivity extends Activity {
         getWindow().setReenterTransition(trans1);
         //ANIMAÇÕES
 
-        textoSenha = findViewById(R.id.textoSenha);
+        textoSenha = findViewById(R.id.TEXTO_SENHA_PROFILE);
+        pegarDadosConta();
     }
+
+	@Override protected void onResume() {
+		super.onResume();
+        AndroidUtils.setImmersiveMode(this,true);
+	}
 
     public void irMenuEdit(View view) {
 //        edos.app.Dialog dialog = new edos.app.Dialog(this, R.layout.autenticacaoprofile);
@@ -87,6 +85,29 @@ public class ProfileActivity extends Activity {
         ActivityOptions options =ActivityOptions.makeSceneTransitionAnimation(this, null);
         startActivity(i, options.toBundle());
         finish();
+    }
+
+    public void pegarDadosConta()
+    {
+        try {
+            int id = AndroidUtils.getCache(this).getInt("usuario_id", 0);
+            String ids = String.valueOf(id);
+            System.out.println(ids);
+            String userID = NetworkUtils.sqlGet(NetworkUtils.TABLE_USERS, "usuario_id", ids);
+            JSONObject user_js = NetworkUtils.parseDataBase(userID, 0);
+            JSONArray json = new JSONArray(userID);
+
+            textoEmail = findViewById(R.id.TEXTO_EMAIL_PROFILE);
+            textoNome = findViewById(R.id.TEXTO_NOME_PROFILE);
+
+            textoNome.setText(user_js.getString("usuario_nome"));
+            textoSenha.setText(user_js.getString("usuario_senha"));
+            textoEmail.setText(user_js.getString("usuario_email"));
+
+        } catch (JSONException e)
+        {
+
+        }
     }
 
 }

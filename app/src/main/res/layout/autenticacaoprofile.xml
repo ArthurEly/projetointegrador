@@ -1,90 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#00FFFFFF"
-    android:gravity="center|top"
-    android:onClick="voltar"
-    android:orientation="vertical">
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#00FFFFFF"
+	android:gravity="center|top"
+	android:onClick="voltar"
+	android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginRight="10dp"
-        android:background="#000000"
-        android:gravity="center_horizontal|top"
-        android:orientation="vertical"
-        android:padding="10dp">
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10dp"
+		android:layout_marginTop="100dp"
+		android:layout_marginRight="10dp"
+		android:background="#000000"
+		android:orientation="vertical"
+		android:padding="10dp">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:src="@drawable/splash_logo" />
+		<TextView
+			android:id="@+id/textView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="20dp"
+			android:text="Digite sua senha:"
+			android:textColor="#FFFFFF"
+			android:textSize="16sp" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Digite sua senha:"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp" />
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginTop="10dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+			<EditText
+				android:id="@+id/campoSenha"
+				android:layout_width="230dp"
+				android:layout_height="wrap_content"
+				android:layout_margin="5dp"
+				android:layout_marginBottom="10dp"
+				android:hint="Digite aqui:"
+				android:inputType="textWebPassword" />
 
-            <EditText
-                android:id="@+id/campoSenha"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:layout_marginBottom="10dp"
-                android:hint="Digite aqui:"
-                android:inputType="textWebPassword" />
+			<ImageButton
+				android:id="@+id/imagemOlhoAut"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:layout_marginLeft="10dp"
+				android:background="#00FFFFFF"
+				android:onClick="verSenha"
+				android:src="@drawable/olhonormal"
+				android:tint="#FFFFFF" />
 
-            <ImageButton
-                android:id="@+id/imagemOlhoAut"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:background="#00FFFFFF"
-                android:src="@drawable/olhonormal"
-                android:tint="#FFFFFF" />
+		</LinearLayout>
 
-        </LinearLayout>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:gravity="right"
+			android:orientation="horizontal"
+			android:padding="5dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:gravity="right"
-            android:orientation="horizontal">
+			<Button
+				android:id="@+id/DIALOGVIEW_CANCEL"
+				android:layout_width="120dp"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="10dp"
+				android:background="@drawable/bordasbotao"
+				android:onClick="cancelar"
+				android:text="Cancelar"
+				android:textColor="#FFFFFF" />
 
-            <Button
-                android:id="@+id/DIALOGVIEW_CANCEL"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:background="#DC1414"
-                android:onClick="voltar"
-                android:text="Cancelar"
-                android:textColor="#FFFFFF" />
+			<view
+				android:id="@+id/view"
+				class="androidx.viewpager.widget.ViewPager"
+				android:layout_width="0dp"
+				android:layout_height="0dp"
+				android:layout_weight="1" />
 
-            <Button
-                android:id="@+id/DIALOGVIEW_OK"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#DC1414"
-                android:onClick="autenticacaoProfile"
-                android:text="OK"
-                android:textColor="#FFFFFF" />
+			<Button
+				android:id="@+id/DIALOGVIEW_OK"
+				android:layout_width="120dp"
+				android:layout_height="wrap_content"
+				android:background="@drawable/bordasbotao"
+				android:onClick="autenticacaoProfile"
+				android:text="OK"
+				android:textColor="#FFFFFF" />
 
-        </LinearLayout>
-    </LinearLayout>
+		</LinearLayout>
+
+		<TextView
+			android:id="@+id/textViewsair"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:text="Obs.: clique três vezes fora para sair ou em cancelar."
+			android:textColor="#66FFFFFF" />
+
+	</LinearLayout>
 
 </LinearLayout>
+

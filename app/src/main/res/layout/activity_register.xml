@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/fundologin"
+	android:gravity="center"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<ImageView
+			android:id="@+id/logoNetflocos"
+			android:layout_width="130dp"
+			android:layout_height="57dp"
+			android:layout_marginStart="16dp"
+			android:layout_marginLeft="16dp"
+			android:src="@drawable/splashlogo" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="right"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_marginRight="16dp"
+				android:gravity="center"
+				android:text="Registre-se"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:textColor="#DC0000"
+				android:textSize="20sp" />
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp" />
+
+	<edos.widget.ShinyLinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical"
+		android:orientation="horizontal"
+		android:padding="10dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="20dp"
+			android:text="Nome completo:"
+			android:textColor="#FFFFFF"
+			android:textSize="18sp" />
+
+		<EditText
+			android:id="@+id/REGISTER_NAME"
+			android:layout_width="match_parent"
+			android:layout_height="30dp"
+			android:background="@drawable/bordas"
+			android:gravity="center"
+			android:inputType="textCapWords"
+			android:textColor="#000000"
+			android:textSize="16sp" />
+
+	</edos.widget.ShinyLinearLayout>
+
+	<edos.widget.ShinyLinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical"
+		android:orientation="horizontal"
+		android:padding="10dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="20dp"
+			android:text="Email:"
+			android:textColor="#FFFFFF"
+			android:textSize="18sp" />
+
+		<EditText
+			android:id="@+id/REGISTER_EMAIL"
+			android:layout_width="match_parent"
+			android:layout_height="30dp"
+			android:background="@drawable/bordas"
+			android:gravity="center"
+			android:inputType="textEmailAddress"
+			android:textColor="#000000"
+			android:textSize="16sp" />
+
+	</edos.widget.ShinyLinearLayout>
+
+	<edos.widget.ShinyLinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical"
+		android:orientation="horizontal"
+		android:padding="10dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="143dp"
+			android:text="Senha:"
+			android:textColor="#FFFFFF"
+			android:textSize="18sp" />
+
+		<EditText
+			android:id="@+id/REGISTER_PASSWORD"
+			android:layout_width="match_parent"
+			android:layout_height="30dp"
+			android:background="@drawable/bordas"
+			android:gravity="center"
+			android:inputType="textPassword"
+			android:textColor="#000000"
+			android:textSize="16sp" />
+
+	</edos.widget.ShinyLinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:orientation="horizontal"
+		android:padding="5dp">
+
+		<TextView
+			android:id="@+id/textView2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="Visualizar senhas"
+			android:textAlignment="textEnd"
+			android:textColor="#FFFFFF"
+			android:textSize="16sp" />
+
+		<ImageButton
+			android:id="@+id/imagemOlhoRegister"
+			android:layout_width="80dp"
+			android:layout_height="40dp"
+			android:layout_marginRight="5dp"
+			android:background="#00FFFFFF"
+			android:onClick="verSenha"
+			android:src="@drawable/olhonormal"
+			android:tint="#FFFFFF" />
+
+	</LinearLayout>
+
+	<edos.widget.ShinyLinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical"
+		android:orientation="horizontal"
+		android:padding="10dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="30dp"
+			android:text="Confirme sua senha:"
+			android:textColor="#FFFFFF"
+			android:textSize="18sp" />
+
+		<EditText
+			android:id="@+id/REGISTER_CONFIRM_PASSWORD"
+			android:layout_width="match_parent"
+			android:layout_height="30dp"
+			android:background="@drawable/bordas"
+			android:gravity="center"
+			android:inputType="textPassword"
+			android:textColor="#000000"
+			android:textSize="16sp" />
+
+	</edos.widget.ShinyLinearLayout>
+
+	<edos.widget.ShinyLinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#00FFFFFF"
+		android:gravity="center_vertical"
+		android:orientation="horizontal"
+		android:padding="10dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="250dp"
+			android:text="Idade:"
+			android:textColor="#FFFFFF"
+			android:textSize="18sp" />
+
+		<EditText
+			android:id="@+id/REGISTER_OLD"
+			android:layout_width="match_parent"
+			android:layout_height="30dp"
+			android:background="@drawable/bordas"
+			android:gravity="center"
+			android:inputType="number"
+			android:textColor="#000000"
+			android:textSize="16sp" />
+
+	</edos.widget.ShinyLinearLayout>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp"
+		android:background="@drawable/bordas"
+		android:text="A sua idade não afetará a criação de sua conta, porém afetará os filmes que você poderá assistir."
+		android:textColor="#323232"
+		android:typeface="monospace" />
+
+	<edos.widget.ShinyLinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:orientation="horizontal"
+		android:padding="10dp">
+
+		<CheckBox
+			android:id="@+id/REGISTER_PRO"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Assinar o plano PRO"
+			android:textColor="#FFFFFF"
+			android:textSize="18sp" />
+
+	</edos.widget.ShinyLinearLayout>
+
+	<View
+		android:layout_width="1dp"
+		android:layout_height="0dp"
+		android:layout_weight="1.0" />
+
+	<Button
+		android:id="@+id/REGISTER_BUTTON"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp"
+		android:background="@drawable/bordasbotao"
+		android:text="Registrar" />
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp"
+		android:text="— ou —" />
+
+	<Button
+		android:id="@+id/REGISTER_LOGIN"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp"
+		android:background="@drawable/bordasbotao"
+		android:text="FAZER LOGIN" />
+
+</LinearLayout>
+

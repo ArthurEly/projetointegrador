@@ -1,22 +1,47 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "I:\\SENAC\\projetointegrador\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v25\\values-v25.xml",
             "map": [
                 {
                     "source": "I:\\SENAC\\projetointegrador\\app\\src\\main\\res\\values-v25\\styles.xml",
+=======
+            "outputFile": "D:\\PI git\\projetointegrador\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v25\\values-v25.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\arthu\\.gradle\\caches\\transforms-2\\files-2.1\\173de8c433dc5f4aca0638778cb887e6\\appcompat-1.0.0\\res\\values-v25\\values-v25.xml",
+                    "from": {
+                        "startLines": "2,3,4,6",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,126,209,308",
+                        "endLines": "2,3,5,7",
+                        "endColumns": "70,82,12,12",
+                        "endOffsets": "121,204,303,414"
+                    }
+                },
+                {
+                    "source": "D:\\PI git\\projetointegrador\\app\\src\\main\\res\\values-v25\\styles.xml",
+>>>>>>> origin/master
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "57",
+<<<<<<< HEAD
                         "endLines": "25",
                         "endColumns": "12",
                         "endOffsets": "1438"
+=======
+                        "endLines": "21",
+                        "endColumns": "12",
+                        "endOffsets": "1266"
+>>>>>>> origin/master
                     },
                     "to": {
                         "startLines": "8",
                         "startColumns": "4",
                         "startOffsets": "419",
+<<<<<<< HEAD
                         "endLines": "31",
                         "endColumns": "12",
                         "endOffsets": "1777"
@@ -31,6 +56,11 @@
                         "endLines": "2,3,5,7",
                         "endColumns": "70,82,12,12",
                         "endOffsets": "121,204,303,414"
+=======
+                        "endLines": "27",
+                        "endColumns": "12",
+                        "endOffsets": "1609"
+>>>>>>> origin/master
                     }
                 }
             ]

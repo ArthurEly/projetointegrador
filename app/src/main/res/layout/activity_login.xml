@@ -1,97 +1,160 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="fill_parent"
 	android:layout_height="fill_parent"
-	android:orientation="vertical"
-	android:gravity="center_horizontal">
-
-	<TextView
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:text="Faça o Login:"
-		android:textAppearance="?android:attr/textAppearanceLarge"
-		android:layout_margin="10dp"/>
-
-	<edos.widget.ShinyLinearLayout
-		android:layout_height="wrap_content"
-		android:layout_width="match_parent"
-		android:padding="10dp"
-		android:orientation="horizontal"
-		android:gravity="center">
-
-		<TextView
-			android:text="Email"
-			android:layout_height="wrap_content"
-			android:layout_width="0dp"
-			android:layout_weight="1.0"/>
-
-		<EditText
-			android:id="@+id/LOGIN_EMAIL"
-			android:layout_height="wrap_content"
-			android:layout_width="0dp"
-			android:layout_weight="1.0"
-			android:inputType="textEmailAddress"
-			android:background="#FFFFFF"
-			android:textColor="#000000"/>
-
-	</edos.widget.ShinyLinearLayout>
-
-	<edos.widget.ShinyLinearLayout
-		android:layout_height="wrap_content"
-		android:layout_width="match_parent"
-		android:padding="10dp"
-		android:orientation="horizontal"
-		android:gravity="center">
-
-		<TextView
-			android:text="Senha"
-			android:layout_height="wrap_content"
-			android:layout_width="0dp"
-			android:layout_weight="1.0"/>
-
-		<EditText
-			android:id="@+id/LOGIN_PASSWORD"
-			android:layout_height="wrap_content"
-			android:layout_width="0dp"
-			android:layout_weight="1.0"
-			android:inputType="textPassword"
-			android:background="#FFFFFF"
-			android:textColor="#000000"/>
-
-	</edos.widget.ShinyLinearLayout>
-
-	<View
-		android:layout_width="1dp"
-		android:layout_height="0dp"
-		android:layout_weight="1.0"/>
+	android:background="@drawable/fundologin"
+	android:gravity="center_horizontal"
+	android:orientation="vertical">
 
 	<LinearLayout
-		android:orientation="vertical"
-		android:layout_width="wrap_content"
+		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:padding="10dp"
-		android:gravity="center">
+		android:orientation="horizontal">
 
-		<Button
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:text="Fazer Login"
-			android:id="@+id/LOGIN_BUTTON"
-			android:background="#CC0000"/>
+		<ImageView
+			android:id="@+id/logoNetflocos"
+			android:layout_width="130dp"
+			android:layout_height="57dp"
+			android:layout_marginStart="16dp"
+			android:layout_marginLeft="16dp"
+			android:src="@drawable/splashlogo" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="right"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_marginRight="16dp"
+				android:gravity="center"
+				android:text="Faça o login"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:textColor="#DC0000"
+				android:textSize="20sp" />
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp" />
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:gravity="center"
+		android:orientation="vertical">
 
 		<TextView
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:text="—ou—"
-			android:layout_margin="10dp"/>
+			android:layout_marginTop="40dp"
+			android:text="Email:"
+			android:textColor="#FFFFFF"
+			android:textSize="16sp" />
 
-		<Button
+		<edos.widget.ShinyLinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:orientation="horizontal"
+			android:padding="10dp">
+
+			<EditText
+				android:id="@+id/LOGIN_EMAIL"
+				android:layout_width="0dp"
+				android:layout_height="30dp"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:layout_weight="1.0"
+				android:background="@drawable/bordas"
+				android:gravity="center"
+				android:inputType="textEmailAddress"
+				android:textColor="#000000" />
+
+		</edos.widget.ShinyLinearLayout>
+
+		<TextView
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:text="SignUp"
+			android:layout_marginTop="10dp"
+			android:text="Senha:"
+			android:textColor="#FFFFFF"
+			android:textSize="16sp" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+			android:orientation="horizontal">
+
+			<edos.widget.ShinyLinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginLeft="45dp"
+				android:gravity="center_horizontal"
+				android:orientation="horizontal"
+				android:padding="10dp">
+
+				<EditText
+					android:id="@+id/LOGIN_PASSWORD"
+					android:layout_width="200dp"
+					android:layout_height="30dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:background="@drawable/bordas"
+					android:gravity="center"
+					android:inputType="textPassword"
+					android:textColor="#000000" />
+
+			</edos.widget.ShinyLinearLayout>
+
+			<ImageButton
+				android:id="@+id/imagemOlhoLogin"
+				android:layout_width="80dp"
+				android:layout_height="40dp"
+				android:layout_gravity="center_vertical"
+				android:background="#00FFFFFF"
+				android:onClick="verSenha"
+				android:src="@drawable/olhonormal"
+				android:tint="#FFFFFF" />
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:orientation="vertical"
+		android:padding="10dp">
+
+		<Button
+			android:id="@+id/LOGIN_BUTTON"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/bordasbotao"
+			android:text="Fazer Login" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="10dp"
+			android:text="— ou —" />
+
+		<Button
 			android:id="@+id/LOGIN_SIGNUP"
-			android:background="#CC0000"/>
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/bordasbotao"
+			android:text="REGISTRAR" />
 
 	</LinearLayout>
 

@@ -11,7 +11,12 @@ import android.widget.*;
 
 //import androidx.core.app.ActivityOptions;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import br.com.senac.projetointegrador.util.AndroidUtils;
+import br.com.senac.projetointegrador.util.NetworkUtils;
 
 public class EditProfileActivity extends Activity {
 
@@ -19,6 +24,7 @@ public class EditProfileActivity extends Activity {
     private ImageButton imagemOlho;
     private Button botaoAlterar;
     private String campoNome, campoSenha, campoEmail;
+    private int count;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,21 +48,10 @@ public class EditProfileActivity extends Activity {
         textoEmailAlterar = findViewById(R.id.textoEmailAlterar);
         textoSenhaAlterar = findViewById(R.id.textoSenhaAlterar);
         botaoAlterar = findViewById(R.id.botaoAlterar);
-        imagemOlho = findViewById(R.id.imagemOlhoAut);
+        imagemOlho = findViewById(R.id.imagemOlhoEdit);
 
-        imagemOlho.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View view, MotionEvent event) {
-                if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                    textoSenhaAlterar.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
-                    imagemOlho.setImageResource(R.drawable.olhoriscado);
-                } else {
-                    textoSenhaAlterar.setTransformationMethod(PasswordTransformationMethod.getInstance());
-                    imagemOlho.setImageResource(R.drawable.olhonormal);
-                }
-                return false;
-            }
-        });
+        pegarDadosConta();
+
     }
 
     public void alterarDados()
@@ -83,5 +78,37 @@ public class EditProfileActivity extends Activity {
         ActivityOptions options =ActivityOptions.makeSceneTransitionAnimation(this, null);
         this.startActivity(i, options.toBundle());
         finish();
+    }
+
+    public void verSenha(View view)
+    {
+        if (count % 2 ==0) {
+            textoSenhaAlterar.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+            imagemOlho.setImageResource(R.drawable.olhoriscado);
+        } else {
+            textoSenhaAlterar.setTransformationMethod(PasswordTransformationMethod.getInstance());
+            imagemOlho.setImageResource(R.drawable.olhonormal);
+        }
+        count++;
+    }
+
+    public void pegarDadosConta()
+    {
+        try {
+            int id = AndroidUtils.getCache(this).getInt("usuario_id", 0);
+            String ids = String.valueOf(id);
+            System.out.println(ids);
+            String userID = NetworkUtils.sqlGet(NetworkUtils.TABLE_USERS, "usuario_id", ids);
+            JSONObject user_js = NetworkUtils.parseDataBase(userID, 0);
+            JSONArray json = new JSONArray(userID);
+
+            textoNomeAlterar.setText(user_js.getString("usuario_nome"));
+            textoSenhaAlterar.setText(user_js.getString("usuario_senha"));
+            textoEmailAlterar.setText(user_js.getString("usuario_email"));
+
+        } catch (JSONException e)
+        {
+
+        }
     }
 }

@@ -30,6 +30,9 @@ public class AutenticacaoProfile extends Activity {
     private EditText campoSenha;
     private ImageButton imagemOlho;
     private String senha;
+    private int count;
+    private int countSair;
+    private TextView t;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -53,6 +56,7 @@ public class AutenticacaoProfile extends Activity {
 
         campoSenha = findViewById(R.id.campoSenha);
         imagemOlho = findViewById(R.id.imagemOlhoAut);
+        t = findViewById(R.id.textViewsair);
 
         Intent i = getIntent();
         if (i != null)
@@ -62,20 +66,6 @@ public class AutenticacaoProfile extends Activity {
                 senha = params.getString("senha");
             }
         }
-
-        imagemOlho.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View view, MotionEvent event) {
-                if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                    campoSenha.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
-                    imagemOlho.setImageResource(R.drawable.olhoriscado);
-                } else {
-                    campoSenha.setTransformationMethod(PasswordTransformationMethod.getInstance());
-                    imagemOlho.setImageResource(R.drawable.olhonormal);
-                }
-                return false;
-            }
-        });
     }
 
     public void autenticacaoProfile(View view)
@@ -93,6 +83,7 @@ public class AutenticacaoProfile extends Activity {
                 Intent i = new Intent(this, EditProfileActivity.class);
                 ActivityOptions activityOptions = ActivityOptions.makeSceneTransitionAnimation(this,null);
                 startActivity( i, activityOptions.toBundle());
+                finish();
             }
             else
             {
@@ -102,10 +93,35 @@ public class AutenticacaoProfile extends Activity {
     }
 
     public void voltar(View view){
+        countSair++;
+        t.setText("Clique mais " + (3 -countSair) + " vezes.");
+
+        if (countSair == 3) {
+            Intent i = new Intent(this, ProfileActivity.class);
+            ActivityOptions activityOptions = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.escurecer, R.anim.naofazertransicao);
+            startActivity(i, activityOptions.toBundle());
+            finish();
+        } else {}
+    }
+
+    public void cancelar(View view)
+    {
         Intent i = new Intent(this, ProfileActivity.class);
-        ActivityOptions activityOptions = ActivityOptions.makeCustomAnimation(getApplicationContext(),R.anim.escurecer,R.anim.naofazertransicao);
+        ActivityOptions activityOptions = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.escurecer, R.anim.naofazertransicao);
         startActivity(i, activityOptions.toBundle());
         finish();
     }
+
+    public void verSenha(View view){
+        if (count % 2 ==0) {
+            campoSenha.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+            imagemOlho.setImageResource(R.drawable.olhoriscado);
+        } else {
+            campoSenha.setTransformationMethod(PasswordTransformationMethod.getInstance());
+            imagemOlho.setImageResource(R.drawable.olhonormal);
+        }
+        count++;
+    }
+
 
 }

@@ -114,7 +114,7 @@
             android:id="@+id/textoEmailAlterar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="17.75dp"
+            android:layout_marginLeft="15dp"
             android:layout_marginTop="20dp"
             android:ems="10"
             android:inputType="textWebEmailAddress"
@@ -122,43 +122,52 @@
             android:textSize="14sp" />
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/linearSenha"
+    <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:scrollbars="none">
 
-        <TextView
-            android:id="@+id/tituloSenhaAlterar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="24dp"
-            android:layout_marginTop="20dp"
-            android:text="Digite sua senha:"
-            android:textColor="#FFFFFF" />
+        <LinearLayout
+            android:id="@+id/linearSenha"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/textoSenhaAlterar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="17.75dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:inputType="textWebPassword"
-            android:textSize="14sp"
-            tools:text="SENHASENHASENHA" />
+            <TextView
+                android:id="@+id/tituloSenhaAlterar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="20dp"
+                android:text="Digite sua senha:"
+                android:textColor="#FFFFFF" />
 
-        <ImageButton
-            android:id="@+id/imagemOlhoAut"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_marginTop="15dp"
-            android:layout_weight="1"
-            android:background="#00FFFFFF"
-            android:src="@drawable/olhonormal"
-            android:tint="#FFFFFF" />
+            <EditText
+                android:id="@+id/textoSenhaAlterar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17.75dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:inputType="textWebPassword"
+                android:textSize="14sp"
+                tools:text="SENHASENHASENHA" />
 
-    </LinearLayout>
+            <ImageButton
+                android:id="@+id/imagemOlhoEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="18dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:onClick="verSenha"
+                android:src="@drawable/olhonormal"
+                android:tint="#FFFFFF"
+                />
+
+        </LinearLayout>
+    </HorizontalScrollView>
 
     <edos.widget.Button
         android:id="@+id/botaoAlterar"
@@ -166,6 +175,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="20dp"
+        android:background="@drawable/bordasbotao"
         android:text="Alterar" />
 
     <LinearLayout

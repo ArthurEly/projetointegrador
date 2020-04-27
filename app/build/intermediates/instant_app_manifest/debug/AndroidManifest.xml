@@ -18,10 +18,18 @@
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
         android:extractNativeLibs="false"
+<<<<<<< HEAD
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+=======
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher"
+        android:supportsRtl="true"
+        android:testOnly="true"
+>>>>>>> origin/master
         android:theme="@style/Tema" >
         <activity android:name="br.com.senac.projetointegrador.SerieActivity" />
         <activity android:name="br.com.senac.projetointegrador.FilmeActivity" />
@@ -38,6 +46,7 @@
             </intent-filter>
         </activity>
         <activity android:name="br.com.senac.projetointegrador.SplashActivity" >
+<<<<<<< HEAD
 
             <!-- NA VERSÃO FINAL MOVER O <intent-filter> pra cá -->
         </activity>
@@ -46,6 +55,18 @@
         <activity android:name="br.com.senac.projetointegrador.ProfileActivity" />
         <activity android:name="br.com.senac.projetointegrador.EditProfileActivity" />
         <activity android:name="br.com.senac.projetointegrador.PlayerActivity" />
+=======
+        </activity>
+        <activity android:name="br.com.senac.projetointegrador.MainActivity" />
+        <activity android:name="br.com.senac.projetointegrador.LoginActivity" />
+        <activity android:name="br.com.senac.projetointegrador.RegisterActivity" />
+        <activity android:name="br.com.senac.projetointegrador.ProfileActivity" />
+        <activity android:name="br.com.senac.projetointegrador.EditProfileActivity" />
+        <activity
+            android:name="br.com.senac.projetointegrador.PlayerActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorLandscape" />
+>>>>>>> origin/master
     </application>
 
 </manifest>
