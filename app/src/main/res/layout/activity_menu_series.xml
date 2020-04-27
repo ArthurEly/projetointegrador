@@ -46,8 +46,7 @@
                         android:onClick="irMenuFilmes"
                         android:text="Filmes"
                         android:textColor="@color/corMenuOculto"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
+                        android:textSize="20sp" />
 
                     <TextView
                         android:id="@+id/menuSeries"
@@ -59,8 +58,7 @@
                         android:onClick="irMenuSeries"
                         android:text="Séries"
                         android:textColor="#FFFFFF"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
+                        android:textSize="20sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -101,7 +99,7 @@
                     android:layout_marginLeft="15dp"
                     android:text="Texto exemplo"
                     android:textColor="#FFFFFF"
-                    android:textSize="16sp" />
+                    android:textSize="18sp" />
 
                 <HorizontalScrollView
                     android:layout_width="match_parent"
@@ -173,7 +171,7 @@
                     android:layout_marginTop="20dp"
                     android:text="Texto exemplo"
                     android:textColor="#FFFFFF"
-                    android:textSize="16sp"/>
+                    android:textSize="18sp" />
 
                 <HorizontalScrollView
                     android:layout_width="match_parent"
@@ -245,7 +243,7 @@
                     android:layout_marginTop="20dp"
                     android:text="Texto exemplo"
                     android:textColor="#FFFFFF"
-                    android:textSize="16sp"/>
+                    android:textSize="18sp" />
 
                 <HorizontalScrollView
                     android:layout_width="match_parent"

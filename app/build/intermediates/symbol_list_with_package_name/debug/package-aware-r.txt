@@ -376,6 +376,7 @@ color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
 color tooltip_background_dark
 color tooltip_background_light
+color transparente
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -575,10 +576,14 @@ drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable account
+drawable account_circle_black
+drawable account_circle_white
 drawable background
 drawable bordas
+drawable bordasbotao
 drawable botaoassistir
 drawable effect_gradient
+drawable fundologin
 drawable ic_arrow_left_black
 drawable ic_arrow_left_white
 drawable ic_close_black
@@ -615,6 +620,7 @@ drawable ic_high_definition_black
 drawable ic_high_definition_white
 drawable ic_home_black
 drawable ic_home_white
+drawable ic_launcher
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_pause_black
@@ -635,7 +641,6 @@ drawable ic_volume_low_black
 drawable ic_volume_low_white
 drawable ic_volume_medium_black
 drawable ic_volume_medium_white
-drawable iconetflocoquadradoinvi
 drawable informationoutline
 drawable loading
 drawable lua
@@ -661,6 +666,9 @@ drawable splash_logo
 drawable splashlogo
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+font netflixbold
+font netflixlight
+font netflixmedium
 id ALT
 id CTRL
 id DIALOGVIEW_CANCEL
@@ -677,6 +685,7 @@ id LOGIN_EMAIL
 id LOGIN_PASSWORD
 id LOGIN_SIGNUP
 id MAIN_ACTIVITY
+id MAIN_LANÇAMENTOS
 id META
 id PLAYER_ACTIVITY
 id PLAYER_DEFINITION
@@ -689,13 +698,18 @@ id PLAYER_RETURN
 id PLAYER_TRACK
 id PLAYER_VIDEO
 id PROFILE_ACTIVITY
+id REGISTER_BUTTON
+id REGISTER_CONFIRM_PASSWORD
+id REGISTER_EMAIL
+id REGISTER_LOGIN
+id REGISTER_NAME
+id REGISTER_OLD
+id REGISTER_PASSWORD
+id REGISTER_PRO
 id SHIFT
 id SPLASH
 id SPLASH_ACTIVITY
 id SYM
-id TEXTO_EMAIL_ALTERAR
-id TEXTO_NOME_ALTERAR
-id TEXTO_SENHA_ALTERAR
 id TOASTVIEW_CONTENT
 id action_bar
 id action_bar_activity_content
@@ -773,6 +787,7 @@ id filme34
 id filme35
 id forever
 id g1
+id glide_custom_view_target_tag
 id group_divider
 id home
 id homeAsUp
@@ -790,6 +805,9 @@ id imageView30
 id imageView5
 id imageView7
 id imagemOlhoAut
+id imagemOlhoEdit
+id imagemOlhoLogin
+id imagemOlhoRegister
 id info
 id italic
 id layoutMain
@@ -856,6 +874,7 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textView
+id textView2
 id textView3
 id textView5
 id textView6
@@ -863,9 +882,13 @@ id textView7
 id textView8
 id textView9
 id textViewJSON
+id textViewsair
 id textoEmail
+id textoEmailAlterar
 id textoNome
+id textoNomeAlterar
 id textoSenha
+id textoSenhaAlterar
 id time
 id title
 id titleDividerNoCustom
@@ -882,6 +905,8 @@ id topPanel
 id uniform
 id up
 id useLogo
+id view
+id view_serie_image
 id withText
 id wrap_content
 integer abc_config_activityDefaultDur
@@ -927,6 +952,7 @@ layout activity_menu_filmes
 layout activity_menu_series
 layout activity_player
 layout activity_profile
+layout activity_register
 layout activity_search
 layout activity_serie
 layout activity_splash
@@ -934,6 +960,7 @@ layout autenticacaoprofile
 layout dialog_config
 layout dialog_error
 layout dialog_home
+layout dialog_loading
 layout dialog_profile
 layout dialog_search
 layout dialog_view
@@ -950,6 +977,7 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 layout toast_view
+layout view_serie
 mipmap ic_launcher
 mipmap ic_launcher_round
 string abc_action_bar_home_description

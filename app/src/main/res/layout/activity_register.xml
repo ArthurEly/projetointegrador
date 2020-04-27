@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
 	android:layout_width="fill_parent"
 	android:layout_height="fill_parent"
-	android:orientation="vertical"
-	android:gravity="center">
+	android:background="@drawable/fundologin"
+	android:gravity="center"
+	android:orientation="vertical">
 
 	<LinearLayout
 		android:layout_width="match_parent"
@@ -13,11 +14,11 @@
 
 		<ImageView
 			android:id="@+id/logoNetflocos"
-			android:layout_width="103dp"
+			android:layout_width="130dp"
 			android:layout_height="57dp"
 			android:layout_marginStart="16dp"
 			android:layout_marginLeft="16dp"
-			android:src="@drawable/splashlogo"/>
+			android:src="@drawable/splashlogo" />
 
 		<LinearLayout
 			android:layout_width="match_parent"
@@ -28,192 +29,254 @@
 			<TextView
 				android:layout_width="wrap_content"
 				android:layout_height="match_parent"
+				android:layout_marginRight="16dp"
+				android:fontFamily="@font/netflixmedium"
+				android:gravity="center"
 				android:text="Registre-se"
 				android:textAppearance="?android:attr/textAppearanceLarge"
-				android:layout_marginRight="16dp"
-				android:gravity="center"/>
+				android:textColor="#DC0000"
+				android:textSize="20sp" />
 
 		</LinearLayout>
 
 	</LinearLayout>
 
 	<View
-		android:background="?android:attr/dividerVertical"
 		android:layout_width="match_parent"
-		android:layout_height="1dp"/>
+		android:layout_height="1dp" />
 
 	<edos.widget.ShinyLinearLayout
-		android:layout_height="wrap_content"
 		android:layout_width="match_parent"
-		android:padding="10dp"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical"
 		android:orientation="horizontal"
-		android:gravity="center">
+		android:padding="10dp">
 
 		<TextView
-			android:text="Nome Completo"
+			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:layout_width="0dp"
-			android:layout_weight="1.0"/>
+			android:layout_marginRight="20dp"
+			android:fontFamily="@font/netflixmedium"
+			android:text="Nome completo:"
+			android:textColor="#FFFFFF"
+			android:textSize="18sp" />
 
 		<EditText
 			android:id="@+id/REGISTER_NAME"
-			android:layout_height="wrap_content"
-			android:layout_width="0dp"
-			android:layout_weight="1.0"
+			android:layout_width="match_parent"
+			android:layout_height="30dp"
+			android:background="@drawable/bordas"
+			android:fontFamily="@font/netflixlight"
+			android:gravity="center"
 			android:inputType="textCapWords"
-			android:background="#FFFFFF"
-			android:textColor="#000000"/>
+			android:textColor="#000000"
+			android:textSize="16sp" />
 
 	</edos.widget.ShinyLinearLayout>
 
 	<edos.widget.ShinyLinearLayout
-		android:layout_height="wrap_content"
 		android:layout_width="match_parent"
-		android:padding="10dp"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical"
 		android:orientation="horizontal"
-		android:gravity="center">
+		android:padding="10dp">
 
 		<TextView
-			android:text="Email"
+			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:layout_width="0dp"
-			android:layout_weight="1.0"/>
+			android:layout_marginRight="20dp"
+			android:fontFamily="@font/netflixmedium"
+			android:text="Email:"
+			android:textColor="#FFFFFF"
+			android:textSize="18sp" />
 
 		<EditText
 			android:id="@+id/REGISTER_EMAIL"
-			android:layout_height="wrap_content"
-			android:layout_width="0dp"
-			android:layout_weight="1.0"
+			android:layout_width="match_parent"
+			android:layout_height="30dp"
+			android:background="@drawable/bordas"
+			android:fontFamily="@font/netflixlight"
+			android:gravity="center"
 			android:inputType="textEmailAddress"
-			android:background="#FFFFFF"
-			android:textColor="#000000"/>
+			android:textColor="#000000"
+			android:textSize="16sp" />
 
 	</edos.widget.ShinyLinearLayout>
 
 	<edos.widget.ShinyLinearLayout
-		android:layout_height="wrap_content"
 		android:layout_width="match_parent"
-		android:padding="10dp"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical"
 		android:orientation="horizontal"
-		android:gravity="center">
+		android:padding="10dp">
 
 		<TextView
-			android:text="Senha"
+			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:layout_width="0dp"
-			android:layout_weight="1.0"/>
+			android:layout_marginRight="143dp"
+			android:fontFamily="@font/netflixmedium"
+			android:text="Senha:"
+			android:textColor="#FFFFFF"
+			android:textSize="18sp" />
 
 		<EditText
 			android:id="@+id/REGISTER_PASSWORD"
-			android:layout_height="wrap_content"
-			android:layout_width="0dp"
-			android:layout_weight="1.0"
+			android:layout_width="match_parent"
+			android:layout_height="30dp"
+			android:background="@drawable/bordas"
+			android:fontFamily="@font/netflixlight"
+			android:gravity="center"
 			android:inputType="textPassword"
-			android:background="#FFFFFF"
-			android:textColor="#000000"/>
+			android:textColor="#000000"
+			android:textSize="16sp" />
 
 	</edos.widget.ShinyLinearLayout>
 
-	<edos.widget.ShinyLinearLayout
-		android:layout_height="wrap_content"
+	<LinearLayout
 		android:layout_width="match_parent"
-		android:padding="10dp"
+		android:layout_height="wrap_content"
+		android:gravity="center"
 		android:orientation="horizontal"
-		android:gravity="center">
+		android:padding="5dp">
 
 		<TextView
-			android:text="Confirme a Senha"
+			android:id="@+id/textView2"
+			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:layout_width="0dp"
-			android:layout_weight="1.0"/>
+			android:layout_weight="1"
+			android:text="Visualizar senhas"
+			android:textAlignment="textEnd"
+			android:textColor="#FFFFFF"
+			android:textSize="16sp" />
+
+		<ImageButton
+			android:id="@+id/imagemOlhoRegister"
+			android:layout_width="80dp"
+			android:layout_height="40dp"
+			android:layout_marginRight="5dp"
+			android:background="#00FFFFFF"
+			android:onClick="verSenha"
+			android:src="@drawable/olhonormal"
+			android:tint="#FFFFFF" />
+
+	</LinearLayout>
+
+	<edos.widget.ShinyLinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical"
+		android:orientation="horizontal"
+		android:padding="10dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="30dp"
+			android:fontFamily="@font/netflixmedium"
+			android:text="Confirme sua senha:"
+			android:textColor="#FFFFFF"
+			android:textSize="18sp" />
 
 		<EditText
 			android:id="@+id/REGISTER_CONFIRM_PASSWORD"
-			android:layout_height="wrap_content"
-			android:layout_width="0dp"
-			android:layout_weight="1.0"
+			android:layout_width="match_parent"
+			android:layout_height="30dp"
+			android:background="@drawable/bordas"
+			android:fontFamily="@font/netflixlight"
+			android:gravity="center"
 			android:inputType="textPassword"
-			android:background="#FFFFFF"
-			android:textColor="#000000"/>
+			android:textColor="#000000"
+			android:textSize="16sp" />
 
 	</edos.widget.ShinyLinearLayout>
 
 	<edos.widget.ShinyLinearLayout
-		android:layout_height="wrap_content"
 		android:layout_width="match_parent"
-		android:padding="10dp"
-		android:orientation="vertical"
-		android:gravity="center">
-
-		<LinearLayout
-			android:layout_height="wrap_content"
-			android:layout_width="match_parent"
-			android:orientation="horizontal"
-			android:gravity="center">
-
-			<TextView
-				android:text="Idade"
-				android:layout_height="wrap_content"
-				android:layout_width="0dp"
-				android:layout_weight="1.0"/>
-
-			<EditText
-				android:id="@+id/REGISTER_OLD"
-				android:layout_height="wrap_content"
-				android:layout_width="0dp"
-				android:layout_weight="1.0"
-				android:inputType="number"
-				android:background="#FFFFFF"
-				android:textColor="#000000"/>
-
-		</LinearLayout>
+		android:layout_height="wrap_content"
+		android:background="#00FFFFFF"
+		android:gravity="center_vertical"
+		android:orientation="horizontal"
+		android:padding="10dp">
 
 		<TextView
-			android:text="A sua idade não afetará a criação de sua conta, porém a sua idade irá afetar os filmes que você poderá assistir."
+			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
+			android:layout_marginRight="250dp"
+			android:fontFamily="@font/netflixmedium"
+			android:text="Idade:"
+			android:textColor="#FFFFFF"
+			android:textSize="18sp" />
+
+		<EditText
+			android:id="@+id/REGISTER_OLD"
 			android:layout_width="match_parent"
-			android:background="#FFFFFF"
-			android:layout_margin="10dp"
-			android:typeface="monospace"
-			android:textColor="#454545"/>
+			android:layout_height="30dp"
+			android:background="@drawable/bordas"
+			android:fontFamily="@font/netflixlight"
+			android:gravity="center"
+			android:inputType="number"
+			android:textColor="#000000"
+			android:textSize="16sp" />
 
 	</edos.widget.ShinyLinearLayout>
 
-	<edos.widget.ShinyLinearLayout
-		android:layout_height="wrap_content"
+	<TextView
 		android:layout_width="match_parent"
-		android:padding="10dp"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp"
+		android:background="@drawable/bordas"
+		android:fontFamily="@font/netflixmedium"
+		android:text="A sua idade não afetará a criação de sua conta, porém afetará os filmes que você poderá assistir."
+		android:textColor="#323232"
+		android:typeface="monospace" />
+
+	<edos.widget.ShinyLinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
 		android:orientation="horizontal"
-		android:gravity="center">
+		android:padding="10dp">
 
 		<CheckBox
 			android:id="@+id/REGISTER_PRO"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:hint="Assinar o plano PRO"/>
+			android:fontFamily="@font/netflixmedium"
+			android:text="Assinar o plano PRO"
+			android:textColor="#FFFFFF"
+			android:textSize="18sp" />
 
 	</edos.widget.ShinyLinearLayout>
 
 	<View
 		android:layout_width="1dp"
 		android:layout_height="0dp"
-		android:layout_weight="1.0"/>
+		android:layout_weight="1.0" />
 
 	<Button
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:text="Registrar"
-		android:layout_margin="10dp"
 		android:id="@+id/REGISTER_BUTTON"
-		android:background="#CC0000"/>
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp"
+		android:background="@drawable/bordasbotao"
+		android:fontFamily="@font/netflixmedium"
+		android:text="Registrar" />
 
-	<Button
+	<TextView
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:text="Registrar"
 		android:layout_margin="10dp"
+		android:fontFamily="@font/netflixmedium"
+		android:text="— ou —" />
+
+	<Button
 		android:id="@+id/REGISTER_LOGIN"
-		android:background="#CC0000"/>
-	
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp"
+		android:background="@drawable/bordasbotao"
+		android:fontFamily="@font/netflixmedium"
+		android:text="FAZER LOGIN" />
+
 </LinearLayout>
 

@@ -4,6 +4,8 @@ import android.content.*;
 import android.view.*;
 import android.util.*;
 
+import br.com.senac.projetointegrador.R;
+
 public class ShinyLinearLayout extends LinearLayout {
 	private void init() {
 		setOnHoverListener(new OnHoverListener() {
@@ -13,7 +15,7 @@ public class ShinyLinearLayout extends LinearLayout {
 						setBackgroundColor(0xFFCC0000);
 						bool = true;
 					} else if (p2.getAction() == p2.ACTION_HOVER_EXIT) {
-						setBackgroundColor(0xFFFFFFFF);
+						setBackgroundColor(getResources().getColor(R.color.transparente));
 						bool = false;
 					}
 
@@ -28,7 +30,7 @@ public class ShinyLinearLayout extends LinearLayout {
 						setBackgroundColor(0xFFCC0000);
 						bool = true;
 					} else if (p2.getAction() == p2.ACTION_UP) {
-						setBackgroundColor(0xFF000000);
+						setBackgroundColor(getResources().getColor(R.color.transparente));
 						bool = false;
 					}
 					return bool;

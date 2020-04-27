@@ -2,6 +2,8 @@ package br.com.senac.projetointegrador;
 import android.app.*;
 import android.os.*;
 import android.text.*;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
 import android.widget.*;
 import android.view.*;
 import br.com.senac.projetointegrador.util.*;
@@ -10,8 +12,14 @@ import android.content.*;
 import java.io.*;
 
 public class LoginActivity extends Activity {
+	private int count;
+	private EditText passw;
+	private ImageButton imagemOlhoLogin;
 
-    @Override
+	public LoginActivity() {
+	}
+
+	@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
@@ -19,6 +27,9 @@ public class LoginActivity extends Activity {
 		final EditText pass = findViewById(R.id.LOGIN_PASSWORD);
 		Button login = findViewById(R.id.LOGIN_BUTTON);
 		Button signup = findViewById(R.id.LOGIN_SIGNUP);
+		imagemOlhoLogin = findViewById(R.id.imagemOlhoLogin);
+		passw = findViewById(R.id.LOGIN_PASSWORD);
+
 		
 		login.setOnClickListener(new View.OnClickListener() {
 			@Override public void onClick(View p1) {
@@ -46,7 +57,7 @@ public class LoginActivity extends Activity {
 						d.dismiss();
 						finish();
 					} else {
-						android.widget.Toast.makeText(p1.getContext(),"senha incorreta",500).show();
+						android.widget.Toast.makeText(p1.getContext(),"Senha incorreta!",500).show();
 					}
 				} catch (JSONException e) {
 					d.setContentView(R.layout.dialog_error);
@@ -69,5 +80,18 @@ public class LoginActivity extends Activity {
 	
 	public Activity self() {
 		return this;
+	}
+
+	public void verSenha(View view)
+	{
+		if (count % 2 == 0)
+		{
+			passw.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+			imagemOlhoLogin.setImageResource(R.drawable.olhoriscado);
+		} else {
+			passw.setTransformationMethod(PasswordTransformationMethod.getInstance());
+			imagemOlhoLogin.setImageResource(R.drawable.olhonormal);
+		}
+		count++;
 	}
 }

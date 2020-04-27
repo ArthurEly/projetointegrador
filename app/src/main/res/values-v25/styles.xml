@@ -21,7 +21,7 @@
         <item name="android:textStyle">normal</item>
         <item name="android:typeface">monospace</item-->
         <item name="android:textColorLink">#FFCC0000</item>
-
+        <item name="android:fontFamily">@font/netflixmedium</item>
         <item name="android:colorSecondary">#FFCC0000</item>
     </style>
 </resources>

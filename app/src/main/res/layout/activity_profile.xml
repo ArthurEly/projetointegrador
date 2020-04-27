@@ -92,7 +92,8 @@
 				android:layout_height="wrap_content"
 				android:layout_marginLeft="20dp"
 				android:layout_marginTop="20dp"
-				android:text="NOMENOMENOME"/>
+				android:fontFamily="@font/netflixlight"
+				android:text="NOMENOMENOME" />
 
 		</LinearLayout>
 
@@ -116,7 +117,8 @@
 				android:layout_height="wrap_content"
 				android:layout_marginLeft="24dp"
 				android:layout_marginTop="20dp"
-				android:text="EMAILEMAILEMAIL"/>
+				android:fontFamily="@font/netflixlight"
+				android:text="EMAILEMAILEMAIL" />
 
 		</LinearLayout>
 
@@ -141,8 +143,9 @@
 				android:layout_height="wrap_content"
 				android:layout_marginLeft="20dp"
 				android:layout_marginTop="20dp"
+				android:fontFamily="@font/netflixlight"
 				android:inputType="numberPassword|textWebPassword"
-				android:text="SENHASENHASENHA"/>
+				android:text="SENHASENHASENHA" />
 
 		</LinearLayout>
 

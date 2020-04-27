@@ -21,7 +21,8 @@
             android:ems="10"
             android:gravity="center_vertical"
             android:hint="Busque por uma série, filme, gênero, etc."
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textSize="15sp" />
 
         <ImageView
             android:id="@+id/imageView2"

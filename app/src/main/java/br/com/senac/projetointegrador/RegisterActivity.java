@@ -1,6 +1,9 @@
 package br.com.senac.projetointegrador;
 import android.os.*;
 import android.app.*;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
+import android.util.Log;
 import android.widget.*;
 import android.view.*;
 import br.com.senac.projetointegrador.util.*;
@@ -12,6 +15,9 @@ public class RegisterActivity extends Activity {
 	EditText nome,email,senha,confirmasenha,idade;
 	CheckBox pro;
 	Button b,l;
+	ImageButton imagemOlho;
+	private int count = 0;
+
 	@Override public void onCreate(Bundle bundle) {
 		super.onCreate(bundle);
 		setContentView(R.layout.activity_register);
@@ -23,6 +29,9 @@ public class RegisterActivity extends Activity {
 		pro = findViewById(R.id.REGISTER_PRO);
 		b = findViewById(R.id.REGISTER_BUTTON);
 		l = findViewById(R.id.REGISTER_LOGIN);
+		imagemOlho = findViewById(R.id.imagemOlhoRegister);
+
+
 		l.setOnClickListener(new View.OnClickListener() {
 			@Override public void onClick(View p1) {
 				Intent i = new Intent(self(), LoginActivity.class);
@@ -86,13 +95,38 @@ public class RegisterActivity extends Activity {
 					}
 					
 				} else {
-					Toast.makeText(p1.getContext()," As senhas não são as mesmas",500).show();
+					Toast.makeText(p1.getContext()," As senhas não são as mesmas.",500).show();
 				}
 			}
 		});
+
+//		imagemOlho.setOnClickListener(new View.OnClickListener() {
+//			@Override
+//			public void onClick(View v) {
+//
+//			}
+//		});
 	}
 	
 	public Activity self() {
 		return this;
 	}
+
+	public void verSenha(View view)
+	{
+		Log.i("aroz", String.valueOf(count));
+		if (count % 2 == 0) {
+			senha.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+			confirmasenha.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+			imagemOlho.setImageResource(R.drawable.olhoriscado);
+		}
+		else {
+			senha.setTransformationMethod(PasswordTransformationMethod.getInstance());
+			confirmasenha.setTransformationMethod(PasswordTransformationMethod.getInstance());
+			imagemOlho.setImageResource(R.drawable.olhonormal);
+		}
+		count++;
+	}
 }
+
+
