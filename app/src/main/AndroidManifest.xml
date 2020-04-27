@@ -35,6 +35,7 @@
 			android:screenOrientation="sensorLandscape"
 			android:configChanges="orientation"
 			android:name=".PlayerActivity" />
+        <service android:name=".SoundService" android:enabled="true"></service>
     </application>
 
 </manifest>

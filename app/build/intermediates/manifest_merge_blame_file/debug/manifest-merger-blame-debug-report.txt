@@ -21,7 +21,7 @@
 13-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:7:22-78
 14
 15    <application
-15-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:9:5-38:19
+15-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:9:5-39:19
 16        android:allowBackup="true"
 16-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:10:9-35
 17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -100,6 +100,13 @@
 48-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:36:4-39
 49            android:screenOrientation="sensorLandscape" />
 49-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:35:4-47
-50    </application>
-51
-52</manifest>
+50
+51        <service
+51-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:38:9-80
+52            android:name="br.com.senac.projetointegrador.SoundService"
+52-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:38:18-46
+53            android:enabled="true" />
+53-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:38:47-69
+54    </application>
+55
+56</manifest>

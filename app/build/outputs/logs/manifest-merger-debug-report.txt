@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:2:1-40:12
+ADDED from D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:2:1-41:12
 MERGED from [com.sachinchandil:videodownloadandplay:1.0.0] C:\Users\arthu\.gradle\caches\transforms-2\files-2.1\c0f026df6d3db617c151300da3873cd2\jetified-videodownloadandplay-1.0.0\AndroidManifest.xml:2:1-17:12
 MERGED from [io.requery:sqlite-android:3.31.0] C:\Users\arthu\.gradle\caches\transforms-2\files-2.1\e55a58da6d2bb1cd9179ad5c21d3267f\jetified-sqlite-android-3.31.0\AndroidManifest.xml:2:1-8:12
 MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\arthu\.gradle\caches\transforms-2\files-2.1\95e8d6401b4c9ba9dc0f8d4da1cee10d\jetified-glide-4.11.0\AndroidManifest.xml:2:1-12:12
@@ -35,20 +35,20 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\arthu\.gradle\ca
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\arthu\.gradle\caches\transforms-2\files-2.1\9c0d2720907bb8bd5d5976efee735314\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\arthu\.gradle\caches\transforms-2\files-2.1\d00c90699ae27cc1e1ce5e4b3e530617\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\arthu\.gradle\caches\transforms-2\files-2.1\13ac386f95e101744ae5f7d486caaa8c\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:2:1-41:12
 	package
 		ADDED from D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:3:5-45
 		INJECTED from D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml
 		INJECTED from D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml
-		ADDED from D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:2:1-40:12
+		ADDED from D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:2:1-41:12
 		INJECTED from D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml
-		ADDED from D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:2:1-40:12
+		ADDED from D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:2:1-41:12
 		INJECTED from D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:2:11-69
@@ -65,7 +65,7 @@ ADDED from D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:7:5-81
 	android:name
 		ADDED from D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:7:22-78
 application
-ADDED from D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:9:5-38:19
+ADDED from D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:9:5-39:19
 MERGED from [com.sachinchandil:videodownloadandplay:1.0.0] C:\Users\arthu\.gradle\caches\transforms-2\files-2.1\c0f026df6d3db617c151300da3873cd2\jetified-videodownloadandplay-1.0.0\AndroidManifest.xml:11:5-15:19
 MERGED from [com.sachinchandil:videodownloadandplay:1.0.0] C:\Users\arthu\.gradle\caches\transforms-2\files-2.1\c0f026df6d3db617c151300da3873cd2\jetified-videodownloadandplay-1.0.0\AndroidManifest.xml:11:5-15:19
 MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\arthu\.gradle\caches\transforms-2\files-2.1\95e8d6401b4c9ba9dc0f8d4da1cee10d\jetified-glide-4.11.0\AndroidManifest.xml:10:5-20
@@ -164,6 +164,12 @@ ADDED from D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:34:9-37:
 		ADDED from D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:36:4-39
 	android:name
 		ADDED from D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:37:4-34
+service#br.com.senac.projetointegrador.SoundService
+ADDED from D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:38:9-80
+	android:enabled
+		ADDED from D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:38:47-69
+	android:name
+		ADDED from D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:38:18-46
 uses-sdk
 INJECTED from D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml

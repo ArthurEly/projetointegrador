@@ -686,6 +686,7 @@ id LOGIN_PASSWORD
 id LOGIN_SIGNUP
 id MAIN_ACTIVITY
 id MAIN_LANÇAMENTOS
+id MAIN_TERROR
 id META
 id PLAYER_ACTIVITY
 id PLAYER_DEFINITION
@@ -980,6 +981,7 @@ layout toast_view
 layout view_serie
 mipmap ic_launcher
 mipmap ic_launcher_round
+raw netflixintro
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

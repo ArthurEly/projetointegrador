@@ -47,6 +47,10 @@
             android:name="br.com.senac.projetointegrador.PlayerActivity"
             android:configChanges="orientation"
             android:screenOrientation="sensorLandscape" />
+
+        <service
+            android:name="br.com.senac.projetointegrador.SoundService"
+            android:enabled="true" />
     </application>
 
 </manifest>
