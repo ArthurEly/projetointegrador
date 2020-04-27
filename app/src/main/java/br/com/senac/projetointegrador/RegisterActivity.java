@@ -91,10 +91,7 @@ public class RegisterActivity extends Activity {
 							Intent i = new Intent(self(),MainActivity.class);
 							ActivityOptions op = ActivityOptions.makeSceneTransitionAnimation(self(), null);
 							startActivity(i, op.toBundle());
-							if (isActivityTransitionRunning())
-							{}
-							else {
-								finish(); }
+							finish();
 						} else if (duplicatas.toArray().length == 1) {
 							// o usuário já existe
 							Toast.makeText(p1.getContext(),"O usuário já existe!", 500).show();

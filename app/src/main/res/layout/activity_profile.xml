@@ -87,7 +87,7 @@
 				android:textColor="#FFFFFF"/>
 
 			<TextView
-				android:id="@+id/textoNome"
+				android:id="@+id/TEXTO_NOME_PROFILE"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:layout_marginLeft="20dp"
@@ -111,11 +111,12 @@
 				android:textColor="#FFFFFF"/>
 
 			<TextView
-				android:id="@+id/textoEmail"
+				android:id="@+id/TEXTO_EMAIL_PROFILE"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:layout_marginLeft="24dp"
-				android:layout_marginTop="20dp"/>
+				android:layout_marginTop="20dp"
+				android:text="EMAILEMAILEMAIL" />
 
 		</LinearLayout>
 
@@ -135,12 +136,12 @@
 				android:textColor="#FFFFFF"/>
 
 			<TextView
-				android:id="@+id/textoSenha"
+				android:id="@+id/TEXTO_SENHA_PROFILE"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:layout_marginLeft="20dp"
 				android:layout_marginTop="20dp"
-				android:inputType="numberPassword|textWebPassword"
+				android:inputType="textPassword"
 				android:text="SENHASENHASENHA" />
 
 		</LinearLayout>

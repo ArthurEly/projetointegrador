@@ -11,7 +11,12 @@ import android.widget.*;
 
 //import androidx.core.app.ActivityOptions;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import br.com.senac.projetointegrador.util.AndroidUtils;
+import br.com.senac.projetointegrador.util.NetworkUtils;
 
 public class EditProfileActivity extends Activity {
 
@@ -44,6 +49,8 @@ public class EditProfileActivity extends Activity {
         textoSenhaAlterar = findViewById(R.id.textoSenhaAlterar);
         botaoAlterar = findViewById(R.id.botaoAlterar);
         imagemOlho = findViewById(R.id.imagemOlhoEdit);
+
+        pegarDadosConta();
 
     }
 
@@ -83,5 +90,25 @@ public class EditProfileActivity extends Activity {
             imagemOlho.setImageResource(R.drawable.olhonormal);
         }
         count++;
+    }
+
+    public void pegarDadosConta()
+    {
+        try {
+            int id = AndroidUtils.getCache(this).getInt("usuario_id", 0);
+            String ids = String.valueOf(id);
+            System.out.println(ids);
+            String userID = NetworkUtils.sqlGet(NetworkUtils.TABLE_USERS, "usuario_id", ids);
+            JSONObject user_js = NetworkUtils.parseDataBase(userID, 0);
+            JSONArray json = new JSONArray(userID);
+
+            textoNomeAlterar.setText(user_js.getString("usuario_nome"));
+            textoSenhaAlterar.setText(user_js.getString("usuario_senha"));
+            textoEmailAlterar.setText(user_js.getString("usuario_email"));
+
+        } catch (JSONException e)
+        {
+
+        }
     }
 }

@@ -714,6 +714,9 @@ id SHIFT
 id SPLASH
 id SPLASH_ACTIVITY
 id SYM
+id TEXTO_EMAIL_PROFILE
+id TEXTO_NOME_PROFILE
+id TEXTO_SENHA_PROFILE
 id TOASTVIEW_CONTENT
 id action_bar
 id action_bar_activity_content
@@ -889,11 +892,8 @@ id textView6
 id textView7
 id textViewJSON
 id textViewsair
-id textoEmail
 id textoEmailAlterar
-id textoNome
 id textoNomeAlterar
-id textoSenha
 id textoSenhaAlterar
 id time
 id title
