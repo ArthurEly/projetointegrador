@@ -26,13 +26,14 @@
         <activity android:name="br.com.senac.projetointegrador.MenuFilmesActivity" />
         <activity android:name="br.com.senac.projetointegrador.SearchActivity" />
         <activity android:name="br.com.senac.projetointegrador.AutenticacaoProfile" />
-        <activity android:name="br.com.senac.projetointegrador.DebugActivity" />
-        <activity android:name="br.com.senac.projetointegrador.SplashActivity" >
+        <activity android:name="br.com.senac.projetointegrador.DebugActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name="br.com.senac.projetointegrador.SplashActivity" >
         </activity>
         <activity android:name="br.com.senac.projetointegrador.MainActivity" />
         <activity android:name="br.com.senac.projetointegrador.LoginActivity" />

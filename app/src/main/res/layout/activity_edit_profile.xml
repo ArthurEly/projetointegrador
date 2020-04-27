@@ -163,7 +163,8 @@
                 android:background="#00FFFFFF"
                 android:onClick="verSenha"
                 android:src="@drawable/olhonormal"
-                android:tint="#FFFFFF" />
+                android:tint="#FFFFFF"
+                />
 
         </LinearLayout>
     </HorizontalScrollView>

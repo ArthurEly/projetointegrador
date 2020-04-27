@@ -3,8 +3,6 @@
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools"
     package="br.com.senac.projetointegrador">
-	
-	<uses-sdk android:minSdkVersion="26"/>
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -23,12 +21,13 @@
         <activity android:name=".MenuFilmesActivity" />
         <activity android:name=".SearchActivity" />
         <activity android:name=".AutenticacaoProfile"/>
-        <activity android:name=".DebugActivity"/>
+        <activity android:name=".DebugActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
         <activity android:name=".SplashActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".LoginActivity" />

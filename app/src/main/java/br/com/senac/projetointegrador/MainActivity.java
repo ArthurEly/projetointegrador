@@ -66,9 +66,11 @@ public class MainActivity extends Activity {
         Intent i = new Intent(this, ProfileActivity.class);
         ActivityOptions options =ActivityOptions.makeCustomAnimation(this, R.anim.escurecer,R.anim.naofazertransicao);
         this.startActivity(i, options.toBundle());
-        finish();
+        if (isActivityTransitionRunning())
+        {}
+        else {
+        finish(); }
     }
-
 
     public void irHome(View view)
     {
@@ -81,7 +83,10 @@ public class MainActivity extends Activity {
         Intent i = new Intent(this, SearchActivity.class);
         ActivityOptions options =ActivityOptions.makeCustomAnimation(this, R.anim.escurecer,R.anim.naofazertransicao);
         this.startActivity(i, options.toBundle());
-        finish();
+		if (isActivityTransitionRunning())
+		{}
+		else {
+			finish(); }
     }
 
     public void irMenuFilmes(View view)
@@ -89,7 +94,10 @@ public class MainActivity extends Activity {
         Intent i = new Intent(this, MenuFilmesActivity.class);
         ActivityOptions activityOptions = ActivityOptions.makeCustomAnimation(getApplicationContext(),R.anim.escurecer,R.anim.naofazertransicao);
         startActivity( i, activityOptions.toBundle());
-        finish();
+		if (isActivityTransitionRunning())
+		{}
+		else {
+			finish(); }
     }
 
     public void irMenuSeries(View view)
@@ -97,7 +105,10 @@ public class MainActivity extends Activity {
         Intent i = new Intent(this, MenuSeriesActivity.class);
         ActivityOptions activityOptions = ActivityOptions.makeCustomAnimation(getApplicationContext(),R.anim.escurecer,R.anim.naofazertransicao);
         startActivity( i, activityOptions.toBundle());
-        finish();
+		if (isActivityTransitionRunning())
+		{}
+		else {
+			finish(); }
     }
 
     public void irFilme(View view) {
@@ -111,7 +122,10 @@ public class MainActivity extends Activity {
         Intent i = new Intent(this, SerieActivity.class);
         ActivityOptions options =ActivityOptions.makeCustomAnimation(this, R.anim.escurecer,R.anim.naofazertransicao);
         startActivity( i, options.toBundle());
-        finish();
+		if (isActivityTransitionRunning())
+		{}
+		else {
+			finish(); }
     }
 
 	public Activity self() {
@@ -150,6 +164,7 @@ public class MainActivity extends Activity {
 							ActivityOptions options =ActivityOptions.makeCustomAnimation(self(), R.anim.escurecer,R.anim.naofazertransicao);
 							startActivity(t, options.toBundle());
 							finish();
+
 						} catch(Exception e) {
 							edos.app.Dialog d = new edos.app.Dialog(self(),R.layout.dialog_error);
 							((TextView) d.findViewById(R.id.error_dialog)).setText(ExceptionUtils.getErrorText(e));
@@ -157,11 +172,13 @@ public class MainActivity extends Activity {
 					}
 				});
 
+
 				// o Glide é um plugin que da cache na url e seta a imagem usando apenas um comando
 				Picasso.get().load(url).into(i);
 
 				// cria a imagem (v) dentro de l (o layout)
 				i.setVisibility(View.VISIBLE);
+				i.setScaleType(ImageView.ScaleType.CENTER_CROP);
 				l.addView(v);
 				l.invalidate();
 
@@ -180,7 +197,7 @@ public class MainActivity extends Activity {
 	public void addTerror() {
 		try {
 			//pega o layout de lanças
-			LinearLayout l = findViewById(R.id.MAIN_LANÇAMENTOS);
+			LinearLayout l = findViewById(R.id.MAIN_TERROR);
 
 			/**
 			 * Pega a tabela inteira de lanças
@@ -209,6 +226,7 @@ public class MainActivity extends Activity {
 							ActivityOptions options =ActivityOptions.makeCustomAnimation(self(), R.anim.escurecer,R.anim.naofazertransicao);
 							startActivity(t, options.toBundle());
 							finish();
+
 						} catch(Exception e) {
 							edos.app.Dialog d = new edos.app.Dialog(self(),R.layout.dialog_error);
 							((TextView) d.findViewById(R.id.error_dialog)).setText(ExceptionUtils.getErrorText(e));
@@ -221,6 +239,7 @@ public class MainActivity extends Activity {
 
 				// cria a imagem (v) dentro de l (o layout)
 				i.setVisibility(View.VISIBLE);
+				i.setScaleType(ImageView.ScaleType.CENTER_CROP);
 				l.addView(v);
 				l.invalidate();
 
@@ -249,7 +268,10 @@ public class MainActivity extends Activity {
 				@Override public void onClick(View p1) {
 					Intent i = new Intent(self(), LoginActivity.class);
 					startActivity(i);
-					finish();
+					if (isActivityTransitionRunning())
+					{}
+					else {
+						finish(); }
 				}
 			});
 		}

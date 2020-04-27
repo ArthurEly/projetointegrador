@@ -4,6 +4,7 @@ import android.os.*;
 import android.text.*;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
+import android.transition.Explode;
 import android.widget.*;
 import android.view.*;
 import br.com.senac.projetointegrador.util.*;
@@ -29,6 +30,16 @@ public class LoginActivity extends Activity {
 		Button signup = findViewById(R.id.LOGIN_SIGNUP);
 		imagemOlhoLogin = findViewById(R.id.imagemOlhoLogin);
 		passw = findViewById(R.id.LOGIN_PASSWORD);
+		//ANIMAÇÕES
+		Explode trans1 = new Explode();
+		trans1.setDuration(750);
+		Explode trans2 = new Explode();
+		trans2.setDuration(300);
+		getWindow().setEnterTransition(trans1);
+		getWindow().setReturnTransition(trans2);
+		getWindow().setExitTransition(trans2);
+		getWindow().setReenterTransition(trans1);
+		//ANIMAÇÕES
 
 		
 		login.setOnClickListener(new View.OnClickListener() {
@@ -52,8 +63,9 @@ public class LoginActivity extends Activity {
 						SharedPreferences.Editor e = AndroidUtils.getCache(p1.getContext()).edit();
 						e.putBoolean("isFirstTime",false);
 						e.commit();
-						Intent i = new Intent(self(), MainActivity.class);
-						startActivity(i);
+						Intent i = new Intent(self(),MainActivity.class);
+						ActivityOptions op = ActivityOptions.makeSceneTransitionAnimation(self(), null);
+						startActivity(i, op.toBundle());
 						d.dismiss();
 						finish();
 					} else {

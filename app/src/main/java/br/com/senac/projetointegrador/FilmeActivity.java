@@ -9,6 +9,8 @@ import android.os.*;
 import android.transition.*;
 import android.view.*;
 import android.widget.*;
+
+
 import br.com.senac.projetointegrador.util.*;
 import org.json.*;
 import br.com.senac.projetointegrador.view.*;
@@ -26,20 +28,22 @@ public class FilmeActivity extends Activity {
 		setAnim();
 		edos.app.Dialog d = new edos.app.Dialog(this, R.layout.dialog_loading);
 		d.show();
+
 		try {
 			int serie = getIntent().getExtras().getInt("serie_id",0);
 			String filme = NetworkUtils.sqlGet(NetworkUtils.TABLE_SERIES, "serie_id","" + serie);
-			String episodios = NetworkUtils.sqlGet(NetworkUtils.TABLE_EPISODES, "series_id","" + serie);
-			adaptadorUSB = new AdaptadorUSB(this,R.layout.view_episodio,usb);
+			//String episodios = NetworkUtils.sqlGet(NetworkUtils.TABLE_EPISODES, "series_id","" + serie);
+//			adaptadorUSB = new AdaptadorUSB(this,R.layout.view_episodio,usb);
 			JSONObject filme_js = NetworkUtils.parseDataBase(filme,0);
-			JSONArray json = new JSONArray(episodios);
+			JSONArray json = new JSONArray(filme);
 	
 			lista = findViewById(R.id.SERIE_LIST);
 			nome_serie = findViewById(R.id.SERIE_TITLE);
 			desc = findViewById(R.id.SERIE_DESCRIPT);
 			autor = findViewById(R.id.SERIE_ARTHUR);
 			
-			lista.setAdapter(adaptadorUSB);
+//			lista.setAdapter(adaptadorUSB);
+
 			desc.setText(filme_js.getString("serie_descricao"));
 			nome_serie.setText(filme_js.getString("serie_nome"));
 			autor.setText(filme_js.getString("serie_autor"));

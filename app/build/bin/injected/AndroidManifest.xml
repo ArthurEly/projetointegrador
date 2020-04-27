@@ -48,10 +48,7 @@
 			android:name=".AutenticacaoProfile"/>
 
 		<activity
-			android:name=".DebugActivity"/>
-
-		<activity
-			android:name=".SplashActivity">
+			android:name=".DebugActivity">
 
 			<intent-filter>
 
@@ -62,6 +59,11 @@
 					android:name="android.intent.category.LAUNCHER"/>
 
 			</intent-filter>
+
+		</activity>
+
+		<activity
+			android:name=".SplashActivity">
 
 		</activity>
 

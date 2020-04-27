@@ -3,6 +3,7 @@ import android.os.*;
 import android.app.*;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
+import android.transition.Explode;
 import android.util.Log;
 import android.widget.*;
 import android.view.*;
@@ -30,7 +31,16 @@ public class RegisterActivity extends Activity {
 		b = findViewById(R.id.REGISTER_BUTTON);
 		l = findViewById(R.id.REGISTER_LOGIN);
 		imagemOlho = findViewById(R.id.imagemOlhoRegister);
-
+		//ANIMAÇÕES
+		Explode trans1 = new Explode();
+		trans1.setDuration(750);
+		Explode trans2 = new Explode();
+		trans2.setDuration(300);
+		getWindow().setEnterTransition(trans1);
+		getWindow().setReturnTransition(trans2);
+		getWindow().setExitTransition(trans2);
+		getWindow().setReenterTransition(trans1);
+		//ANIMAÇÕES
 
 		l.setOnClickListener(new View.OnClickListener() {
 			@Override public void onClick(View p1) {
@@ -78,8 +88,9 @@ public class RegisterActivity extends Activity {
 							SharedPreferences.Editor e = AndroidUtils.getCache(p1.getContext()).edit();
 							e.putBoolean("isFirstTime",false);
 							e.commit();
-							Intent i = new Intent(self(), MainActivity.class);
-							startActivity(i);
+							Intent i = new Intent(self(),MainActivity.class);
+							ActivityOptions op = ActivityOptions.makeSceneTransitionAnimation(self(), null);
+							startActivity(i, op.toBundle());
 							finish();
 						} else if (duplicatas.toArray().length == 1) {
 							// o usuário já existe

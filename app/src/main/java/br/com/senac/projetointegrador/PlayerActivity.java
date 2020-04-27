@@ -24,8 +24,12 @@ public class PlayerActivity extends Activity {
 		video = findViewById(R.id.PLAYER_VIDEO);
 		
 		play.setImageResource(R.drawable.loading);
+
+		String url = "https://player.vimeo.com/external/399913636.hd.mp4?s=ec8c3bcf6597f7f5cfe3098d5edddb5ecd28c179&profile_id=174";
+		video.setVideoURI(Uri.parse(url));
+		video.start();
 		
-		startServer("http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4");
+		//startServer("https://player.vimeo.com/external/399913636.hd.mp4?s=ec8c3bcf6597f7f5cfe3098d5edddb5ecd28c179&profile_id=174");
 	}
 
 	@Override protected void onResume() {
