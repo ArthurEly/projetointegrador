@@ -119,16 +119,28 @@ public class MainActivity extends Activity {
 	
 	public void addLanças() {
 		try {
+			//pega o layout de lanças
 			LinearLayout l = findViewById(R.id.MAIN_LANÇAMENTOS);
+			
+			/**
+			 * Pega a tabela inteira de lanças
+			 * @Note: A String n pode estar junta de JSONArray jsarray.
+			 */
 			String db = NetworkUtils.sqlGet(NetworkUtils.TABLE_SERIES);
 			final JSONArray jsarray = new JSONArray(db);
-			JSONObject json = null;
 
 			for (int x = 0;x < jsarray.length();x++) {
+				// pega a url da capa, armazenada em  serie_capa do Banco de dados;
 				String url = jsarray.getJSONObject(x).getString("serie_capa").toString();
+				
+				// transforma x em final, pois n é possivel chamálo no onClick
 				final int y = x;
+				
+				//se prepara para inflar a imagem
 				LinearLayout v = (LinearLayout) getLayoutInflater().inflate(R.layout.view_serie,null,true);
 				ImageView i = v.findViewById(R.id.view_serie_image);
+				
+				// cria uma ação de clique para a imagem
 				i.setOnClickListener(new View.OnClickListener() {
 					@Override public void onClick(View v) {
 						try {
@@ -143,15 +155,21 @@ public class MainActivity extends Activity {
 						}
 					}
 					});
+					
+				// o Glide é um plugin que da cache na url e seta a imagem usando apenas um comando
 				Glide.with(this).load(url).into(i);
+				
+				// cria a imagem (v) dentro de l (o layout)
 				i.setVisibility(View.VISIBLE);
 				l.addView(v);
-				//i.setLayoutParams(new ViewGroup.LayoutParams(110,150));
 				l.invalidate();
+				
+				// DEBUG das urls
 				Log.i("MainActivity", url);
 			}
 			
 		} catch(Exception e) {
+			//caso der erro, ele cria um dialogo de erro
 			edos.app.Dialog d = new edos.app.Dialog(this,R.layout.dialog_error);
 			d.show();
 			((TextView) d.findViewById(R.id.error_dialog)).setText(ExceptionUtils.getErrorText(e));
