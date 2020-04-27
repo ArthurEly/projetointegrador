@@ -37,7 +37,7 @@ public class MainActivity extends Activity {
 		checkLogin();
 		
 		//adiciona as series ao main
-		addSeries();
+		addLanças();
 
         //ANIMAÇÕES
         Explode trans1 = new Explode();
@@ -117,7 +117,7 @@ public class MainActivity extends Activity {
 		return this;
 	}
 	
-	public void addSeries() {
+	public void addLanças() {
 		try {
 			LinearLayout l = findViewById(R.id.MAIN_LANÇAMENTOS);
 			String db = NetworkUtils.sqlGet(NetworkUtils.TABLE_SERIES);
