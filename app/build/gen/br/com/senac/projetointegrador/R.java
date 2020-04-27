@@ -15,11 +15,11 @@ public final class R {
     public static final class attr {
     }
     public static final class color {
-        public static final int colorAccent=0x7f090002;
-        public static final int colorPrimary=0x7f090000;
-        public static final int colorPrimaryDark=0x7f090001;
-        public static final int corMenuOculto=0x7f090003;
-        public static final int transparente=0x7f090004;
+        public static final int colorAccent=0x7f080002;
+        public static final int colorPrimary=0x7f080000;
+        public static final int colorPrimaryDark=0x7f080001;
+        public static final int corMenuOculto=0x7f080003;
+        public static final int transparente=0x7f080004;
     }
     public static final class drawable {
         public static final int account=0x7f020000;
@@ -255,7 +255,7 @@ public final class R {
         public static final int netflixmedium=0x7f070002;
     }
     public static final class string {
-        public static final int app_name=0x7f080000;
+        public static final int app_name=0x7f090000;
     }
     public static final class style {
         /** item name="android:fontFamily">@raw/netflixmedium</item

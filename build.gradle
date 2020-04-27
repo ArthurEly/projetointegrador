@@ -14,12 +14,21 @@ buildscript {
     }
 }
 
+configurations {
+    toCopy
+}
+
 allprojects {
     repositories {
         google()
         jcenter()
         mavenCentral()
     }
+}
+
+task download(type: Copy) {
+    from configurations.toCopy 
+    into 'app/libs'
 }
 
 task clean(type: Delete) {
