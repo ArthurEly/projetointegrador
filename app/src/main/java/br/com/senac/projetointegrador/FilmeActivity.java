@@ -11,10 +11,14 @@ import android.view.*;
 import android.widget.*;
 import br.com.senac.projetointegrador.util.*;
 import org.json.*;
+import br.com.senac.projetointegrador.view.*;
+import java.util.*;
 
 public class FilmeActivity extends Activity {
 	TextView nome_serie,desc,autor;
-	ListView episodios;
+	ListView lista;
+	ArrayList<USB> usb;
+	AdaptadorUSB adaptadorUSB;
 
     @Override protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,17 +30,23 @@ public class FilmeActivity extends Activity {
 			int serie = getIntent().getExtras().getInt("serie_id",0);
 			String filme = NetworkUtils.sqlGet(NetworkUtils.TABLE_SERIES, "serie_id","" + serie);
 			String episodios = NetworkUtils.sqlGet(NetworkUtils.TABLE_EPISODES, "series_id","" + serie);
-		
+			adaptadorUSB = new AdaptadorUSB(this,R.layout.view_episodio,usb);
 			JSONObject filme_js = NetworkUtils.parseDataBase(filme,0);
+			JSONArray json = new JSONArray(episodios);
 		
-			//episodios = findViewById(R.id.SERIE_LIST);
+			lista = findViewById(R.id.SERIE_LIST);
 			nome_serie = findViewById(R.id.SERIE_TITLE);
 			desc = findViewById(R.id.SERIE_DESCRIPT);
 			autor = findViewById(R.id.SERIE_ARTHUR);
-		
+			
+			lista.setAdapter(adaptadorUSB);
 			desc.setText(filme_js.getString("serie_descricao"));
 			nome_serie.setText(filme_js.getString("serie_nome"));
 			autor.setText(filme_js.getString("serie_autor"));
+			
+			for (int x = 0;x < json.length();x++) {
+				
+			}
 			
 			d.dismiss();
 		} catch(JSONException e) {

@@ -11,9 +11,9 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.TextView;
 
-import androidx.core.app.ActivityCompat;
-import androidx.core.app.ActivityOptionsCompat;
-import androidx.core.util.Pair;
+//import androidx.core.app.this;
+//import androidx.core.app.ActivityOptions;
+//import androidx.core.util.Pair;
 
 import br.com.senac.projetointegrador.util.AndroidUtils;
 
@@ -54,24 +54,24 @@ public class MenuFilmesActivity extends Activity {
     public void irProfile(View view)
     {
         Intent i = new Intent(this, ProfileActivity.class);
-        ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(this, null);
-        ActivityCompat.startActivity(this, i, activityOptionsCompat.toBundle());
+        ActivityOptions activityOptions = ActivityOptions.makeCustomAnimation(getApplicationContext(),R.anim.escurecer,R.anim.naofazertransicao);
+        this.startActivity(i, activityOptions.toBundle());
         finish();
     }
 
     public void irHome(View view)
     {
         Intent i = new Intent(this, MainActivity.class);
-        ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(),R.anim.escurecer,R.anim.naofazertransicao);
-        ActivityCompat.startActivity(this, i, activityOptionsCompat.toBundle());
+        ActivityOptions activityOptions = ActivityOptions.makeCustomAnimation(getApplicationContext(),R.anim.escurecer,R.anim.naofazertransicao);
+        this.startActivity(i, activityOptions.toBundle());
         finish();
     }
 
     public void irBusca(View view)
     {
         Intent i = new Intent(this, SearchActivity.class);
-        ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(this, null);
-        ActivityCompat.startActivity(this, i, activityOptionsCompat.toBundle());
+        ActivityOptions activityOptions = ActivityOptions.makeCustomAnimation(getApplicationContext(),R.anim.escurecer,R.anim.naofazertransicao);
+        this.startActivity(i, activityOptions.toBundle());
         finish();
     }
 
@@ -84,16 +84,16 @@ public class MenuFilmesActivity extends Activity {
     public void irMenuSeries(View view)
     {
         Intent i = new Intent(this, MenuSeriesActivity.class);
-        ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(this, null);
-        ActivityCompat.startActivity(this, i, activityOptionsCompat.toBundle());
+        ActivityOptions activityOptions = ActivityOptions.makeCustomAnimation(getApplicationContext(),R.anim.escurecer,R.anim.naofazertransicao);
+        this.startActivity(i, activityOptions.toBundle());
         finish();
     }
 
     public void irFilme(View view)
     {
         Intent i = new Intent(this, FilmeActivity.class);
-        ActivityOptionsCompat options =ActivityOptionsCompat.makeSceneTransitionAnimation(this, null);
-        ActivityCompat.startActivity(this, i, options.toBundle());
+        ActivityOptions options =ActivityOptions.makeCustomAnimation(getApplicationContext(),R.anim.escurecer,R.anim.naofazertransicao);
+        this.startActivity(i, options.toBundle());
         finish();
     }
 }

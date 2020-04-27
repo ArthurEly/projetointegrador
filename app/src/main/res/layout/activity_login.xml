@@ -29,7 +29,7 @@
 				android:layout_width="wrap_content"
 				android:layout_height="match_parent"
 				android:layout_marginRight="16dp"
-				android:fontFamily="@font/netflixmedium"
+				android:fontFamily="@raw/netflixmedium"
 				android:gravity="center"
 				android:text="Faça o login"
 				android:textAppearance="?android:attr/textAppearanceLarge"
@@ -55,7 +55,7 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_marginTop="40dp"
-			android:fontFamily="@font/netflixmedium"
+			android:fontFamily="@raw/netflixmedium"
 			android:text="Email:"
 			android:textColor="#FFFFFF"
 			android:textSize="16sp" />
@@ -75,7 +75,7 @@
 				android:layout_marginRight="10dp"
 				android:layout_weight="1.0"
 				android:background="@drawable/bordas"
-				android:fontFamily="@font/netflixlight"
+				android:fontFamily="@raw/netflixlight"
 				android:gravity="center"
 				android:inputType="textEmailAddress"
 				android:textColor="#000000" />
@@ -86,7 +86,7 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_marginTop="10dp"
-			android:fontFamily="@font/netflixmedium"
+			android:fontFamily="@raw/netflixmedium"
 			android:text="Senha:"
 			android:textColor="#FFFFFF"
 			android:textSize="16sp" />
@@ -113,7 +113,7 @@
 					android:layout_marginLeft="10dp"
 					android:layout_marginRight="10dp"
 					android:background="@drawable/bordas"
-					android:fontFamily="@font/netflixlight"
+					android:fontFamily="@raw/netflixlight"
 					android:gravity="center"
 					android:inputType="textPassword"
 					android:textColor="#000000" />
@@ -146,14 +146,14 @@
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:background="@drawable/bordasbotao"
-			android:fontFamily="@font/netflixmedium"
+			android:fontFamily="@raw/netflixmedium"
 			android:text="Fazer Login" />
 
 		<TextView
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_margin="10dp"
-			android:fontFamily="@font/netflixmedium"
+			android:fontFamily="@raw/netflixmedium"
 			android:text="— ou —" />
 
 		<Button
@@ -161,7 +161,7 @@
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:background="@drawable/bordasbotao"
-			android:fontFamily="@font/netflixmedium"
+			android:fontFamily="@raw/netflixmedium"
 			android:text="REGISTRAR" />
 
 	</LinearLayout>

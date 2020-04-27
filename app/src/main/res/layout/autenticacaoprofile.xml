@@ -42,7 +42,7 @@
 				android:layout_height="wrap_content"
 				android:layout_margin="5dp"
 				android:layout_marginBottom="10dp"
-				android:fontFamily="@font/netflixlight"
+				android:fontFamily="@raw/netflixlight"
 				android:hint="Digite aqui:"
 				android:inputType="textWebPassword" />
 
