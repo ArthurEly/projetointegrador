@@ -31,7 +31,6 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-		
 		// checa alterações no banco de dados (não deletar)
 		checkLogin();
 		

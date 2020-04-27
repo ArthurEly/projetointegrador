@@ -30,7 +30,6 @@
 				android:layout_width="wrap_content"
 				android:layout_height="match_parent"
 				android:layout_marginRight="16dp"
-				android:fontFamily="@font/netflixmedium"
 				android:gravity="center"
 				android:text="Registre-se"
 				android:textAppearance="?android:attr/textAppearanceLarge"
@@ -56,7 +55,6 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_marginRight="20dp"
-			android:fontFamily="@font/netflixmedium"
 			android:text="Nome completo:"
 			android:textColor="#FFFFFF"
 			android:textSize="18sp" />
@@ -66,7 +64,6 @@
 			android:layout_width="match_parent"
 			android:layout_height="30dp"
 			android:background="@drawable/bordas"
-			android:fontFamily="@font/netflixlight"
 			android:gravity="center"
 			android:inputType="textCapWords"
 			android:textColor="#000000"
@@ -85,7 +82,6 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_marginRight="20dp"
-			android:fontFamily="@font/netflixmedium"
 			android:text="Email:"
 			android:textColor="#FFFFFF"
 			android:textSize="18sp" />
@@ -95,7 +91,6 @@
 			android:layout_width="match_parent"
 			android:layout_height="30dp"
 			android:background="@drawable/bordas"
-			android:fontFamily="@font/netflixlight"
 			android:gravity="center"
 			android:inputType="textEmailAddress"
 			android:textColor="#000000"
@@ -114,7 +109,6 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_marginRight="143dp"
-			android:fontFamily="@font/netflixmedium"
 			android:text="Senha:"
 			android:textColor="#FFFFFF"
 			android:textSize="18sp" />
@@ -124,7 +118,6 @@
 			android:layout_width="match_parent"
 			android:layout_height="30dp"
 			android:background="@drawable/bordas"
-			android:fontFamily="@font/netflixlight"
 			android:gravity="center"
 			android:inputType="textPassword"
 			android:textColor="#000000"
@@ -172,7 +165,6 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_marginRight="30dp"
-			android:fontFamily="@font/netflixmedium"
 			android:text="Confirme sua senha:"
 			android:textColor="#FFFFFF"
 			android:textSize="18sp" />
@@ -182,7 +174,6 @@
 			android:layout_width="match_parent"
 			android:layout_height="30dp"
 			android:background="@drawable/bordas"
-			android:fontFamily="@font/netflixlight"
 			android:gravity="center"
 			android:inputType="textPassword"
 			android:textColor="#000000"
@@ -202,7 +193,6 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_marginRight="250dp"
-			android:fontFamily="@font/netflixmedium"
 			android:text="Idade:"
 			android:textColor="#FFFFFF"
 			android:textSize="18sp" />
@@ -212,7 +202,6 @@
 			android:layout_width="match_parent"
 			android:layout_height="30dp"
 			android:background="@drawable/bordas"
-			android:fontFamily="@font/netflixlight"
 			android:gravity="center"
 			android:inputType="number"
 			android:textColor="#000000"
@@ -225,7 +214,6 @@
 		android:layout_height="wrap_content"
 		android:layout_margin="10dp"
 		android:background="@drawable/bordas"
-		android:fontFamily="@font/netflixmedium"
 		android:text="A sua idade não afetará a criação de sua conta, porém afetará os filmes que você poderá assistir."
 		android:textColor="#323232"
 		android:typeface="monospace" />
@@ -241,7 +229,6 @@
 			android:id="@+id/REGISTER_PRO"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:fontFamily="@font/netflixmedium"
 			android:text="Assinar o plano PRO"
 			android:textColor="#FFFFFF"
 			android:textSize="18sp" />
@@ -259,14 +246,12 @@
 		android:layout_height="wrap_content"
 		android:layout_margin="10dp"
 		android:background="@drawable/bordasbotao"
-		android:fontFamily="@font/netflixmedium"
 		android:text="Registrar" />
 
 	<TextView
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:layout_margin="10dp"
-		android:fontFamily="@font/netflixmedium"
 		android:text="— ou —" />
 
 	<Button
@@ -275,7 +260,6 @@
 		android:layout_height="wrap_content"
 		android:layout_margin="10dp"
 		android:background="@drawable/bordasbotao"
-		android:fontFamily="@font/netflixmedium"
 		android:text="FAZER LOGIN" />
 
 </LinearLayout>
