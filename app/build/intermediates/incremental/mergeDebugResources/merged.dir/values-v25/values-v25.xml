@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Platform.AppCompat" parent="Platform.V25.AppCompat"/>
+    <style name="Platform.AppCompat.Light" parent="Platform.V25.AppCompat.Light"/>
+    <style name="Platform.V25.AppCompat" parent="android:Theme.Material.NoActionBar">
+    </style>
+    <style name="Platform.V25.AppCompat.Light" parent="android:Theme.Material.Light.NoActionBar">
+    </style>
+    <style name="Tema" parent="android:Theme.Material">
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowOverscan">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowSoftInputMode">stateAlwaysHidden</item>
+        <item name="android:windowNoDisplay">false</item>
+        <item name="android:colorPrimary">#FFCC0000</item>
+        <item name="android:colorPrimaryDark">#FFA00000</item>
+        <item name="android:navigationBarColor">#FFCC0000</item>
+        <item name="android:colorControlActivated">#FFCC0000</item>
+        <item name="android:colorControlNormal">#FFFFFFFF</item>
+        <item name="android:colorControlHighlight">#00A00000</item>
+        <item name="android:colorAccent">#FFFFFFFF</item>
+        <item name="android:colorButtonNormal">#FFFFFFFF</item>
+        <item name="android:colorEdgeEffect">#00000000</item>
+        <item name="android:textColorLink">#FFCC0000</item>
+        <item name="android:colorSecondary">#FFCC0000</item>
+    </style>
+</resources>

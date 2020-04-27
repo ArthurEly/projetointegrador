@@ -38,7 +38,7 @@ public class SerieActivity extends Activity {
         Intent i = new Intent(this, MainActivity.class);
         ActivityOptions options = ActivityOptions.makeCustomAnimation(getApplicationContext(),R.anim.escurecer,R.anim.naofazertransicao);
         this.startActivity(i, options.toBundle());
-        finish();
+
     }
 
     public void irBusca(View view)

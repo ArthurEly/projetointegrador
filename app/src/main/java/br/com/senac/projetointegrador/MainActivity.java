@@ -215,7 +215,7 @@ public class MainActivity extends Activity {
 
 				//se prepara para inflar a imagem
 				LinearLayout v = (LinearLayout) getLayoutInflater().inflate(R.layout.view_serie,null,true);
-				final ImageView i = v.findViewById(R.id.view_serie_image);
+				ImageView i = v.findViewById(R.id.view_serie_image);
 
 				// cria uma ação de clique para a imagem
 				i.setOnClickListener(new View.OnClickListener() {

@@ -72,10 +72,7 @@ public class MenuSeriesActivity extends Activity {
         Intent i = new Intent(this, MenuFilmesActivity.class);
         ActivityOptions activityOptionsCompat = ActivityOptions.makeSceneTransitionAnimation(this, null);
         startActivity(i, activityOptionsCompat.toBundle());
-        if (isActivityTransitionRunning())
-        {}
-        else {
-            finish(); }
+        finish();
     }
 
     public void irMenuSeries(View view)
