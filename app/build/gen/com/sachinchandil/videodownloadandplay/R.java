@@ -2121,6 +2121,7 @@ containing a value of this type.
         public static final int topPanel=0x7f0c0039;
         public static final int up=0x7f0c0008;
         public static final int useLogo=0x7f0c0012;
+        public static final int view_serie_image=0x7f0c00d0;
         public static final int withText=0x7f0c0021;
         public static final int wrap_content=0x7f0c0019;
     }
@@ -2202,6 +2203,7 @@ containing a value of this type.
         public static final int select_dialog_singlechoice_material=0x7f040044;
         public static final int support_simple_spinner_dropdown_item=0x7f040045;
         public static final int toast_view=0x7f040046;
+        public static final int view_serie=0x7f040047;
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;

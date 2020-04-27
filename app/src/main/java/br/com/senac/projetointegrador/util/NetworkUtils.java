@@ -294,7 +294,8 @@ public class NetworkUtils {
 
 	public static void cacheUser(Context act,int id) throws JSONException {
 		SharedPreferences.Editor c = AndroidUtils.getCache(act).edit();
-		JSONObject j = new JSONObject(sqlGet(TABLE_USERS,"usuario_id","" + id));
+		String db = sqlGet(TABLE_USERS,"usuario_id","" + id);
+		JSONObject j = new JSONArray(db).getJSONObject(0);
 		boolean pro = false;
 		
 		if (j.getInt("usuario_pro") == 1) {
