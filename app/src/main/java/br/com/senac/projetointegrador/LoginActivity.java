@@ -43,6 +43,7 @@ public class LoginActivity extends Activity {
 						e.commit();
 						Intent i = new Intent(self(), MainActivity.class);
 						startActivity(i);
+						d.dismiss();
 						finish();
 					} else {
 						android.widget.Toast.makeText(p1.getContext(),"senha incorreta",500).show();
@@ -51,7 +52,7 @@ public class LoginActivity extends Activity {
 					d.setContentView(R.layout.dialog_error);
 					((TextView) d.findViewById(R.id.error_dialog)).setText(ExceptionUtils.getErrorText(e));
 				} catch (NullPointerException e) {
-					d.cancel();
+					d.dismiss();
 					android.widget.Toast.makeText(p1.getContext(),"Preencha os campos!",500).show();
 				}
 			}

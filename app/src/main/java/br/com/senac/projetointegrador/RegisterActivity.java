@@ -79,6 +79,7 @@ public class RegisterActivity extends Activity {
 
 						
 						NetworkUtils.cacheUser(p1.getContext(),json);
+						d.dismiss();
 					} catch(JSONException e) {
 						d.setContentView(R.layout.dialog_error);
 						((TextView) d.findViewById(R.id.error_dialog)).setText(ExceptionUtils.getErrorText(e));
