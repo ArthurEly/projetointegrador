@@ -19,8 +19,8 @@ import org.json.*;
 import java.util.*;
 import android.widget.*;
 import android.view.*;
-import com.bumptech.glide.*;
 import android.graphics.*;
+import com.squareup.picasso.*;
 
 public class MainActivity extends Activity {
 
@@ -158,7 +158,7 @@ public class MainActivity extends Activity {
 				});
 
 				// o Glide é um plugin que da cache na url e seta a imagem usando apenas um comando
-				Glide.with(this).load(url).into(i);
+				Picasso.get().load(url).into(i);
 
 				// cria a imagem (v) dentro de l (o layout)
 				i.setVisibility(View.VISIBLE);
@@ -216,8 +216,8 @@ public class MainActivity extends Activity {
 					}
 				});
 
-				// o Glide é um plugin que da cache na url e seta a imagem usando apenas um comando
-				Glide.with(this).load(url).into(i);
+				// o Picasso é um plugin que da cache na url e seta a imagem usando apenas um comando
+				Picasso.get().load(url).into(i);
 
 				// cria a imagem (v) dentro de l (o layout)
 				i.setVisibility(View.VISIBLE);
