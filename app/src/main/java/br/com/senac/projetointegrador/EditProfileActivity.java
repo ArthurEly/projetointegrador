@@ -3,6 +3,7 @@ package br.com.senac.projetointegrador;
 import android.app.*;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
 import android.transition.Slide;
@@ -33,11 +34,11 @@ public class EditProfileActivity extends Activity {
 
         //ANIMAÇÕES
         Slide trans1 = new Slide();
-        trans1.setDuration(500);
-        trans1.setSlideEdge(Gravity.RIGHT);
+        trans1.setDuration(750);
+        trans1.setSlideEdge(Gravity.TOP);
         Slide trans2 = new Slide();
-        trans2.setDuration(500);
-        trans2.setSlideEdge(Gravity.LEFT);
+        trans2.setDuration(400);
+        trans2.setSlideEdge(Gravity.BOTTOM);
         getWindow().setEnterTransition(trans1);
         getWindow().setReturnTransition(trans2);
         getWindow().setExitTransition(trans2);
@@ -61,7 +62,14 @@ public class EditProfileActivity extends Activity {
 
     public void irProfile(View view)
     {
-        Toast.makeText(getApplicationContext(),"Você já está no menu de conta.", Toast.LENGTH_SHORT).show();
+        Intent i = new Intent(this, ProfileActivity.class);
+        ActivityOptions options =ActivityOptions.makeSceneTransitionAnimation(this, null);
+        this.startActivity(i, options.toBundle());
+        new Handler().postDelayed(new Runnable() {
+            public void run () {
+                finish();
+            }
+        }, 2000L);
     }
 
     public void irHome(View view)
@@ -69,7 +77,11 @@ public class EditProfileActivity extends Activity {
         Intent i = new Intent(this, MainActivity.class);
         ActivityOptions options =ActivityOptions.makeSceneTransitionAnimation(this, null);
         this.startActivity(i, options.toBundle());
-        finish();
+        new Handler().postDelayed(new Runnable() {
+            public void run () {
+                finish();
+            }
+        }, 2000L);
     }
 
     public void irBusca(View view)
@@ -77,7 +89,11 @@ public class EditProfileActivity extends Activity {
         Intent i = new Intent(this, SearchActivity.class);
         ActivityOptions options =ActivityOptions.makeSceneTransitionAnimation(this, null);
         this.startActivity(i, options.toBundle());
-        finish();
+        new Handler().postDelayed(new Runnable() {
+            public void run () {
+                finish();
+            }
+        }, 2000L);
     }
 
     public void verSenha(View view)
@@ -110,5 +126,18 @@ public class EditProfileActivity extends Activity {
         {
 
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent i = new Intent(this, ProfileActivity.class);
+        ActivityOptions options =ActivityOptions.makeSceneTransitionAnimation(this, null);
+        this.startActivity(i, options.toBundle());
+        new Handler().postDelayed(new Runnable() {
+            public void run () {
+                finish();
+            }
+        }, 2000L);
     }
 }

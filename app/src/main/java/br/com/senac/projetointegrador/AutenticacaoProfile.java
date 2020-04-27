@@ -3,6 +3,7 @@ package br.com.senac.projetointegrador;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
 import android.transition.Slide;
@@ -43,11 +44,11 @@ public class AutenticacaoProfile extends Activity {
 
         //ANIMAÇÕES
         Slide trans1 = new Slide();
-        trans1.setDuration(500);
-        trans1.setSlideEdge(Gravity.RIGHT);
+        trans1.setDuration(750);
+        trans1.setSlideEdge(Gravity.BOTTOM);
         Slide trans2 = new Slide();
-        trans2.setDuration(500);
-        trans2.setSlideEdge(Gravity.LEFT);
+        trans2.setDuration(400);
+        trans2.setSlideEdge(Gravity.BOTTOM);
         getWindow().setEnterTransition(trans1);
         getWindow().setReturnTransition(trans2);
         getWindow().setExitTransition(trans2);
@@ -83,7 +84,11 @@ public class AutenticacaoProfile extends Activity {
                 Intent i = new Intent(this, EditProfileActivity.class);
                 ActivityOptions activityOptions = ActivityOptions.makeSceneTransitionAnimation(this,null);
                 startActivity( i, activityOptions.toBundle());
-                finish();
+                new Handler().postDelayed(new Runnable() {
+                    public void run () {
+                        finish();
+                    }
+                }, 2000L);
             }
             else
             {
@@ -94,22 +99,30 @@ public class AutenticacaoProfile extends Activity {
 
     public void voltar(View view){
         countSair++;
-        t.setText("Clique mais " + (3 -countSair) + " vezes.");
+        t.setText("Clique mais " + (3 - countSair) + " vezes.");
 
         if (countSair == 3) {
             Intent i = new Intent(this, ProfileActivity.class);
-            ActivityOptions activityOptions = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.escurecer, R.anim.naofazertransicao);
-            startActivity(i, activityOptions.toBundle());
-            finish();
+            ActivityOptions options =ActivityOptions.makeSceneTransitionAnimation(this, null);
+            this.startActivity(i, options.toBundle());
+            new Handler().postDelayed(new Runnable() {
+                public void run () {
+                    finish();
+                }
+            }, 2000L);
         } else {}
     }
 
     public void cancelar(View view)
     {
         Intent i = new Intent(this, ProfileActivity.class);
-        ActivityOptions activityOptions = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.escurecer, R.anim.naofazertransicao);
-        startActivity(i, activityOptions.toBundle());
-        finish();
+        ActivityOptions options =ActivityOptions.makeSceneTransitionAnimation(this, null);
+        this.startActivity(i, options.toBundle());
+        new Handler().postDelayed(new Runnable() {
+            public void run () {
+                finish();
+            }
+        }, 2000L);
     }
 
     public void verSenha(View view){

@@ -67,7 +67,11 @@ public class LoginActivity extends Activity {
 						ActivityOptions op = ActivityOptions.makeSceneTransitionAnimation(self(), null);
 						startActivity(i, op.toBundle());
 						d.dismiss();
-						finish();
+						new Handler().postDelayed(new Runnable() {
+							public void run () {
+								finish();
+							}
+						}, 2000L);
 					} else {
 						android.widget.Toast.makeText(p1.getContext(),"Senha incorreta!",500).show();
 					}
@@ -85,7 +89,11 @@ public class LoginActivity extends Activity {
 			@Override public void onClick(View view) {
 				Intent i = new Intent(self(),RegisterActivity.class);
 				startActivity(i);
-				finish();
+				new Handler().postDelayed(new Runnable() {
+					public void run () {
+						finish();
+					}
+				}, 2000L);
 			}
 		});
     }

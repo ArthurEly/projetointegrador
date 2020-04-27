@@ -46,7 +46,6 @@ public class RegisterActivity extends Activity {
 			@Override public void onClick(View p1) {
 				Intent i = new Intent(self(), LoginActivity.class);
 				startActivity(i);
-				finish();
 			}
 		});
 		
@@ -91,7 +90,11 @@ public class RegisterActivity extends Activity {
 							Intent i = new Intent(self(),MainActivity.class);
 							ActivityOptions op = ActivityOptions.makeSceneTransitionAnimation(self(), null);
 							startActivity(i, op.toBundle());
-							finish();
+							new Handler().postDelayed(new Runnable() {
+								public void run () {
+									finish();
+								}
+							}, 2000L);
 						} else if (duplicatas.toArray().length == 1) {
 							// o usuário já existe
 							Toast.makeText(p1.getContext(),"O usuário já existe!", 500).show();

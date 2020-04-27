@@ -29,6 +29,7 @@ public class FilmeActivity extends Activity {
 		setAnim();
 		edos.app.Dialog d = new edos.app.Dialog(this, R.layout.dialog_loading);
 		d.show();
+		LinearLayout l = findViewById(R.id.CAPA_FILME);
 
 		try {
 			int serie = getIntent().getExtras().getInt("serie_id",0);
@@ -37,7 +38,7 @@ public class FilmeActivity extends Activity {
 //			adaptadorUSB = new AdaptadorUSB(this,R.layout.view_episodio,usb);
 			JSONObject filme_js = NetworkUtils.parseDataBase(filme,0);
 			JSONArray json = new JSONArray(filme);
-	
+
 			lista = findViewById(R.id.SERIE_LIST);
 			nome_serie = findViewById(R.id.SERIE_TITLE);
 			desc = findViewById(R.id.SERIE_DESCRIPT);
@@ -48,7 +49,16 @@ public class FilmeActivity extends Activity {
 			desc.setText(filme_js.getString("serie_descricao"));
 			nome_serie.setText(filme_js.getString("serie_nome"));
 			autor.setText(filme_js.getString("serie_autor"));
-			
+
+			String capa = json.getJSONObject(serie).getString("serie_capa");
+			LinearLayout v = (LinearLayout) getLayoutInflater().inflate(R.layout.view_serie,null,true);
+            ImageView i = findViewById(R.id.view_serie_image);
+            Glide.with(this).load(capa).into(i);
+            i.setVisibility(View.VISIBLE);
+            i.setScaleType(ImageView.ScaleType.CENTER_CROP);
+            l.addView(v);
+            l.invalidate();
+
 			for (int x = 0;x < json.length();x++) {
 				
 			}
@@ -70,7 +80,11 @@ public class FilmeActivity extends Activity {
         Intent i = new Intent(this, MainActivity.class);
         ActivityOptions options = ActivityOptions.makeCustomAnimation(getApplicationContext(),R.anim.escurecer,R.anim.naofazertransicao);
         this.startActivity(i, options.toBundle());
-        finish();
+        new Handler().postDelayed(new Runnable() {
+            public void run () {
+                finish();
+            }
+        }, 2000L);
     }
 
     public void irBusca(View view)
@@ -78,7 +92,11 @@ public class FilmeActivity extends Activity {
         Intent i = new Intent(this, SearchActivity.class);
         ActivityOptions options =ActivityOptions.makeCustomAnimation(getApplicationContext(),R.anim.escurecer,R.anim.naofazertransicao);
         this.startActivity(i, options.toBundle());
-        finish();
+        new Handler().postDelayed(new Runnable() {
+            public void run () {
+                finish();
+            }
+        }, 2000L);
     }
 
     public void irProfile(View view)
@@ -86,7 +104,11 @@ public class FilmeActivity extends Activity {
         Intent i = new Intent(this, ProfileActivity.class);
         ActivityOptions options =ActivityOptions.makeCustomAnimation(getApplicationContext(),R.anim.escurecer,R.anim.naofazertransicao);
         this.startActivity(i, options.toBundle());
-        finish();
+        new Handler().postDelayed(new Runnable() {
+            public void run () {
+                finish();
+            }
+        }, 2000L);
     }
 	
 	public void setAnim() {

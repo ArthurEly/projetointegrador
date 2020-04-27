@@ -36,7 +36,6 @@ public class SplashActivity extends Activity {
 					Intent i = new Intent(SplashActivity.this,MainActivity.class);
 					ActivityOptions op = ActivityOptions.makeSceneTransitionAnimation(SplashActivity.this, null);
 					startActivity(i, op.toBundle());
-
 				}
 				finish();
 			}

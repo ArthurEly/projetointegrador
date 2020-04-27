@@ -2,6 +2,7 @@ package br.com.senac.projetointegrador;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.transition.Explode;
 import android.transition.Fade;
 import android.view.View;
@@ -37,7 +38,11 @@ public class SearchActivity extends Activity {
         Intent i = new Intent(this, ProfileActivity.class);
         ActivityOptions options =ActivityOptions.makeSceneTransitionAnimation(this, null);
         this.startActivity(i, options.toBundle());
-        finish();
+        new Handler().postDelayed(new Runnable() {
+            public void run () {
+                finish();
+            }
+        }, 2000L);
     }
 
     public void irHome(View view)
@@ -45,7 +50,11 @@ public class SearchActivity extends Activity {
         Intent i = new Intent(this, MainActivity.class);
         ActivityOptions options =ActivityOptions.makeSceneTransitionAnimation(this, null);
         this.startActivity(i, options.toBundle());
-        finish();
+        new Handler().postDelayed(new Runnable() {
+            public void run () {
+                finish();
+            }
+        }, 2000L);
     }
 
     public void irBusca(View view)

@@ -667,6 +667,7 @@ drawable splashlogo
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
+id CAPA_FILME
 id CTRL
 id DIALOGVIEW_CANCEL
 id DIALOGVIEW_CONTENT
@@ -676,6 +677,7 @@ id EDITPROFILE_ACTIVITY
 id EDIT_TEXT_BUTTON
 id EDIT_TEXT_EDITABLE
 id FUNCTION
+id ImagemCapaFS
 id JSON_ACTIVITY
 id LOGIN_ACTIVITY
 id LOGIN_BUTTON
@@ -745,6 +747,7 @@ id async
 id beginning
 id blocking
 id botaoAlterar
+id botaoAlterar2
 id bottom
 id button
 id button3
@@ -814,7 +817,6 @@ id imageView2
 id imageView3
 id imageView30
 id imageView5
-id imageView7
 id imagemOlhoAut
 id imagemOlhoEdit
 id imagemOlhoLogin

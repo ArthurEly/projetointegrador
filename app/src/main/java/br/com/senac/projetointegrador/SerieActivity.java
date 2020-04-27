@@ -5,6 +5,7 @@ package br.com.senac.projetointegrador;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.transition.Explode;
 import android.transition.Slide;
 import android.view.Gravity;
@@ -38,6 +39,11 @@ public class SerieActivity extends Activity {
         Intent i = new Intent(this, MainActivity.class);
         ActivityOptions options = ActivityOptions.makeCustomAnimation(getApplicationContext(),R.anim.escurecer,R.anim.naofazertransicao);
         this.startActivity(i, options.toBundle());
+        new Handler().postDelayed(new Runnable() {
+            public void run () {
+                finish();
+            }
+        }, 2000L);
 
     }
 
@@ -46,7 +52,11 @@ public class SerieActivity extends Activity {
         Intent i = new Intent(this, SearchActivity.class);
         ActivityOptions options =ActivityOptions.makeSceneTransitionAnimation(this, null);
         this.startActivity(i, options.toBundle());
-        finish();
+        new Handler().postDelayed(new Runnable() {
+            public void run () {
+                finish();
+            }
+        }, 2000L);
     }
 
     public void irProfile(View view)
@@ -54,6 +64,10 @@ public class SerieActivity extends Activity {
         Intent i = new Intent(this, ProfileActivity.class);
         ActivityOptions options =ActivityOptions.makeSceneTransitionAnimation(this, null);
         this.startActivity(i, options.toBundle());
-        finish();
+        new Handler().postDelayed(new Runnable() {
+            public void run () {
+                finish();
+            }
+        }, 2000L);
     }
 }

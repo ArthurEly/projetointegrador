@@ -3,6 +3,7 @@ package br.com.senac.projetointegrador;
 import android.app.*;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.transition.Explode;
 import android.transition.Slide;
 import android.transition.Transition;
@@ -30,10 +31,10 @@ public class MenuFilmesActivity extends Activity {
         //ANIMAÇÕES
         Slide trans1 = new Slide();
         trans1.setDuration(800);
-        trans1.setSlideEdge(Gravity.START);
+        trans1.setSlideEdge(Gravity.LEFT);
         Slide trans2 = new Slide();
-        trans2.setDuration(400);
-        trans2.setSlideEdge(Gravity.END);
+        trans2.setDuration(800);
+        trans2.setSlideEdge(Gravity.LEFT);
         getWindow().setEnterTransition(trans1);
         getWindow().setReenterTransition(trans1);
         getWindow().setReturnTransition(trans2);
@@ -54,25 +55,37 @@ public class MenuFilmesActivity extends Activity {
     public void irProfile(View view)
     {
         Intent i = new Intent(this, ProfileActivity.class);
-        ActivityOptions activityOptions = ActivityOptions.makeCustomAnimation(getApplicationContext(),R.anim.escurecer,R.anim.naofazertransicao);
-        this.startActivity(i, activityOptions.toBundle());
-        finish();
+        ActivityOptions op = ActivityOptions.makeSceneTransitionAnimation(this, null);
+        startActivity( i, op.toBundle());
+        new Handler().postDelayed(new Runnable() {
+            public void run () {
+                finish();
+            }
+        }, 2000L);
     }
 
     public void irHome(View view)
     {
         Intent i = new Intent(this, MainActivity.class);
-        ActivityOptions activityOptions = ActivityOptions.makeCustomAnimation(getApplicationContext(),R.anim.escurecer,R.anim.naofazertransicao);
-        this.startActivity(i, activityOptions.toBundle());
-        finish();
+        ActivityOptions activityOptionsCompat = ActivityOptions.makeCustomAnimation(getApplicationContext(),R.anim.escurecer,R.anim.naofazertransicao);
+        startActivity(i, activityOptionsCompat.toBundle());
+        new Handler().postDelayed(new Runnable() {
+            public void run () {
+                finish();
+            }
+        }, 2000L);
     }
 
     public void irBusca(View view)
     {
         Intent i = new Intent(this, SearchActivity.class);
-        ActivityOptions activityOptions = ActivityOptions.makeCustomAnimation(getApplicationContext(),R.anim.escurecer,R.anim.naofazertransicao);
-        this.startActivity(i, activityOptions.toBundle());
-        finish();
+        ActivityOptions op = ActivityOptions.makeSceneTransitionAnimation(this, null);
+        startActivity( i, op.toBundle());
+        new Handler().postDelayed(new Runnable() {
+            public void run () {
+                finish();
+            }
+        }, 2000L);
     }
 
 
@@ -84,16 +97,24 @@ public class MenuFilmesActivity extends Activity {
     public void irMenuSeries(View view)
     {
         Intent i = new Intent(this, MenuSeriesActivity.class);
-        ActivityOptions activityOptions = ActivityOptions.makeCustomAnimation(getApplicationContext(),R.anim.escurecer,R.anim.naofazertransicao);
-        this.startActivity(i, activityOptions.toBundle());
-        finish();
+        ActivityOptions op = ActivityOptions.makeSceneTransitionAnimation(this, null);
+        startActivity( i, op.toBundle());
+        new Handler().postDelayed(new Runnable() {
+            public void run () {
+                finish();
+            }
+        }, 2000L);
     }
 
     public void irFilme(View view)
     {
         Intent i = new Intent(this, FilmeActivity.class);
-        ActivityOptions options =ActivityOptions.makeCustomAnimation(getApplicationContext(),R.anim.escurecer,R.anim.naofazertransicao);
-        this.startActivity(i, options.toBundle());
-        finish();
+        ActivityOptions op = ActivityOptions.makeSceneTransitionAnimation(this, null);
+        startActivity( i, op.toBundle());
+        new Handler().postDelayed(new Runnable() {
+            public void run () {
+                finish();
+            }
+        }, 2000L);
     }
 }

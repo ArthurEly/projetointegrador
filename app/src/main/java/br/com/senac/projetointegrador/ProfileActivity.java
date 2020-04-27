@@ -3,6 +3,7 @@ package br.com.senac.projetointegrador;
 import android.content.Intent;
 import android.app.*;
 import android.os.*;
+import android.transition.Explode;
 import android.transition.Slide;
 import android.view.*;
 import android.widget.TextView;
@@ -13,6 +14,8 @@ import android.widget.TextView;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.util.concurrent.TimeUnit;
 
 import br.com.senac.projetointegrador.util.AndroidUtils;
 import br.com.senac.projetointegrador.util.NetworkUtils;
@@ -30,11 +33,11 @@ public class ProfileActivity extends Activity {
 
         //ANIMAÇÕES
         Slide trans1 = new Slide();
-        trans1.setDuration(500);
-        trans1.setSlideEdge(Gravity.RIGHT);
+        trans1.setDuration(750);
+        trans1.setSlideEdge(Gravity.TOP);
         Slide trans2 = new Slide();
         trans2.setDuration(500);
-        trans2.setSlideEdge(Gravity.LEFT);
+        trans2.setSlideEdge(Gravity.TOP);
         getWindow().setEnterTransition(trans1);
         getWindow().setReturnTransition(trans2);
         getWindow().setExitTransition(trans2);
@@ -60,9 +63,12 @@ public class ProfileActivity extends Activity {
         Bundle b = new Bundle ();
         b.putString("senha", senha);
         i.putExtras(b);
-
-//        startActivity(i);
         startActivity(i, activityOptionsCompat.toBundle());
+        new Handler().postDelayed(new Runnable() {
+            public void run () {
+                finish();
+            }
+        }, 2000L);
     }
 
 
@@ -76,7 +82,11 @@ public class ProfileActivity extends Activity {
         Intent i = new Intent(this, MainActivity.class);
         ActivityOptions options =ActivityOptions.makeSceneTransitionAnimation(this, null);
         startActivity(i, options.toBundle());
-        finish();
+        new Handler().postDelayed(new Runnable() {
+            public void run () {
+                finish();
+            }
+        }, 2000L);
     }
 
     public void irBusca(View view)
@@ -84,7 +94,12 @@ public class ProfileActivity extends Activity {
         Intent i = new Intent(this, SearchActivity.class);
         ActivityOptions options =ActivityOptions.makeSceneTransitionAnimation(this, null);
         startActivity(i, options.toBundle());
-        finish();
+
+        new Handler().postDelayed(new Runnable() {
+            public void run () {
+                finish();
+            }
+        }, 2000L);
     }
 
     public void pegarDadosConta()
@@ -110,6 +125,16 @@ public class ProfileActivity extends Activity {
         }
     }
 
+    public void trocarConta(View view) {
+        Intent i = new Intent(this,LoginActivity.class);
+        ActivityOptions options =ActivityOptions.makeSceneTransitionAnimation(this, null);
+        startActivity(i,options.toBundle());
+        new Handler().postDelayed(new Runnable() {
+            public void run () {
+                finish();
+            }
+        }, 2000L);
+    }
 }
 
 
