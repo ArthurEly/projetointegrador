@@ -5,6 +5,7 @@ import android.text.*;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
 import android.transition.Explode;
+import android.transition.Slide;
 import android.widget.*;
 import android.view.*;
 import br.com.senac.projetointegrador.util.*;
@@ -31,10 +32,12 @@ public class LoginActivity extends Activity {
 		imagemOlhoLogin = findViewById(R.id.imagemOlhoLogin);
 		passw = findViewById(R.id.LOGIN_PASSWORD);
 		//ANIMAÇÕES
-		Explode trans1 = new Explode();
+		Slide trans1 = new Slide();
 		trans1.setDuration(750);
-		Explode trans2 = new Explode();
-		trans2.setDuration(300);
+		trans1.setSlideEdge(Gravity.TOP);
+		Slide trans2 = new Slide();
+		trans2.setDuration(500);
+		trans2.setSlideEdge(Gravity.TOP);
 		getWindow().setEnterTransition(trans1);
 		getWindow().setReturnTransition(trans2);
 		getWindow().setExitTransition(trans2);
@@ -88,7 +91,8 @@ public class LoginActivity extends Activity {
 		signup.setOnClickListener(new View.OnClickListener() {
 			@Override public void onClick(View view) {
 				Intent i = new Intent(self(),RegisterActivity.class);
-				startActivity(i);
+				ActivityOptions op = ActivityOptions.makeSceneTransitionAnimation(self(), null);
+				startActivity(i, op.toBundle());
 				new Handler().postDelayed(new Runnable() {
 					public void run () {
 						finish();

@@ -4,6 +4,7 @@ import android.app.*;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
 import android.transition.Explode;
+import android.transition.Slide;
 import android.util.Log;
 import android.widget.*;
 import android.view.*;
@@ -31,11 +32,14 @@ public class RegisterActivity extends Activity {
 		b = findViewById(R.id.REGISTER_BUTTON);
 		l = findViewById(R.id.REGISTER_LOGIN);
 		imagemOlho = findViewById(R.id.imagemOlhoRegister);
+
 		//ANIMAÇÕES
-		Explode trans1 = new Explode();
+		Slide trans1 = new Slide();
 		trans1.setDuration(750);
-		Explode trans2 = new Explode();
-		trans2.setDuration(300);
+		trans1.setSlideEdge(Gravity.TOP);
+		Slide trans2 = new Slide();
+		trans2.setDuration(500);
+		trans2.setSlideEdge(Gravity.TOP);
 		getWindow().setEnterTransition(trans1);
 		getWindow().setReturnTransition(trans2);
 		getWindow().setExitTransition(trans2);
@@ -45,7 +49,13 @@ public class RegisterActivity extends Activity {
 		l.setOnClickListener(new View.OnClickListener() {
 			@Override public void onClick(View p1) {
 				Intent i = new Intent(self(), LoginActivity.class);
-				startActivity(i);
+				ActivityOptions op = ActivityOptions.makeSceneTransitionAnimation(self(), null);
+				startActivity(i, op.toBundle());
+				new Handler().postDelayed(new Runnable() {
+					public void run () {
+						finish();
+					}
+				}, 2000L);
 			}
 		});
 		

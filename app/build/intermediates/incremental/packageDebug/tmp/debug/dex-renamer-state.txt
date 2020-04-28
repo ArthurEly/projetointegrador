@@ -1,4 +1,4 @@
-#Mon Apr 27 17:47:02 BRT 2020
+#Tue Apr 28 16:16:15 BRT 2020
 base.0=D\:\\PI git\\projetointegrador\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex

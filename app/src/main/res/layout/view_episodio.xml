@@ -1,49 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="fill_parent"
 	android:layout_height="wrap_content"
-	android:orientation="horizontal">
+	android:orientation="horizontal"
+	android:padding="10dp">
 
-		<LinearLayout
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:orientation="vertical">
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
 
-			<TextView
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:layout_marginBottom="10dp"
-				android:gravity="center_horizontal"
-				android:text="Episódio 1"
-				android:textAlignment="center"
-				android:id="@+id/episodio_nome"/>
-
-			<ImageView
-				android:layout_width="130dp"
-				android:layout_height="80dp"
-				android:background="#000000"
-				android:src="@drawable/ic_launcher"
-				android:id="@+id/episodio_thumb"/>
-
-			<ImageView
-				android:layout_width="match_parent"
-				android:layout_height="60dp"
-				android:layout_gravity="center_horizontal|left"
-				android:layout_marginTop="10dp"
-				android:layout_weight="1"
-				android:src="@drawable/botaoassistir"
-				android:id="@+id/episodio_assistir"/>
-
-		</LinearLayout>
 
 		<TextView
+			android:id="@+id/episodio_nome"
+			android:layout_width="110dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginBottom="20dp"
+			android:gravity="center_horizontal"
+			android:text="Episódio 1"
+			android:textAlignment="center"
+			android:textColor="#FFFFFF" />
+
+		<ImageView
+			android:id="@+id/episodio_thumb"
+			android:layout_width="130dp"
+			android:layout_height="80dp"
+			android:background="#000000"
+			android:src="@drawable/ic_launcher" />
+
+		<ImageView
+			android:id="@+id/episodio_assistir"
 			android:layout_width="match_parent"
-			android:layout_height="match_parent"
-			android:layout_marginLeft="10dp"
-			android:gravity="center_vertical"
-			android:text="NULL"
-			android:id="@+id/episodio_sinopse"/>
-		
+			android:layout_height="60dp"
+			android:layout_gravity="center_horizontal|left"
+			android:layout_marginTop="10dp"
+			android:layout_weight="1"
+			android:src="@drawable/botaoassistir" />
+
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/episodio_sinopse"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginLeft="10dp"
+		android:fontFamily="@font/netflixlight"
+		android:gravity="center_vertical"
+		android:text="NULL"
+		android:textColor="#C8C8C8" />
+
+	<EditText
+		android:id="@+id/editText2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:ems="10"
+		android:gravity="start|top"
+		android:inputType="textMultiLine" />
+
 </LinearLayout>
 

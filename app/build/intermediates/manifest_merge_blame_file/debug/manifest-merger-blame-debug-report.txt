@@ -21,11 +21,11 @@
 13-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:9:22-78
 14
 15    <application
-15-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:11:5-41:19
+15-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:11:5-38:19
 16        android:allowBackup="true"
 16-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:12:9-35
 17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-17-->[androidx.core:core:1.0.0] C:\Users\arthu\.gradle\caches\transforms-2\files-2.1\799659d157cba173c3391744d4f4133c\core-1.0.0\AndroidManifest.xml:22:18-86
+17-->[androidx.core:core:1.1.0] C:\Users\arthu\.gradle\caches\transforms-2\files-2.1\34b4ab0d8b65ac74ddd00d45b26dd963\core-1.1.0\AndroidManifest.xml:24:18-86
 18        android:debuggable="true"
 19        android:extractNativeLibs="false"
 20        android:icon="@drawable/ic_launcher"
@@ -48,59 +48,61 @@
 28        <activity android:name="br.com.senac.projetointegrador.JSONTeste" />
 28-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:19:9-47
 28-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:19:19-44
-29        <activity android:name="br.com.senac.projetointegrador.MenuSeriesActivity" />
-29-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:20:9-56
-29-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:20:19-53
-30        <activity android:name="br.com.senac.projetointegrador.MenuFilmesActivity" />
+29        <activity android:name="br.com.senac.projetointegrador.SearchActivity" />
+29-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:20:9-52
+29-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:20:19-49
+30        <activity android:name="br.com.senac.projetointegrador.AutenticacaoProfile" />
 30-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:21:9-56
-30-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:21:19-53
-31        <activity android:name="br.com.senac.projetointegrador.SearchActivity" />
-31-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:22:9-52
-31-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:22:19-49
-32        <activity android:name="br.com.senac.projetointegrador.AutenticacaoProfile" />
-32-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:23:9-56
-32-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:23:19-54
-33        <activity android:name="br.com.senac.projetointegrador.DebugActivity" >
-33-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:24:9-29:20
-33-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:24:19-48
-34            <intent-filter>
-34-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:25:9-28:25
-35                <action android:name="android.intent.action.MAIN" />
-35-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:26:13-65
-35-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:26:21-62
-36
-37                <category android:name="android.intent.category.LAUNCHER" />
-37-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:27:13-73
-37-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:27:23-70
-38            </intent-filter>
-39        </activity>
-40        <activity android:name="br.com.senac.projetointegrador.SplashActivity" >
-40-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:30:9-31:20
-40-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:30:19-49
-41        </activity>
-42        <activity android:name="br.com.senac.projetointegrador.MainActivity" />
-42-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:32:9-50
-42-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:32:19-47
-43        <activity android:name="br.com.senac.projetointegrador.LoginActivity" />
-43-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:33:9-51
-43-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:33:19-48
-44        <activity android:name="br.com.senac.projetointegrador.RegisterActivity" />
-44-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:34:9-54
-44-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:34:19-51
-45        <activity android:name="br.com.senac.projetointegrador.ProfileActivity" />
-45-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:35:9-53
-45-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:35:19-50
-46        <activity android:name="br.com.senac.projetointegrador.EditProfileActivity" />
-46-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:36:9-57
-46-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:36:19-54
-47        <activity
-47-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:37:9-40:37
-48            android:name="br.com.senac.projetointegrador.PlayerActivity"
-48-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:40:4-34
-49            android:configChanges="orientation"
-49-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:39:4-39
-50            android:screenOrientation="sensorLandscape" />
-50-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:38:4-47
-51    </application>
-52
-53</manifest>
+30-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:21:19-54
+31        <activity android:name="br.com.senac.projetointegrador.DebugActivity" />
+31-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:22:9-50
+31-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:22:19-48
+32        <activity android:name="br.com.senac.projetointegrador.SplashActivity" >
+32-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:23:9-28:20
+32-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:23:19-49
+33            <intent-filter>
+33-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:24:13-27:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:25:17-69
+34-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:25:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:26:17-77
+36-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:26:27-74
+37            </intent-filter>
+38        </activity>
+39        <activity android:name="br.com.senac.projetointegrador.MainActivity" />
+39-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:29:9-50
+39-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:29:19-47
+40        <activity android:name="br.com.senac.projetointegrador.LoginActivity" />
+40-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:30:9-51
+40-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:30:19-48
+41        <activity android:name="br.com.senac.projetointegrador.RegisterActivity" />
+41-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:31:9-54
+41-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:31:19-51
+42        <activity android:name="br.com.senac.projetointegrador.ProfileActivity" />
+42-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:32:9-53
+42-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:32:19-50
+43        <activity android:name="br.com.senac.projetointegrador.EditProfileActivity" />
+43-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:33:9-57
+43-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:33:19-54
+44        <activity
+44-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:34:9-37:37
+45            android:name="br.com.senac.projetointegrador.PlayerActivity"
+45-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:37:4-34
+46            android:configChanges="orientation"
+46-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:36:4-39
+47            android:screenOrientation="sensorLandscape" />
+47-->D:\PI git\projetointegrador\app\src\main\AndroidManifest.xml:35:4-47
+48
+49        <provider
+49-->[com.squareup.picasso:picasso:2.71828] C:\Users\arthu\.gradle\caches\transforms-2\files-2.1\b02a443249b11b259343868fcd914fb8\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+50            android:name="com.squareup.picasso.PicassoProvider"
+50-->[com.squareup.picasso:picasso:2.71828] C:\Users\arthu\.gradle\caches\transforms-2\files-2.1\b02a443249b11b259343868fcd914fb8\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+51            android:authorities="br.com.senac.projetointegrador.com.squareup.picasso"
+51-->[com.squareup.picasso:picasso:2.71828] C:\Users\arthu\.gradle\caches\transforms-2\files-2.1\b02a443249b11b259343868fcd914fb8\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+52            android:exported="false" />
+52-->[com.squareup.picasso:picasso:2.71828] C:\Users\arthu\.gradle\caches\transforms-2\files-2.1\b02a443249b11b259343868fcd914fb8\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+53    </application>
+54
+55</manifest>

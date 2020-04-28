@@ -2,6 +2,7 @@ package br.com.senac.projetointegrador;
 
 import android.content.Intent;
 import android.app.*;
+import android.content.SharedPreferences;
 import android.os.*;
 import android.transition.Explode;
 import android.transition.Slide;

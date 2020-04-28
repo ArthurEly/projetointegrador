@@ -4,5 +4,7 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#CC0000</color>
     <color name="corMenuOculto">#B38D8D8D</color>
+    <color name="colorSerie">#007E14</color>
+    <color name="colorFilme">#042DAF</color>
     <color name="transparente">#00FFFFFF</color>
 </resources>

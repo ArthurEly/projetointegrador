@@ -7,100 +7,110 @@
 	android:gravity="center">
 
 	<VideoView
+		android:id="@+id/PLAYER_VIDEO"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-		android:id="@+id/PLAYER_VIDEO"/>
+		android:onClick="esconderTelaToque" />
 
 	<LinearLayout
+		android:id="@+id/linearComandos"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_centerHorizontal="true"
-		android:layout_centerVertical="true"
+		android:layout_centerInParent="true"
 		android:gravity="center">
 
 		<ImageView
-			android:src="@drawable/ic_skip_previous_white"
+			android:id="@+id/PLAYER_PREVIOUS"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:layout_centerVertical="true"
-			android:scaleType="centerInside"
 			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
 			android:layout_margin="10dp"
-			android:id="@+id/PLAYER_PREVIOUS"/>
+			android:scaleType="centerInside"
+			android:src="@drawable/ic_skip_previous_white" />
 
 		<ImageView
-			android:src="@drawable/ic_play_white"
+			android:id="@+id/PLAYER_PLAY"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_centerHorizontal="true"
 			android:layout_centerVertical="true"
+			android:layout_margin="25dp"
 			android:scaleType="centerInside"
 			android:scaleX="2"
 			android:scaleY="2"
-			android:layout_margin="25dp"
-			android:id="@+id/PLAYER_PLAY"/>
+			android:src="@drawable/loading" />
 
 		<ImageView
-			android:src="@drawable/ic_skip_next_white"
+			android:id="@+id/PLAYER_NEXT"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
 			android:layout_centerHorizontal="false"
 			android:layout_centerVertical="true"
-			android:scaleType="centerInside"
-			android:layout_alignParentRight="true"
 			android:layout_margin="10dp"
-			android:id="@+id/PLAYER_NEXT"/>
+			android:scaleType="centerInside"
+			android:src="@drawable/ic_skip_next_white" />
 
 	</LinearLayout>
 
 	<ImageView
-		android:src="@drawable/ic_arrow_left_white"
+		android:id="@+id/PLAYER_RETURN"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_margin="10dp"
-		android:id="@+id/PLAYER_RETURN"/>
+		android:layout_marginStart="10dp"
+		android:layout_marginTop="10dp"
+		android:layout_marginEnd="10dp"
+		android:layout_marginBottom="10dp"
+		android:onClick="onBackPressed"
+		android:src="@drawable/ic_arrow_left_white" />
 
 	<LinearLayout
-		android:orientation="vertical"
+		android:id="@+id/linearSeekBar"
 		android:layout_width="match_parent"
 		android:layout_height="50dp"
 		android:layout_alignParentBottom="true"
+		android:background="@drawable/effect_gradient"
 		android:gravity="bottom"
-		android:background="@drawable/effect_gradient">
+		android:orientation="vertical">
 
 		<SeekBar
+			android:id="@+id/PLAYER_TRACK"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:thumb="@drawable/seekbar_thumbdata"
 			android:elevation="10dp"
-			android:id="@+id/PLAYER_TRACK"/>
+			android:thumb="@drawable/seekbar_thumbdata" />
 
 	</LinearLayout>
 
 	<LinearLayout
-		android:orientation="horizontal"
+		android:id="@+id/linearSettings"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:layout_alignParentRight="true"
-		android:layout_margin="10dp">
+		android:layout_marginStart="10dp"
+		android:layout_marginTop="10dp"
+		android:layout_marginEnd="10dp"
+		android:layout_marginBottom="10dp"
+		android:orientation="horizontal">
 
 		<ImageView
-			android:src="@drawable/ic_standard_definition_white"
+			android:id="@+id/PLAYER_DEFINITION"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:id="@+id/PLAYER_DEFINITION"/>
+			android:src="@drawable/ic_standard_definition_white" />
 
 		<ImageView
-			android:src="@drawable/ic_fullscreen_exit_white"
+			android:id="@+id/PLAYER_PIP"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:id="@+id/PLAYER_PIP"/>
+			android:src="@drawable/ic_fullscreen_exit_white" />
 
 		<ImageView
-			android:src="@drawable/ic_dots_vertical_white"
+			android:id="@+id/PLAYER_OPTIONS"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:id="@+id/PLAYER_OPTIONS"/>
+			android:src="@drawable/ic_dots_vertical_white" />
 
 	</LinearLayout>
 

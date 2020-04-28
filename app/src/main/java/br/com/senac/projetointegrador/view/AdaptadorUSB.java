@@ -41,7 +41,8 @@ public class AdaptadorUSB extends ArrayAdapter<USB> {
 				img.setImageResource(i.getImage());
 			}
 		}
-		
+
+
 		return v;
 	}
 	

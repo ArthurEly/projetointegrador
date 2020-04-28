@@ -11,31 +11,25 @@
 	<ScrollView
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:layout_weight="1.0"
+		android:layout_gravity="center_horizontal"
+		android:layout_weight="0"
 		android:scrollbars="none">
 
 		<LinearLayout
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
 			android:orientation="vertical">
 
 			<LinearLayout
-				android:layout_width="match_parent"
-				android:layout_height="400dp"
+				android:id="@+id/CAPA_FS"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dp"
 				android:layout_marginBottom="5dp"
 				android:backgroundTintMode="src_over"
-				android:orientation="vertical">
-
-				<ImageView
-					android:id="@+id/SERIE_CAPA"
-					android:layout_width="match_parent"
-					android:layout_height="match_parent"
-					android:background="#000000"
-					android:src="@drawable/ic_launcher"
-					android:cropToPadding="true"
-					android:adjustViewBounds="true"/>
-
-			</LinearLayout>
+				android:gravity="center"
+				android:orientation="vertical" />
 
 			<LinearLayout
 				android:layout_width="match_parent"
@@ -51,7 +45,7 @@
 					android:text="Título da série"
 					android:textColor="#FFFFFF"
 					android:textSize="20sp"
-					android:textStyle="bold"/>
+					android:textStyle="bold" />
 
 				<TextView
 					android:id="@+id/SERIE_ARTHUR"
@@ -61,7 +55,7 @@
 					android:gravity="center_horizontal"
 					android:text="Autor da série"
 					android:textColor="#FFFFFF"
-					android:textSize="18sp"/>
+					android:textSize="18sp" />
 
 				<TextView
 					android:id="@+id/SERIE_DESCRIPT"
@@ -70,75 +64,24 @@
 					android:layout_marginLeft="10dp"
 					android:layout_marginTop="10dp"
 					android:layout_marginRight="10dp"
+					android:fontFamily="@font/netflixlight"
 					android:text="NULL"
 					android:textAlignment="viewStart"
 					android:textColor="#FFFFFF"
-					android:textSize="16sp"/>
+					android:textSize="16sp" />
 
 			</LinearLayout>
+
+			<ListView
+				android:id="@+id/SERIE_LIST"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_marginTop="30dp"
+				android:layout_weight="1.0" />
 
 		</LinearLayout>
 
 	</ScrollView>
-
-	<View
-		android:layout_width="match_parent"
-		android:layout_height="0.75dp"
-		android:layout_marginTop="50dp"
-		android:background="#FFFFFF"/>
-
-	<ListView
-		android:layout_width="match_parent"
-		android:layout_height="0dp"
-		android:id="@+id/SERIE_LIST"
-		android:layout_weight="1.0"/>
-
-	<View
-		android:layout_width="match_parent"
-		android:layout_height="1.5dp"
-		android:background="#580000"
-		android:elevation="10dp"/>
-
-	<LinearLayout
-		android:layout_width="match_parent"
-		android:layout_height="50dp"
-		android:background="#BB2929"
-		android:backgroundTint="#1f1f1f"
-		android:elevation="10dp"
-		android:gravity="center"
-		android:orientation="horizontal">
-
-		<ImageButton
-			android:id="@+id/imageButtonLupa"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_weight="1"
-			android:background="#00FFFFFF"
-			android:onClick="irBusca"
-			android:src="@drawable/lupa"
-			android:tint="#FFFFFF"/>
-
-		<ImageButton
-			android:id="@+id/imageButtonHome"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_weight="1"
-			android:background="#00FFFFFF"
-			android:onClick="irHome"
-			android:src="@drawable/ic_home_white"
-			android:tint="#DA1414"/>
-
-		<ImageButton
-			android:id="@+id/imageButtonProfile"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_weight="1"
-			android:background="#00FFFFFF"
-			android:onClick="irProfile"
-			android:src="@drawable/account"
-			android:tint="#FFFFFF"/>
-
-	</LinearLayout>
 
 </LinearLayout>
 

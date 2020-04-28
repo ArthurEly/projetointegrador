@@ -27,16 +27,18 @@
 		android:gravity="right">
 
 		<edos.widget.Button
+			android:id="@+id/DIALOGVIEW_CANCEL"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:text="Cancelar"
 			android:layout_marginRight="10dp"
-			android:id="@+id/DIALOGVIEW_CANCEL"/>
+			android:background="@drawable/bordasbotao"
+			android:text="Cancelar" />
 
 		<edos.widget.Button
 			android:id="@+id/DIALOGVIEW_OK"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
+			android:background="@drawable/bordasbotao"
 			android:text="OK" />
 
 	</LinearLayout>

@@ -6,6 +6,7 @@ import android.os.*;
 import br.com.senac.projetointegrador.util.*;
 import android.content.*;
 import android.transition.Explode;
+import android.transition.Fade;
 import android.view.View;
 
 public class SplashActivity extends Activity {
@@ -16,9 +17,9 @@ public class SplashActivity extends Activity {
         playAudio();
 
 		//ANIMAÇÕES
-		Explode trans1 = new Explode();
+		Fade trans1 = new Fade();
 		trans1.setDuration(1200);
-		Explode trans2 = new Explode();
+		Fade trans2 = new Fade();
 		trans2.setDuration(800);
 		getWindow().setEnterTransition(trans1);
 		getWindow().setReturnTransition(trans2);
@@ -37,9 +38,13 @@ public class SplashActivity extends Activity {
 					ActivityOptions op = ActivityOptions.makeSceneTransitionAnimation(SplashActivity.this, null);
 					startActivity(i, op.toBundle());
 				}
-				finish();
+				new Handler().postDelayed(new Runnable() {
+					public void run() {
+						finish();
+					}
+				}, 1500L);
 			}
-		}, 1500L);
+		}, 2000);
     }
 
     @Override public void onWindowFocusChanged(boolean hasFocus) {

@@ -73,6 +73,7 @@
 				android:layout_marginRight="10dp"
 				android:layout_weight="1.0"
 				android:background="@drawable/bordas"
+				android:fontFamily="@font/netflixlight"
 				android:gravity="center"
 				android:inputType="textEmailAddress"
 				android:textColor="#000000" />
@@ -109,6 +110,7 @@
 					android:layout_marginLeft="10dp"
 					android:layout_marginRight="10dp"
 					android:background="@drawable/bordas"
+					android:fontFamily="@font/netflixlight"
 					android:gravity="center"
 					android:inputType="textPassword"
 					android:textColor="#000000" />

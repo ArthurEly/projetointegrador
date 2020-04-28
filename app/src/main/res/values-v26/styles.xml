@@ -19,6 +19,6 @@
         <item name="android:colorEdgeEffect">#00000000</item>
         <item name="android:textColorLink">#FFCC0000</item>
         <item name="android:colorSecondary">#FFCC0000</item>
-        <!--item name="android:fontFamily">@raw/netflixmedium</item-->
+        <item name="android:fontFamily">@font/netflixmedium</item>
     </style>
 </resources>

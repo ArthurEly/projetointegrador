@@ -17,7 +17,7 @@
 
 		<LinearLayout
 			android:layout_width="match_parent"
-			android:layout_height="match_parent"
+			android:layout_height="wrap_content"
 			android:orientation="vertical">
 
 			<LinearLayout
@@ -52,7 +52,7 @@
 					android:text="Título do filme"
 					android:textColor="#FFFFFF"
 					android:textSize="20sp"
-					android:textStyle="bold"/>
+					android:textStyle="bold" />
 
 				<TextView
 					android:id="@+id/textView6"
@@ -62,7 +62,7 @@
 					android:gravity="center_horizontal"
 					android:text="Autor do filme"
 					android:textColor="#FFFFFF"
-					android:textSize="18sp"/>
+					android:textSize="18sp" />
 
 				<TextView
 					android:id="@+id/Descrição"
@@ -71,10 +71,11 @@
 					android:layout_marginLeft="10dp"
 					android:layout_marginTop="10dp"
 					android:layout_marginRight="10dp"
+					android:fontFamily="@font/netflixlight"
 					android:text="NULL"
 					android:textAlignment="viewStart"
 					android:textColor="#FFFFFF"
-					android:textSize="16sp"/>
+					android:textSize="16sp" />
 
 				<ImageView
 					android:id="@+id/imageView3"
@@ -84,7 +85,7 @@
 					android:layout_marginTop="20dp"
 					android:layout_marginBottom="10dp"
 					android:layout_weight="1"
-					android:src="@drawable/botaoassistir"/>
+					android:src="@drawable/botaoassistir" />
 
 			</LinearLayout>
 
@@ -96,7 +97,7 @@
 		android:layout_width="match_parent"
 		android:layout_height="1.5dp"
 		android:background="#580000"
-		android:elevation="10dp"/>
+		android:elevation="10dp" />
 
 	<LinearLayout
 		android:layout_width="match_parent"

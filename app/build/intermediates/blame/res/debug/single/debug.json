@@ -28,8 +28,8 @@
         "source": "D:\\PI git\\projetointegrador\\app\\src\\main\\res\\layout\\activity_player.xml"
     },
     {
-        "merged": "D:\\PI git\\projetointegrador\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_menu_series.xml.flat",
-        "source": "D:\\PI git\\projetointegrador\\app\\src\\main\\res\\layout\\activity_menu_series.xml"
+        "merged": "D:\\PI git\\projetointegrador\\app\\build\\intermediates\\res\\merged\\debug\\font_netflixlight.otf.flat",
+        "source": "D:\\PI git\\projetointegrador\\app\\src\\main\\res\\font\\netflixlight.otf"
     },
     {
         "merged": "D:\\PI git\\projetointegrador\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_skip_previous_white.png.flat",
@@ -64,10 +64,6 @@
         "source": "D:\\PI git\\projetointegrador\\app\\src\\main\\res\\layout\\toast_view.xml"
     },
     {
-        "merged": "D:\\PI git\\projetointegrador\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_menu_filmes.xml.flat",
-        "source": "D:\\PI git\\projetointegrador\\app\\src\\main\\res\\layout\\activity_menu_filmes.xml"
-    },
-    {
         "merged": "D:\\PI git\\projetointegrador\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_fundologin.jpg.flat",
         "source": "D:\\PI git\\projetointegrador\\app\\src\\main\\res\\drawable-v24\\fundologin.jpg"
     },
@@ -76,8 +72,20 @@
         "source": "D:\\PI git\\projetointegrador\\app\\src\\main\\res\\drawable\\ic_hexagon_outline_white.png"
     },
     {
+        "merged": "D:\\PI git\\projetointegrador\\app\\build\\intermediates\\res\\merged\\debug\\layout_recycler_layout.xml.flat",
+        "source": "D:\\PI git\\projetointegrador\\app\\src\\main\\res\\layout\\recycler_layout.xml"
+    },
+    {
         "merged": "D:\\PI git\\projetointegrador\\app\\build\\intermediates\\res\\merged\\debug\\drawable_account.png.flat",
         "source": "D:\\PI git\\projetointegrador\\app\\src\\main\\res\\drawable\\account.png"
+    },
+    {
+        "merged": "D:\\PI git\\projetointegrador\\app\\build\\intermediates\\res\\merged\\debug\\font_netflixbold.otf.flat",
+        "source": "D:\\PI git\\projetointegrador\\app\\src\\main\\res\\font\\netflixbold.otf"
+    },
+    {
+        "merged": "D:\\PI git\\projetointegrador\\app\\build\\intermediates\\res\\merged\\debug\\drawable_recycler_bg.xml.flat",
+        "source": "D:\\PI git\\projetointegrador\\app\\src\\main\\res\\drawable\\recycler_bg.xml"
     },
     {
         "merged": "D:\\PI git\\projetointegrador\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_splash.xml.flat",
@@ -108,10 +116,6 @@
         "source": "D:\\PI git\\projetointegrador\\app\\src\\main\\res\\layout\\activity_debug.xml"
     },
     {
-        "merged": "D:\\PI git\\projetointegrador\\app\\build\\intermediates\\res\\merged\\debug\\raw_netflixmedium.otf.flat",
-        "source": "D:\\PI git\\projetointegrador\\app\\src\\main\\res\\raw\\netflixmedium.otf"
-    },
-    {
         "merged": "D:\\PI git\\projetointegrador\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_arrow_left_white.png.flat",
         "source": "D:\\PI git\\projetointegrador\\app\\src\\main\\res\\drawable\\ic_arrow_left_white.png"
     },
@@ -130,6 +134,10 @@
     {
         "merged": "D:\\PI git\\projetointegrador\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_home_black.png.flat",
         "source": "D:\\PI git\\projetointegrador\\app\\src\\main\\res\\drawable\\ic_home_black.png"
+    },
+    {
+        "merged": "D:\\PI git\\projetointegrador\\app\\build\\intermediates\\res\\merged\\debug\\layout_view_serie_sugestao.xml.flat",
+        "source": "D:\\PI git\\projetointegrador\\app\\src\\main\\res\\layout\\view_serie_sugestao.xml"
     },
     {
         "merged": "D:\\PI git\\projetointegrador\\app\\build\\intermediates\\res\\merged\\debug\\drawable_botaoassistir.png.flat",
@@ -180,12 +188,12 @@
         "source": "D:\\PI git\\projetointegrador\\app\\src\\main\\res\\drawable\\ic_close_white.png"
     },
     {
-        "merged": "D:\\PI git\\projetointegrador\\app\\build\\intermediates\\res\\merged\\debug\\raw_netflixlight.otf.flat",
-        "source": "D:\\PI git\\projetointegrador\\app\\src\\main\\res\\raw\\netflixlight.otf"
-    },
-    {
         "merged": "D:\\PI git\\projetointegrador\\app\\build\\intermediates\\res\\merged\\debug\\drawable_sol.png.flat",
         "source": "D:\\PI git\\projetointegrador\\app\\src\\main\\res\\drawable\\sol.png"
+    },
+    {
+        "merged": "D:\\PI git\\projetointegrador\\app\\build\\intermediates\\res\\merged\\debug\\font_netflixmedium.otf.flat",
+        "source": "D:\\PI git\\projetointegrador\\app\\src\\main\\res\\font\\netflixmedium.otf"
     },
     {
         "merged": "D:\\PI git\\projetointegrador\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_loading.xml.flat",
@@ -248,6 +256,10 @@
         "source": "D:\\PI git\\projetointegrador\\app\\src\\main\\res\\layout\\dialog_home.xml"
     },
     {
+        "merged": "D:\\PI git\\projetointegrador\\app\\build\\intermediates\\res\\merged\\debug\\layout_view_serie_infos.xml.flat",
+        "source": "D:\\PI git\\projetointegrador\\app\\src\\main\\res\\layout\\view_serie_infos.xml"
+    },
+    {
         "merged": "D:\\PI git\\projetointegrador\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
         "source": "D:\\PI git\\projetointegrador\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
@@ -258,6 +270,10 @@
     {
         "merged": "D:\\PI git\\projetointegrador\\app\\build\\intermediates\\res\\merged\\debug\\drawable_olhoriscado.png.flat",
         "source": "D:\\PI git\\projetointegrador\\app\\src\\main\\res\\drawable\\olhoriscado.png"
+    },
+    {
+        "merged": "D:\\PI git\\projetointegrador\\app\\build\\intermediates\\res\\merged\\debug\\drawable_capa.xml.flat",
+        "source": "D:\\PI git\\projetointegrador\\app\\src\\main\\res\\drawable\\capa.xml"
     },
     {
         "merged": "D:\\PI git\\projetointegrador\\app\\build\\intermediates\\res\\merged\\debug\\drawable_olhonormal.png.flat",
@@ -312,8 +328,8 @@
         "source": "D:\\PI git\\projetointegrador\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "D:\\PI git\\projetointegrador\\app\\build\\intermediates\\res\\merged\\debug\\raw_netflixbold.otf.flat",
-        "source": "D:\\PI git\\projetointegrador\\app\\src\\main\\res\\raw\\netflixbold.otf"
+        "merged": "D:\\PI git\\projetointegrador\\app\\build\\intermediates\\res\\merged\\debug\\drawable_divisor_tipo.xml.flat",
+        "source": "D:\\PI git\\projetointegrador\\app\\src\\main\\res\\drawable\\divisor_tipo.xml"
     },
     {
         "merged": "D:\\PI git\\projetointegrador\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_view.xml.flat",
@@ -470,6 +486,10 @@
     {
         "merged": "D:\\PI git\\projetointegrador\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_arrow_left_black.png.flat",
         "source": "D:\\PI git\\projetointegrador\\app\\src\\main\\res\\drawable\\ic_arrow_left_black.png"
+    },
+    {
+        "merged": "D:\\PI git\\projetointegrador\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_fundodrgradevermelho.jpg.flat",
+        "source": "D:\\PI git\\projetointegrador\\app\\src\\main\\res\\drawable-v24\\fundodrgradevermelho.jpg"
     },
     {
         "merged": "D:\\PI git\\projetointegrador\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",

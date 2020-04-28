@@ -21,14 +21,14 @@
 
 			<LinearLayout
 				android:layout_width="match_parent"
-				android:layout_height="400dp"
+				android:layout_height="wrap_content"
 				android:layout_marginBottom="5dp"
-				android:background="@drawable/background"
+				android:background="@drawable/fundodrgradevermelho"
 				android:orientation="vertical"
 				android:padding="10dp">
 
 				<LinearLayout
-					android:layout_width="wrap_content"
+					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
 					android:orientation="horizontal">
 
@@ -36,55 +36,62 @@
 						android:id="@+id/imageView30"
 						android:layout_width="50dp"
 						android:layout_height="50dp"
-						android:src="@drawable/ic_launcher"/>
+						android:src="@drawable/ic_launcher" />
 
 					<TextView
-						android:id="@+id/menuFilmes"
-						android:layout_width="175dp"
+						android:id="@+id/textView4"
+						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
-						android:layout_marginTop="10dp"
+						android:layout_gravity="center"
+						android:layout_marginLeft="10dp"
 						android:gravity="center"
-						android:onClick="irMenuFilmes"
-						android:text="Filmes"
+						android:text="Uma sugestão especial para você!"
 						android:textColor="#FFFFFF"
-						android:textSize="20sp" />
-
-					<TextView
-						android:id="@+id/menuSeries"
-						android:layout_width="200dp"
-						android:layout_height="wrap_content"
-						android:layout_marginTop="10dp"
-						android:layout_weight="1"
-						android:gravity="center"
-						android:onClick="irMenuSeries"
-						android:text="Séries"
-						android:textColor="#FFFFFF"
-						android:textSize="20sp" />
+						android:textSize="23sp"
+						android:textStyle="bold" />
 
 				</LinearLayout>
 
 				<LinearLayout
+					android:id="@+id/SUJEIRA"
 					android:layout_width="match_parent"
 					android:layout_height="match_parent"
-					android:gravity="bottom|center_horizontal"
-					android:orientation="horizontal">
+					android:gravity="center_horizontal"
+					android:orientation="vertical">
 
-					<ImageView
-						android:id="@+id/imageView3"
-						android:layout_width="100dp"
-						android:layout_height="40dp"
-						android:layout_marginLeft="10dp"
+					<LinearLayout
+						android:id="@+id/MAIN_SUGESTAO"
+						android:layout_width="match_parent"
+						android:layout_height="500dp"
+						android:layout_marginTop="10dp"
+						android:layout_marginBottom="15dp"
 						android:layout_weight="1"
-						android:src="@drawable/botaoassistir"/>
+						android:gravity="center"
+						android:orientation="vertical"></LinearLayout>
 
-					<ImageView
-						android:id="@+id/imageView5"
-						android:layout_width="wrap_content"
-						android:layout_height="35dp"
-						android:layout_marginBottom="5dp"
-						android:layout_weight="1"
-						android:src="@drawable/informationoutline"
-						android:tint="#1AFFFFFF"/>
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_weight="0"
+						android:orientation="horizontal">
+
+						<ImageView
+							android:id="@+id/playerSugestao"
+							android:layout_width="100dp"
+							android:layout_height="40dp"
+							android:layout_marginLeft="10dp"
+							android:layout_weight="1"
+							android:src="@drawable/botaoassistir" />
+
+						<ImageView
+							android:id="@+id/infoSugestao"
+							android:layout_width="wrap_content"
+							android:layout_height="35dp"
+							android:layout_marginBottom="5dp"
+							android:layout_weight="1"
+							android:src="@drawable/informationoutline"
+							android:tint="#1AFFFFFF" />
+					</LinearLayout>
 
 				</LinearLayout>
 
@@ -100,7 +107,7 @@
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
 					android:layout_marginLeft="15dp"
-					android:text="Lançamentos"
+					android:text="Todos os filmes"
 					android:textColor="#FFFFFF"
 					android:textSize="18sp" />
 
@@ -127,7 +134,7 @@
 					android:layout_height="wrap_content"
 					android:layout_marginLeft="15dp"
 					android:layout_marginTop="20dp"
-					android:text="Filmes de Terror"
+					android:text="Filmes de terror"
 					android:textColor="#FFFFFF"
 					android:textSize="18sp" />
 
@@ -143,10 +150,7 @@
 						android:layout_width="match_parent"
 						android:layout_height="match_parent"
 						android:orientation="horizontal">
-
-
 					</LinearLayout>
-
 				</HorizontalScrollView>
 
 				<TextView
@@ -154,57 +158,143 @@
 					android:layout_height="wrap_content"
 					android:layout_marginLeft="15dp"
 					android:layout_marginTop="20dp"
-					android:text="Texto exemplo"
+					android:text="Romances"
 					android:textColor="#FFFFFF"
-					android:textSize="16sp"/>
+					android:textSize="18sp" />
 
 				<HorizontalScrollView
 					android:layout_width="match_parent"
-					android:layout_height="match_parent"
+					android:layout_height="wrap_content"
 					android:layout_marginLeft="15dp"
 					android:layout_marginTop="5dp"
 					android:scrollbars="none">
 
 					<LinearLayout
+						android:id="@+id/MAIN_ROMANCE"
 						android:layout_width="match_parent"
-						android:layout_height="match_parent"
+						android:layout_height="wrap_content"
 						android:orientation="horizontal">
-
-						<ImageView
-							android:layout_width="110dp"
-							android:layout_height="150dp"
-							android:layout_marginRight="5dp"
-							android:background="#FFFFFF"
-							android:src="@drawable/ic_launcher"/>
-
-						<ImageView
-							android:layout_width="110dp"
-							android:layout_height="150dp"
-							android:layout_marginLeft="5dp"
-							android:layout_marginRight="5dp"
-							android:background="#FFFFFF"
-							android:src="@drawable/ic_launcher"/>
-
-						<ImageView
-							android:layout_width="110dp"
-							android:layout_height="150dp"
-							android:layout_marginLeft="5dp"
-							android:layout_marginRight="5dp"
-							android:layout_weight="1"
-							android:background="#FFFFFF"
-							android:src="@drawable/ic_launcher"/>
-
-						<ImageView
-							android:layout_width="110dp"
-							android:layout_height="150dp"
-							android:layout_marginLeft="5dp"
-							android:layout_marginRight="5dp"
-							android:layout_weight="1"
-							android:background="#FFFFFF"
-							android:src="@drawable/ic_launcher"/>
-
 					</LinearLayout>
+				</HorizontalScrollView>
 
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="15dp"
+					android:layout_marginTop="20dp"
+					android:text="Filmes de aventura"
+					android:textColor="#FFFFFF"
+					android:textSize="18sp" />
+
+				<HorizontalScrollView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="15dp"
+					android:layout_marginTop="5dp"
+					android:scrollbars="none">
+
+					<LinearLayout
+						android:id="@+id/MAIN_AVENTURA"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal">
+					</LinearLayout>
+				</HorizontalScrollView>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="15dp"
+					android:layout_marginTop="20dp"
+					android:text="Dramas"
+					android:textColor="#FFFFFF"
+					android:textSize="18sp" />
+
+				<HorizontalScrollView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="15dp"
+					android:layout_marginTop="5dp"
+					android:scrollbars="none">
+
+					<LinearLayout
+						android:id="@+id/MAIN_DRAMA"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal">
+					</LinearLayout>
+				</HorizontalScrollView>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="15dp"
+					android:layout_marginTop="20dp"
+					android:text="Filmes de ação"
+					android:textColor="#FFFFFF"
+					android:textSize="18sp" />
+
+				<HorizontalScrollView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="15dp"
+					android:layout_marginTop="5dp"
+					android:scrollbars="none">
+
+					<LinearLayout
+						android:id="@+id/MAIN_ACAO"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal">
+					</LinearLayout>
+				</HorizontalScrollView>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="15dp"
+					android:layout_marginTop="20dp"
+					android:text="Filmes de suspense"
+					android:textColor="#FFFFFF"
+					android:textSize="18sp" />
+
+				<HorizontalScrollView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="15dp"
+					android:layout_marginTop="5dp"
+					android:scrollbars="none">
+
+					<LinearLayout
+						android:id="@+id/MAIN_SUSPENSE"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal">
+					</LinearLayout>
+				</HorizontalScrollView>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="15dp"
+					android:layout_marginTop="20dp"
+					android:text="Comédias"
+					android:textColor="#FFFFFF"
+					android:textSize="18sp" />
+
+				<HorizontalScrollView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="15dp"
+					android:layout_marginTop="5dp"
+					android:layout_marginBottom="20dp"
+					android:scrollbars="none">
+
+					<LinearLayout
+						android:id="@+id/MAIN_COMEDIA"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal"></LinearLayout>
 				</HorizontalScrollView>
 
 			</LinearLayout>
